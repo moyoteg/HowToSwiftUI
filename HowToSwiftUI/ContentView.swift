@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+        NavigationView {
+            List {
+                NavigationLink("hide nav bar", destination: HideNavigationBar())
+                NavigationLink("use sheet", destination: UseSheet())
+                NavigationLink("center text textfield", destination: CenterTextFieldPlaceholderText())
+            }
+            .navigationTitle("How to")
+        }
+            Divider()
+            VStack {
+                Text("by ") +
+                Text("Moi Gutiérrez")
+                    .font(.system(size: 18, weight: .bold, design: .default)) +
+                Text(" with love ❤️")
+                Link("@moyoteg",
+                      destination: URL(string: "https://www.twitter.com/moyoteg")!)
+            }
+        }
     }
 }
 
