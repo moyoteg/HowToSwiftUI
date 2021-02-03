@@ -14,6 +14,7 @@
 		041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98325C8CFB600111090 /* HideNavigationBar.swift */; };
 		041CB98725C8D20700111090 /* UseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98625C8D20700111090 /* UseSheet.swift */; };
 		041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */; };
+		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		041CB98325C8CFB600111090 /* HideNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNavigationBar.swift; sourceTree = "<group>"; };
 		041CB98625C8D20700111090 /* UseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSheet.swift; sourceTree = "<group>"; };
 		041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTextFieldPlaceholderText.swift; sourceTree = "<group>"; };
+		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */,
 				041CB98625C8D20700111090 /* UseSheet.swift */,
 				041CB98325C8CFB600111090 /* HideNavigationBar.swift */,
+				04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
 				041CB97925C8CE6A00111090 /* Preview Content */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,

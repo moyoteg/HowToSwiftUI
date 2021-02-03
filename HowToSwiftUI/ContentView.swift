@@ -15,6 +15,7 @@ struct ContentView: View {
                 NavigationLink("hide nav bar", destination: HideNavigationBar())
                 NavigationLink("use sheet", destination: UseSheet())
                 NavigationLink("center text textfield", destination: CenterTextFieldPlaceholderText())
+                NavigationLink("insert and remove tab", destination: InsertAndRemoveTab())
             }
             .navigationTitle("How to")
         }
