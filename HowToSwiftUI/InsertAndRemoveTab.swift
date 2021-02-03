@@ -20,15 +20,12 @@ struct InsertAndRemoveTab: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                
-                TabView {
-                    ForEach(tabs) { tab in
-                        Text(tab.title).tabItem { Text(tab.label) }.tag(tab.tag)
-                    }
+            TabView {
+                ForEach(tabs) { tab in
+                    Text(tab.title).tabItem { Text(tab.label) }.tag(tab.tag)
                 }
-                
-            }.navigationTitle("Dynamic Tab Count")
+            }
+            .navigationTitle("Dynamic Tab Count")
             .toolbar {
                 HStack {
                     Button("Add", action: addItem)
@@ -40,7 +37,9 @@ struct InsertAndRemoveTab: View {
     }
     
     func addItem() {
-        tabs.append(Tab(title:"Tab number: \(tabs.count)", label: "Tab Label \(tabs.count)", tag: tabs.count + 1))
+        tabs.append(Tab(title:"Tab number: \(tabs.count)",
+                        label: "Tab Label \(tabs.count)",
+                        tag: tabs.count + 1))
     }
     
     func removeItem() {
