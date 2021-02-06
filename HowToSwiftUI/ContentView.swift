@@ -16,6 +16,7 @@ struct ContentView: View {
                 NavigationLink("use sheet", destination: UseSheet())
                 NavigationLink("center text textfield", destination: CenterTextFieldPlaceholderText())
                 NavigationLink("insert and remove tab", destination: InsertAndRemoveTab())
+                NavigationLink("secure toggle textfield", destination: SecureToggleTextField())
             }
             .navigationTitle("How to")
         }

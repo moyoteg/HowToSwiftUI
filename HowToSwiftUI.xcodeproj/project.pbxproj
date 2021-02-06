@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98325C8CFB600111090 /* HideNavigationBar.swift */; };
 		041CB98725C8D20700111090 /* UseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98625C8D20700111090 /* UseSheet.swift */; };
 		041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */; };
+		041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */; };
+		041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 041ECC7F25CE1F1000A37F49 /* Introspect */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,7 @@
 		041CB98325C8CFB600111090 /* HideNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNavigationBar.swift; sourceTree = "<group>"; };
 		041CB98625C8D20700111090 /* UseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSheet.swift; sourceTree = "<group>"; };
 		041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTextFieldPlaceholderText.swift; sourceTree = "<group>"; };
+		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */,
 				041CB97525C8CE6800111090 /* ContentView.swift */,
 				041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */,
+				041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */,
 				041CB98625C8D20700111090 /* UseSheet.swift */,
 				041CB98325C8CFB600111090 /* HideNavigationBar.swift */,
 				04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */,
@@ -97,6 +102,9 @@
 			dependencies = (
 			);
 			name = HowToSwiftUI;
+			packageProductDependencies = (
+				041ECC7F25CE1F1000A37F49 /* Introspect */,
+			);
 			productName = HowToSwiftUI;
 			productReference = 041CB97025C8CE6800111090 /* HowToSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 041CB96725C8CE6800111090;
+			packageReferences = (
+				041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 041CB97125C8CE6800111090 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,6 +167,7 @@
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		041ECC7F25CE1F1000A37F49 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 041CB96825C8CE6800111090 /* Project object */;
 }
