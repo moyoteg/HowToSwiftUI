@@ -30,6 +30,8 @@ struct ContentView: View {
                     NavigationLink(howTo.description, destination: howTo.view)
                 }
             }
+            .shadow(radius: 10)
+            Divider()
             HStack {
                 Text("✅ resolved")
                 Divider()
