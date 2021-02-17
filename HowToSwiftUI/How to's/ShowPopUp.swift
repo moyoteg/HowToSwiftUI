@@ -14,13 +14,15 @@ struct ShowPopUP: View {
     var body: some View {
         VStack {
 
-            PopUp(isPresented: $isPresented) {
-                Button("show menu") {
-                    withAnimation {
-                        isPresented = true
-                    }
+            Button("show menu") {
+                withAnimation {
+                    isPresented = true
                 }
-            } popUpContent: {
+            }
+            .popUp(isPresented: $isPresented,
+                   onDismiss: {
+                print("on dismiss")
+            }) {
                 Button("hide menu") {
                     withAnimation {
                         isPresented = false
@@ -31,18 +33,20 @@ struct ShowPopUP: View {
     }
 }
 
-
-struct PopUp<Content: View>: View {
+struct PopUp<PopUpContent: View>: ViewModifier {
     
     @Binding private var isPresented: Bool
-    let content: () -> Content
-    let popUpContent: () -> Content
-
-    var body: some View {
+    let popUpContent: () -> PopUpContent
+    let onDismiss: (() -> Void)?
+    
+    func body(content: Content) -> some View {
         ZStack {
-            content()
+            content
             if isPresented {
                 popUpContent()
+                    .onDisappear {
+                        onDismiss?()
+                    }
                     .padding()
                     .background(
                         Rectangle()
@@ -51,17 +55,30 @@ struct PopUp<Content: View>: View {
                         
                         , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .transition(.scale)
-                    .padding(.top, 16)
+                    .padding(.top, 42)
                     .shadow(radius: 10)
             }
         }
+
     }
+
     
     public init(isPresented: Binding<Bool>,
-                @ViewBuilder content: @escaping () -> Content,
-                @ViewBuilder popUpContent: @escaping () -> Content) {
+                onDismiss: (() -> Void)? = nil,
+                @ViewBuilder popUpContent: @escaping () -> PopUpContent) {
         self._isPresented = isPresented
-        self.content = content
+        self.onDismiss = onDismiss
         self.popUpContent = popUpContent
     }
+}
+
+extension View {
+    
+    public func popUp<Content>(isPresented: Binding<Bool>,
+                               onDismiss: (() -> Void)? = nil,
+                               @ViewBuilder content: @escaping () -> Content
+    ) -> some View where Content : View {
+        self.modifier(PopUp(isPresented: isPresented, onDismiss: onDismiss, popUpContent: content))
+    }
+
 }

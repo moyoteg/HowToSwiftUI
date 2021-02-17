@@ -9,35 +9,23 @@ import SwiftUI
 
 struct SandBox: View {
     
-    @State private var showMenu = false
+    var colors = ["Red", "Green", "Blue", "Tartan"]
+    @State private var selectedColor = "Red"
+    @State private var isPresented = false
     
     var body: some View {
-        VStack {
-            ZStack {
-                Button("show menu") {
-                    withAnimation {
-                        showMenu = true
-                    }
-                }
-                if showMenu {
-                    Button("hide menu") {
-                        withAnimation {
-                            showMenu = false
-                        }
-                    }
-                    .padding()
-                    .background(
-                        Rectangle()
-                            .fill(Color.white)
-                            .cornerRadius(15)
-                        
-                        , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .transition(.scale)
-                    .padding(.top, 16)
-                    .shadow(radius: 10)
+        Button("show menu") {
+            withAnimation {
+                isPresented = true
+            }
+        }
+        .popUp(isPresented: $isPresented) {
+            Button("hide menu") {
+                withAnimation {
+                    isPresented = false
                 }
             }
-            
         }
+        
     }
 }
