@@ -20,6 +20,7 @@ struct ContentView: View {
         HowTo("(unresolved) disable tab", AnyView(DisableTab())),
         HowTo("insert/remove view with transition", AnyView(InsertAndRemoveViewWithTransition())),
         HowTo("show pop up", AnyView(ShowPopUP())),
+        HowTo("pass generic view content", AnyView(PassGenericViewContent()))
     ]
     
     var body: some View {
