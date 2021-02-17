@@ -21,6 +21,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "insert view w/ transition", AnyView(InsertViewWithTransition())),
         HowTo(isResolved: true, "show pop up", AnyView(ShowPopUP())),
         HowTo(isResolved: true, "pass generic content", AnyView(PassGenericViewContent())),
+        HowTo(isResolved: true, "rotate 3D effect", AnyView(Rotate3DEffect())),
     ]
     
     var body: some View {
