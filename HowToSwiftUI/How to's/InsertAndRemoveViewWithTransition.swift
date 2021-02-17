@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct InsertAndRemoveViewWithTransition: View {
+struct InsertViewWithTransition: View {
     @State private var showDetails = false
 
     var body: some View {

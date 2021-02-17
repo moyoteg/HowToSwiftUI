@@ -18,16 +18,21 @@ struct ContentView: View {
         HowTo(isResolved: true, "insert and remove tab", AnyView(InsertAndRemoveTab())),
         HowTo(isResolved: true, "secure toggle textfield", AnyView(SecureToggleTextField())),
         HowTo(isResolved: false, "disable tab", AnyView(DisableTab())),
-        HowTo(isResolved: true, "insert/remove view with transition", AnyView(InsertAndRemoveViewWithTransition())),
+        HowTo(isResolved: true, "insert view w/ transition", AnyView(InsertViewWithTransition())),
         HowTo(isResolved: true, "show pop up", AnyView(ShowPopUP())),
-        HowTo(isResolved: true, "pass generic view content", AnyView(PassGenericViewContent())),
+        HowTo(isResolved: true, "pass generic content", AnyView(PassGenericViewContent())),
     ]
     
     var body: some View {
         VStack {
             NavigationView {
-                FilteredList("How To", list: howTos) { (howTo) in
-                    NavigationLink(howTo.description, destination: howTo.view)
+                FilteredList("How To",
+                             list: howTos) { (howTo) in
+                    NavigationLink(howTo.description,
+                                   destination:
+                                    howTo.view
+                                    .navigationBarTitle("\(howTo.name)")
+                    )
                 }
             }
             .shadow(radius: 10)

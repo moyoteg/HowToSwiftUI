@@ -20,11 +20,21 @@ struct SandBox: View {
             }
         }
         .popUp(isPresented: $isPresented) {
-            Button("hide menu") {
-                withAnimation {
-                    isPresented = false
+            VStack {
+                Button("hide menu") {
+                    withAnimation {
+                        isPresented = false
+                    }
                 }
+                Divider()
+                Picker("Please choose a color", selection: $selectedColor) {
+                    ForEach(colors, id: \.self) {
+                        Text($0)
+                    }
+                }
+                Text("You selected: \(selectedColor)")
             }
+            .padding()
         }
         
     }
