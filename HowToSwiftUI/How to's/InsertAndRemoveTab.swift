@@ -25,7 +25,7 @@ struct InsertAndRemoveTab: View {
                     Text(tab.title).tabItem { Text(tab.label) }.tag(tab.tag)
                 }
             }
-            .navigationTitle("Dynamic Tab Count")
+            .navigationTitle("Tab Count: \(tabs.count)")
             .toolbar {
                 HStack {
                     Button("Add", action: addItem)
