@@ -11,25 +11,31 @@ import SwiftUIComponents
 struct ContentView: View {
     
     let howTos = [
-        HowTo("sandbox", AnyView(SandBox())),
-        HowTo("hide nav bar", AnyView(HideNavigationBar())),
-        HowTo("use sheet", AnyView(UseSheet())),
-        HowTo("center text textfield", AnyView(CenterTextFieldPlaceholderText())),
-        HowTo("insert and remove tab", AnyView(InsertAndRemoveTab())),
-        HowTo("secure toggle textfield", AnyView(SecureToggleTextField())),
-        HowTo("(unresolved) disable tab", AnyView(DisableTab())),
-        HowTo("insert/remove view with transition", AnyView(InsertAndRemoveViewWithTransition())),
-        HowTo("show pop up", AnyView(ShowPopUP())),
-        HowTo("pass generic view content", AnyView(PassGenericViewContent()))
+        HowTo(isResolved: true, "sandbox", AnyView(SandBox())),
+        HowTo(isResolved: true, "hide nav bar", AnyView(HideNavigationBar())),
+        HowTo(isResolved: true, "use sheet", AnyView(UseSheet())),
+        HowTo(isResolved: true, "center text textfield", AnyView(CenterTextFieldPlaceholderText())),
+        HowTo(isResolved: true, "insert and remove tab", AnyView(InsertAndRemoveTab())),
+        HowTo(isResolved: true, "secure toggle textfield", AnyView(SecureToggleTextField())),
+        HowTo(isResolved: false, "disable tab", AnyView(DisableTab())),
+        HowTo(isResolved: true, "insert/remove view with transition", AnyView(InsertAndRemoveViewWithTransition())),
+        HowTo(isResolved: true, "show pop up", AnyView(ShowPopUP())),
+        HowTo(isResolved: true, "pass generic view content", AnyView(PassGenericViewContent())),
     ]
     
     var body: some View {
         VStack {
             NavigationView {
                 FilteredList("How To", list: howTos) { (howTo) in
-                    NavigationLink(howTo.name, destination: howTo.view)
+                    NavigationLink(howTo.description, destination: howTo.view)
                 }
             }
+            HStack {
+                Text("✅ resolved")
+                Divider()
+                Text("❌ unresolved")
+            }
+            .fixedSize()
             Divider()
             VStack {
                 Text("by ") +
@@ -57,7 +63,7 @@ struct HowTo: View, StringFilterable {
     }
     
     var description: String {
-        return name
+        return "\(isResolved ? "✅":"❌") " + name
     }
     
     func hash(into hasher: inout Hasher) {
@@ -73,9 +79,11 @@ struct HowTo: View, StringFilterable {
     var body: some View {
         view
     }
+    let isResolved: Bool
     
-    init(_ name: String, _ view: AnyView) {
+    init(isResolved: Bool = false, _ name: String, _ view: AnyView) {
         self.name = name
         self.view = view
+        self.isResolved = isResolved
     }
 }
