@@ -26,5 +26,4 @@ struct Passthrough<Content>: View where Content: View {
     var body: some View {
         content()
     }
-
 }
