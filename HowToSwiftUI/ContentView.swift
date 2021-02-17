@@ -11,11 +11,15 @@ import SwiftUIComponents
 struct ContentView: View {
     
     let howTos = [
+        HowTo("sandbox", AnyView(SandBox())),
         HowTo("hide nav bar", AnyView(HideNavigationBar())),
         HowTo("use sheet", AnyView(UseSheet())),
         HowTo("center text textfield", AnyView(CenterTextFieldPlaceholderText())),
         HowTo("insert and remove tab", AnyView(InsertAndRemoveTab())),
         HowTo("secure toggle textfield", AnyView(SecureToggleTextField())),
+        HowTo("(unresolved) disable tab", AnyView(DisableTab())),
+        HowTo("insert/remove view with transition", AnyView(InsertAndRemoveViewWithTransition())),
+        HowTo("show pop up", AnyView(ShowPopUP())),
     ]
     
     var body: some View {

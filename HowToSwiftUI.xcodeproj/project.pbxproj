@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */; };
 		041CB97625C8CE6800111090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97525C8CE6800111090 /* ContentView.swift */; };
 		041CB97825C8CE6A00111090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
@@ -17,10 +18,14 @@
 		041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */; };
 		041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 041ECC7F25CE1F1000A37F49 /* Introspect */; };
 		041ECC8725CE45E300A37F49 /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 041ECC8625CE45E300A37F49 /* SwiftUIComponents */; };
+		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
+		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
+		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0418F63825D4EDB800B40FAB /* DisableTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableTab.swift; sourceTree = "<group>"; };
 		041CB97025C8CE6800111090 /* HowToSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSwiftUIApp.swift; sourceTree = "<group>"; };
 		041CB97525C8CE6800111090 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +36,9 @@
 		041CB98625C8D20700111090 /* UseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSheet.swift; sourceTree = "<group>"; };
 		041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTextFieldPlaceholderText.swift; sourceTree = "<group>"; };
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
+		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
+		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
+		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418F63B25D4EE7800B40FAB /* How to's */ = {
+			isa = PBXGroup;
+			children = (
+				047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */,
+				041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */,
+				0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */,
+				041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */,
+				041CB98625C8D20700111090 /* UseSheet.swift */,
+				041CB98325C8CFB600111090 /* HideNavigationBar.swift */,
+				04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */,
+				0418F63825D4EDB800B40FAB /* DisableTab.swift */,
+			);
+			path = "How to's";
+			sourceTree = "<group>";
+		};
 		041CB96725C8CE6800111090 = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +91,8 @@
 			children = (
 				041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */,
 				041CB97525C8CE6800111090 /* ContentView.swift */,
-				041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */,
-				041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */,
-				041CB98625C8D20700111090 /* UseSheet.swift */,
-				041CB98325C8CFB600111090 /* HideNavigationBar.swift */,
-				04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */,
+				0478402B25DCA28B00CBF92B /* SandBox.swift */,
+				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
 				041CB97925C8CE6A00111090 /* Preview Content */,
@@ -169,8 +189,12 @@
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,
+				047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */,
+				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
+				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
 				041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HowToSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HL66E8Y24;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -322,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HowToSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = G7882XEDUN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
