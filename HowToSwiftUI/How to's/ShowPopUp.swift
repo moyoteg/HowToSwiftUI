@@ -15,7 +15,7 @@ struct ShowPopUP: View {
     var body: some View {
         VStack {
 
-            Button("show menu") {
+            Button("show popup") {
                 withAnimation {
                     isPresented = true
                 }
@@ -24,7 +24,7 @@ struct ShowPopUP: View {
                    onDismiss: {
                 print("on dismiss")
             }) {
-                Button("hide menu") {
+                Button("hide popup") {
                     withAnimation {
                         isPresented = false
                     }
