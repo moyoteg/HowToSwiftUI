@@ -1,22 +1,16 @@
 //
-//  SandBox.swift
+//  File.swift
 //  HowToSwiftUI
 //
-//  Created by Moi Gutierrez on 2/16/21.
+//  Created by Moi Gutierrez on 2/18/21.
 //
 
 import SwiftUI
 
-extension Color: Identifiable {
-    public var id: String {
-        self.description
-    }
-}
-
-struct SandBox: View {
+struct ScrollRotatingCards: View {
     
     var colors = [Color.blue,  Color.pink, Color.green, Color.yellow, Color.purple]
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -50,8 +44,8 @@ struct SandBox: View {
                 }
             }
         }
-        
     }
+    
     
     func getOffset(geometry: GeometryProxy) -> Double {
         
@@ -60,54 +54,3 @@ struct SandBox: View {
         return offset
     }
 }
-
-
-/*
- //
- //  SandBox.swift
- //  HowToSwiftUI
- //
- //  Created by Moi Gutierrez on 2/16/21.
- //
- 
- import SwiftUI
- 
- extension Color: Identifiable {
- public var id: String {
- self.description
- }
- }
- 
- struct SandBox: View {
- 
- var colors = [Color.blue,  Color.pink, Color.green]
- @State private var selectedColor = "Red"
- @State private var isPresented = false
- 
- var cardColor: Color = Color.blue
- 
- var body: some View {
- ZStack {
- Color.gray.opacity(0.1)
- ScrollView(.horizontal, showsIndicators: false) {
- HStack {
- GeometryReader { geometry2 in
- ForEach(colors) { color in
- Rectangle()
- .fill(color)
- .cornerRadius(15)
- .padding()
- .shadow(color: color.opacity(0.5), radius: 10)
- //                                    .rotation3DEffect(Angle(degrees: Double(geometry2.frame(in: .global).minX)), axis: (x: 10, y: 10, z: 10))
- }
- }
- .frame(width: 100,
- height: 200,
- alignment: .center)
- }
- }
- }
- }
- }
- 
- */

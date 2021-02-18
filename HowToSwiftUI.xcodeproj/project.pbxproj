@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0400C70225DCAE2B00D234EE /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
 		0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */; };
+		0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */; };
 		0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */; };
 		041CB97625C8CE6800111090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97525C8CE6800111090 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGenericViewContent.swift; sourceTree = "<group>"; };
 		0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rotate3DEffect.swift; sourceTree = "<group>"; };
+		0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRotatingCards.swift; sourceTree = "<group>"; };
 		0418F63825D4EDB800B40FAB /* DisableTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableTab.swift; sourceTree = "<group>"; };
 		041CB97025C8CE6800111090 /* HowToSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */,
 				041CB97525C8CE6800111090 /* ContentView.swift */,
 				0478402B25DCA28B00CBF92B /* SandBox.swift */,
+				0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
@@ -200,6 +203,7 @@
 				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
 				0400C70225DCAE2B00D234EE /* PassGenericViewContent.swift in Sources */,

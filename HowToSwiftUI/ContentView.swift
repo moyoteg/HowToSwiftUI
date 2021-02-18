@@ -11,7 +11,7 @@ import SwiftUIComponents
 struct ContentView: View {
     
     let howTos = [
-        HowTo(isResolved: true, "sandbox", AnyView(SandBox())),
+        HowTo(isResolved: true, " 🔬 👨‍💻 sandbox 👩‍💻 🧪", AnyView(SandBox())),
         HowTo(isResolved: true, "hide nav bar", AnyView(HideNavigationBar())),
         HowTo(isResolved: true, "use sheet", AnyView(UseSheet())),
         HowTo(isResolved: true, "center text textfield", AnyView(CenterTextFieldPlaceholderText())),
@@ -22,6 +22,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "show pop up", AnyView(ShowPopUP())),
         HowTo(isResolved: true, "pass generic content", AnyView(PassGenericViewContent())),
         HowTo(isResolved: true, "rotate 3D effect", AnyView(Rotate3DEffect())),
+        HowTo(isResolved: true, "scroll rotating cards", AnyView(ScrollRotatingCards())),
+
     ]
     
     var body: some View {
@@ -43,7 +45,7 @@ struct ContentView: View {
                 Divider()
                 Text("❌ unresolved")
             }
-            .fixedSize()
+            .fixedSize()    
             Divider()
             VStack {
                 Text("by ") +
