@@ -23,6 +23,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "pass generic content", AnyView(PassGenericViewContent())),
         HowTo(isResolved: true, "rotate 3D effect", AnyView(Rotate3DEffect())),
         HowTo(isResolved: true, "scroll rotating cards", AnyView(ScrollRotatingCards())),
+        HowTo(isResolved: true, "reflect view", AnyView(ReflectView())),
 
     ]
     
@@ -51,7 +52,7 @@ struct ContentView: View {
                 Text("by ") +
                     Text("Moi Gutiérrez")
                     .font(.system(size: 18, weight: .bold, design: .default)) +
-                    Text(" with love ❤️")
+                    Text(" with ❤️")
                 Link("@moyoteg",
                      destination: URL(string: "https://www.twitter.com/moyoteg")!)
             }

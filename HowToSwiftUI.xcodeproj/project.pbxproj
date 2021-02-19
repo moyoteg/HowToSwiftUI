@@ -18,6 +18,7 @@
 		041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98325C8CFB600111090 /* HideNavigationBar.swift */; };
 		041CB98725C8D20700111090 /* UseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98625C8D20700111090 /* UseSheet.swift */; };
 		041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */; };
+		041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DF01825DF54FE0029ECE5 /* ReflectView.swift */; };
 		041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */; };
 		041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 041ECC7F25CE1F1000A37F49 /* Introspect */; };
 		041ECC8725CE45E300A37F49 /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 041ECC8625CE45E300A37F49 /* SwiftUIComponents */; };
@@ -41,6 +42,7 @@
 		041CB98325C8CFB600111090 /* HideNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNavigationBar.swift; sourceTree = "<group>"; };
 		041CB98625C8D20700111090 /* UseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSheet.swift; sourceTree = "<group>"; };
 		041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTextFieldPlaceholderText.swift; sourceTree = "<group>"; };
+		041DF01825DF54FE0029ECE5 /* ReflectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectView.swift; sourceTree = "<group>"; };
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		0418F63B25D4EE7800B40FAB /* How to's */ = {
 			isa = PBXGroup;
 			children = (
+				041DF01825DF54FE0029ECE5 /* ReflectView.swift */,
+				0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */,
 				047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */,
 				0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */,
 				041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */,
@@ -100,7 +104,6 @@
 				041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */,
 				041CB97525C8CE6800111090 /* ContentView.swift */,
 				0478402B25DCA28B00CBF92B /* SandBox.swift */,
-				0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
@@ -202,6 +205,7 @@
 				047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */,
 				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
+				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,

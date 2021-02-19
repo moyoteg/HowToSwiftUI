@@ -32,13 +32,11 @@ struct ScrollRotatingCards: View {
                                     }
                                 }
                                 .shadow(color: color, radius: 5)
-                                .rotation3DEffect(Angle(degrees: getOffset(geometry: geometry2)), axis: (x: 1, y: 1, z: 0.3))
-                                
+                                .rotation3DEffect(Angle(degrees: getOffset(geometry: geometry2)), axis: (x: 1, y: 1, z: 0.3))                                
                             }
                             .frame(width: geometry.size.width * 0.8,
                                    height: geometry.size.height / 3,
                                    alignment: .center)
-                            
                         }
                     }
                 }
@@ -46,11 +44,7 @@ struct ScrollRotatingCards: View {
         }
     }
     
-    
     func getOffset(geometry: GeometryProxy) -> Double {
-        
-        let offset = Double(geometry.frame(in: .global).minX) / -20
-        print("\(offset)")
-        return offset
+       Double(geometry.frame(in: .global).minX) / -20
     }
 }

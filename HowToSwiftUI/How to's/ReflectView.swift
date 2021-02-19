@@ -1,20 +1,14 @@
 //
-//  SandBox.swift
+//  ReflectView.swift
 //  HowToSwiftUI
 //
-//  Created by Moi Gutierrez on 2/16/21.
+//  Created by Moi Gutierrez on 2/18/21.
 //
 
 import SwiftUI
 import SwiftUIComponents
 
-extension Color: Identifiable {
-    public var id: String {
-        self.description
-    }
-}
-
-struct SandBox: View {
+struct ReflectView: View {
     
     var colors = [Color.blue,  Color.pink, Color.green, Color.yellow, Color.purple]
     
