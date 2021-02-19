@@ -21,7 +21,7 @@ struct UseButton: View {
         if toggle {
             Rectangle()
                 .fill(Color.green)
-                .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 40, height: 40, alignment: .center)
                 .cornerRadius(5)
                 .shadow(color: Color.green, radius: 3)
                 .padding()

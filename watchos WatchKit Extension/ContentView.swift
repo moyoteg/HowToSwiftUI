@@ -12,6 +12,8 @@ struct ContentView: View {
     
     let howTos = [
         HowTo(isResolved: true, "use button", AnyView(UseButton())),
+        HowTo(isResolved: true, "change background", AnyView(ChangeBackground())),
+
     ]
     
     var body: some View {
