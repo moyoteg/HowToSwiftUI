@@ -7,7 +7,45 @@
 		<key>HowToSwiftUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>multiplatform (iOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>multiplatform (macOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>watchos WatchKit App (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>watchos WatchKit App (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>watchos WatchKit App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>045D7F1125DF9E2300150123</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>045D7F1425DF9E2400150123</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
