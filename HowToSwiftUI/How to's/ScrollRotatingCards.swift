@@ -16,7 +16,7 @@ struct ScrollRotatingCards: View {
             ZStack {
                 Color.gray.opacity(0.1)
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .center, spacing: 5.0) {
+                    HStack(alignment: .center, spacing: 10.0) {
                         ForEach(colors) { color in
                             GeometryReader { geometry2 in
                                 VStack {
@@ -32,7 +32,7 @@ struct ScrollRotatingCards: View {
                                     }
                                 }
                                 .shadow(color: color, radius: 5)
-                                .rotation3DEffect(Angle(degrees: getOffset(geometry: geometry2)), axis: (x: 1, y: 1, z: 0.3))                                
+                                .rotation3DEffect(Angle(degrees: getOffset(geometry: geometry2)), axis: (x: 0, y: 100, z: 0))
                             }
                             .frame(width: geometry.size.width * 0.8,
                                    height: geometry.size.height / 3,
@@ -45,6 +45,6 @@ struct ScrollRotatingCards: View {
     }
     
     func getOffset(geometry: GeometryProxy) -> Double {
-       Double(geometry.frame(in: .global).minX) / -20
+        Double(geometry.frame(in: .global).minX) * -0.05
     }
 }
