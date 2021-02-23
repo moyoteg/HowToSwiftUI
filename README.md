@@ -1,2 +1,2 @@
-# HowToSwiftUI
-Collection of how to do things in SwiftUI
+# 😄 HowToSwiftUI 🎂 😍
+Collection of how to do AWESOME 😎 things in SwiftUI 🧨🧪

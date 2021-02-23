@@ -25,6 +25,7 @@
 		0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 0422E15625DFA9DC0017ABCF /* SwiftUIComponents */; };
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
+		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
 		045D7F0125DF9DEF00150123 /* multiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */; };
 		045D7F0225DF9DEF00150123 /* multiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */; };
 		045D7F0325DF9DEF00150123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7EF025DF9DEE00150123 /* ContentView.swift */; };
@@ -111,6 +112,7 @@
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
+		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplatformApp.swift; sourceTree = "<group>"; };
 		045D7EF025DF9DEE00150123 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		045D7EF125DF9DEF00150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		041CB96725C8CE6800111090 = {
 			isa = PBXGroup;
 			children = (
+				0442FCCC25E59D13000D7283 /* README.md */,
 				041CB97225C8CE6800111090 /* HowToSwiftUI */,
 				045D7EEE25DF9DEE00150123 /* Shared */,
 				045D7EF725DF9DEF00150123 /* iOS */,
@@ -494,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0442FCCD25E59D13000D7283 /* README.md in Resources */,
 				041CB97B25C8CE6A00111090 /* Preview Assets.xcassets in Resources */,
 				041CB97825C8CE6A00111090 /* Assets.xcassets in Resources */,
 			);
