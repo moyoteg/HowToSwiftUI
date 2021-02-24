@@ -17,7 +17,7 @@ struct ShowPopUP: View {
 
             Button("show popup") {
                 withAnimation {
-                    isPresented = true
+                    isPresented.toggle()
                 }
             }
             .popUp(isPresented: $isPresented,
