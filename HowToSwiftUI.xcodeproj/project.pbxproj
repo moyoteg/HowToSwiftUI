@@ -41,6 +41,26 @@
 		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
+		049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91D25E61BB500482E7F /* tvOSApp.swift */; };
+		049CD92025E61BB500482E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91F25E61BB500482E7F /* ContentView.swift */; };
+		049CD92225E61BB600482E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CD92125E61BB600482E7F /* Assets.xcassets */; };
+		049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CD92425E61BB600482E7F /* Preview Assets.xcassets */; };
+		049CD96225E61C1F00482E7F /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
+		049CD96925E61C8D00482E7F /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 049CD96825E61C8D00482E7F /* SwiftUIComponents */; settings = {ATTRIBUTES = (Required, ); }; };
+		049CD96B25E61C9000482E7F /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 049CD96A25E61C9000482E7F /* Introspect */; };
+		049CD98625E61F3D00482E7F /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
+		049CD98C25E62CF000482E7F /* UseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98625C8D20700111090 /* UseSheet.swift */; };
+		049CD99225E62D2600482E7F /* ReflectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DF01825DF54FE0029ECE5 /* ReflectView.swift */; };
+		049CD99825E62D2900482E7F /* ScrollRotatingCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */; };
+		049CD99E25E62D2D00482E7F /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
+		049CD9A425E62D2F00482E7F /* rotate3DEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */; };
+		049CD9AA25E62D3200482E7F /* CenterTextFieldPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98A25C8D83300111090 /* CenterTextFieldPlaceholderText.swift */; };
+		049CD9B025E62D3600482E7F /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
+		049CD9B625E62D3900482E7F /* SecureToggleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */; };
+		049CD9BC25E62D3D00482E7F /* HideNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB98325C8CFB600111090 /* HideNavigationBar.swift */; };
+		049CD9C225E62D4100482E7F /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
+		049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
+		049CD9CE25E62D4700482E7F /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,9 +128,6 @@
 		045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplatformApp.swift; sourceTree = "<group>"; };
 		045D7EF025DF9DEE00150123 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		045D7EF125DF9DEF00150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		045D7EF825DF9DEF00150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045D7EFF25DF9DEF00150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045D7F0025DF9DEF00150123 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1A25DF9E2500150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +147,12 @@
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
 		049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowToSwiftUI.entitlements; sourceTree = "<group>"; };
+		049CD91B25E61BB500482E7F /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049CD91D25E61BB500482E7F /* tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSApp.swift; sourceTree = "<group>"; };
+		049CD91F25E61BB500482E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		049CD92125E61BB600482E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049CD92425E61BB600482E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		049CD92B25E61BB600482E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +171,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049CD91825E61BB500482E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049CD96925E61C8D00482E7F /* SwiftUIComponents in Frameworks */,
+				049CD96B25E61C9000482E7F /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,10 +211,9 @@
 				0442FCCC25E59D13000D7283 /* README.md */,
 				041CB97225C8CE6800111090 /* HowToSwiftUI */,
 				045D7EEE25DF9DEE00150123 /* Shared */,
-				045D7EF725DF9DEF00150123 /* iOS */,
-				045D7EFE25DF9DEF00150123 /* macOS */,
 				045D7F1925DF9E2400150123 /* watchos WatchKit App */,
 				045D7F2525DF9E2500150123 /* watchos WatchKit Extension */,
+				049CD91C25E61BB500482E7F /* tvOS */,
 				041CB97125C8CE6800111090 /* Products */,
 				0422E15525DFA9DC0017ABCF /* Frameworks */,
 			);
@@ -195,6 +226,7 @@
 				045D7F1225DF9E2300150123 /* watchos.app */,
 				045D7F1525DF9E2400150123 /* watchos WatchKit App.app */,
 				045D7F2125DF9E2500150123 /* watchos WatchKit Extension.appex */,
+				049CD91B25E61BB500482E7F /* tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,23 +281,6 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		045D7EF725DF9DEF00150123 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				045D7EF825DF9DEF00150123 /* Info.plist */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		045D7EFE25DF9DEF00150123 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				045D7EFF25DF9DEF00150123 /* Info.plist */,
-				045D7F0025DF9DEF00150123 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		045D7F1925DF9E2400150123 /* watchos WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +313,34 @@
 				045D7F3325DF9E2600150123 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		049CD91C25E61BB500482E7F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				049CD91D25E61BB500482E7F /* tvOSApp.swift */,
+				049CD91F25E61BB500482E7F /* ContentView.swift */,
+				049CD92125E61BB600482E7F /* Assets.xcassets */,
+				049CD92B25E61BB600482E7F /* Info.plist */,
+				049CD97625E61EBA00482E7F /* How To's */,
+				049CD92325E61BB600482E7F /* Preview Content */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		049CD92325E61BB600482E7F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				049CD92425E61BB600482E7F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		049CD97625E61EBA00482E7F /* How To's */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "How To's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +421,27 @@
 			productReference = 045D7F2125DF9E2500150123 /* watchos WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		049CD91A25E61BB500482E7F /* tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049CD94225E61BB700482E7F /* Build configuration list for PBXNativeTarget "tvOS" */;
+			buildPhases = (
+				049CD91725E61BB500482E7F /* Sources */,
+				049CD91825E61BB500482E7F /* Frameworks */,
+				049CD91925E61BB500482E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOS;
+			packageProductDependencies = (
+				049CD96825E61C8D00482E7F /* SwiftUIComponents */,
+				049CD96A25E61C9000482E7F /* Introspect */,
+			);
+			productName = tvOS;
+			productReference = 049CD91B25E61BB500482E7F /* tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -397,6 +461,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					045D7F2025DF9E2500150123 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					049CD91A25E61BB500482E7F = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -422,6 +489,7 @@
 				045D7F1125DF9E2300150123 /* watchos */,
 				045D7F1425DF9E2400150123 /* watchos WatchKit App */,
 				045D7F2025DF9E2500150123 /* watchos WatchKit Extension */,
+				049CD91A25E61BB500482E7F /* tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -458,6 +526,15 @@
 			files = (
 				045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */,
 				045D7F3125DF9E2600150123 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049CD91925E61BB500482E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */,
+				049CD92225E61BB600482E7F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +576,29 @@
 				045D7F2D25DF9E2500150123 /* NotificationView.swift in Sources */,
 				0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */,
 				0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049CD91725E61BB500482E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049CD9C225E62D4100482E7F /* InsertAndRemoveTab.swift in Sources */,
+				049CD9CE25E62D4700482E7F /* PassGenericViewContent.swift in Sources */,
+				049CD9B625E62D3900482E7F /* SecureToggleTextField.swift in Sources */,
+				049CD96225E61C1F00482E7F /* HowTo.swift in Sources */,
+				049CD98C25E62CF000482E7F /* UseSheet.swift in Sources */,
+				049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */,
+				049CD99225E62D2600482E7F /* ReflectView.swift in Sources */,
+				049CD9BC25E62D3D00482E7F /* HideNavigationBar.swift in Sources */,
+				049CD9B025E62D3600482E7F /* InsertAndRemoveViewWithTransition.swift in Sources */,
+				049CD92025E61BB500482E7F /* ContentView.swift in Sources */,
+				049CD99825E62D2900482E7F /* ScrollRotatingCards.swift in Sources */,
+				049CD9AA25E62D3200482E7F /* CenterTextFieldPlaceholderText.swift in Sources */,
+				049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */,
+				049CD98625E61F3D00482E7F /* SandBox.swift in Sources */,
+				049CD99E25E62D2D00482E7F /* ShowPopUp.swift in Sources */,
+				049CD9A425E62D2F00482E7F /* rotate3DEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +676,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 			};
 			name = Debug;
 		};
@@ -630,6 +731,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -792,6 +894,52 @@
 			};
 			name = Release;
 		};
+		049CD94325E61BB700482E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G7882XEDUN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.tvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		049CD94425E61BB700482E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G7882XEDUN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.tvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -840,6 +988,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		049CD94225E61BB700482E7F /* Build configuration list for PBXNativeTarget "tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049CD94325E61BB700482E7F /* Debug */,
+				049CD94425E61BB700482E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -876,6 +1033,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */;
 			productName = SwiftUIComponents;
+		};
+		049CD96825E61C8D00482E7F /* SwiftUIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */;
+			productName = SwiftUIComponents;
+		};
+		049CD96A25E61C9000482E7F /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
