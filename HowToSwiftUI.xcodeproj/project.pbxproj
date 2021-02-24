@@ -26,24 +26,25 @@
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
+		0453E24B25E6C8D100B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
+		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
+		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		045D7F1625DF9E2400150123 /* watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 045D7F1525DF9E2400150123 /* watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		045D7F1B25DF9E2500150123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F1A25DF9E2500150123 /* Assets.xcassets */; };
 		045D7F2225DF9E2500150123 /* watchos WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 045D7F2125DF9E2500150123 /* watchos WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2625DF9E2500150123 /* HowToSwiftUIApp.swift */; };
 		045D7F2925DF9E2500150123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2825DF9E2500150123 /* ContentView.swift */; };
 		045D7F2B25DF9E2500150123 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2A25DF9E2500150123 /* NotificationController.swift */; };
 		045D7F2D25DF9E2500150123 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2C25DF9E2500150123 /* NotificationView.swift */; };
 		045D7F2F25DF9E2500150123 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2E25DF9E2500150123 /* ComplicationController.swift */; };
-		045D7F3125DF9E2600150123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F3025DF9E2600150123 /* Assets.xcassets */; };
 		045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F3325DF9E2600150123 /* Preview Assets.xcassets */; };
 		045D7F7725DFA03900150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		045D7F7E25DFA04400150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
+		047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F55C825E6DDF30051B567 /* Assets.xcassets */; };
 		049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91D25E61BB500482E7F /* tvOSApp.swift */; };
 		049CD92025E61BB500482E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91F25E61BB500482E7F /* ContentView.swift */; };
-		049CD92225E61BB600482E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CD92125E61BB600482E7F /* Assets.xcassets */; };
 		049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CD92425E61BB600482E7F /* Preview Assets.xcassets */; };
 		049CD96225E61C1F00482E7F /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		049CD96925E61C8D00482E7F /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 049CD96825E61C8D00482E7F /* SwiftUIComponents */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -127,7 +128,6 @@
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		045D7F1A25DF9E2500150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045D7F1C25DF9E2500150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D7F2125DF9E2500150123 /* watchos WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchos WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F2625DF9E2500150123 /* HowToSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -135,7 +135,6 @@
 		045D7F2A25DF9E2500150123 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		045D7F2C25DF9E2500150123 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		045D7F2E25DF9E2500150123 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		045D7F3025DF9E2600150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045D7F3325DF9E2600150123 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		045D7F3525DF9E2600150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D7F3625DF9E2600150123 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -143,11 +142,11 @@
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
+		047F55C825E6DDF30051B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowToSwiftUI.entitlements; sourceTree = "<group>"; };
 		049CD91B25E61BB500482E7F /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049CD91D25E61BB500482E7F /* tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSApp.swift; sourceTree = "<group>"; };
 		049CD91F25E61BB500482E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		049CD92125E61BB600482E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049CD92425E61BB600482E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		049CD92B25E61BB600482E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
@@ -270,7 +269,6 @@
 		045D7F1925DF9E2400150123 /* watchos WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				045D7F1A25DF9E2500150123 /* Assets.xcassets */,
 				045D7F1C25DF9E2500150123 /* Info.plist */,
 			);
 			path = "watchos WatchKit App";
@@ -285,7 +283,6 @@
 				045D7F2C25DF9E2500150123 /* NotificationView.swift */,
 				045D7F2E25DF9E2500150123 /* ComplicationController.swift */,
 				0422E16C25DFB1D80017ABCF /* How To */,
-				045D7F3025DF9E2600150123 /* Assets.xcassets */,
 				045D7F3525DF9E2600150123 /* Info.plist */,
 				045D7F3625DF9E2600150123 /* PushNotificationPayload.apns */,
 				045D7F3225DF9E2600150123 /* Preview Content */,
@@ -306,7 +303,7 @@
 			children = (
 				049CD91D25E61BB500482E7F /* tvOSApp.swift */,
 				049CD91F25E61BB500482E7F /* ContentView.swift */,
-				049CD92125E61BB600482E7F /* Assets.xcassets */,
+				047F55C825E6DDF30051B567 /* Assets.xcassets */,
 				049CD92B25E61BB600482E7F /* Info.plist */,
 				049CD97625E61EBA00482E7F /* How To's */,
 				049CD92325E61BB600482E7F /* Preview Content */,
@@ -495,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045D7F1B25DF9E2500150123 /* Assets.xcassets in Resources */,
+				0453E24B25E6C8D100B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */,
-				045D7F3125DF9E2600150123 /* Assets.xcassets in Resources */,
+				0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */,
-				049CD92225E61BB600482E7F /* Assets.xcassets in Resources */,
+				047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,7 +737,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.HowToSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -764,7 +762,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.HowToSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;

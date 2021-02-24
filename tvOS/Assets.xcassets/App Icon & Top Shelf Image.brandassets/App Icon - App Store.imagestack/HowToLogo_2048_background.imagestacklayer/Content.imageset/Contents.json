@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "TopShelfImageWide.png",
-      "idiom" : "tv",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "HowToLogo_2048_background.png",
+      "idiom" : "tv"
     },
     {
-      "filename" : "TopShelfImageWide@2x.png",
       "idiom" : "tv",
       "scale" : "2x"
     }

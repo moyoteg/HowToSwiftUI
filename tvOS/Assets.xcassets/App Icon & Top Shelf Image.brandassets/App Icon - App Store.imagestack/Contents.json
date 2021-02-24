@@ -3,15 +3,21 @@
     "author" : "xcode",
     "version" : 1
   },
+  "properties" : {
+    "canvasSize" : {
+      "width" : 1280,
+      "height" : 768
+    }
+  },
   "layers" : [
     {
-      "filename" : "Front.imagestacklayer"
+      "filename" : "HowToLogo_2048_foreground.imagestacklayer"
     },
     {
-      "filename" : "Middle.imagestacklayer"
+      "filename" : "HowToLogo_2048_midground.imagestacklayer"
     },
     {
-      "filename" : "Back.imagestacklayer"
+      "filename" : "HowToLogo_2048_background.imagestacklayer"
     }
   ]
 }

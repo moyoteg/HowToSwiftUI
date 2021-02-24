@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "scale" : "1x",
+      "filename" : "HowToLogo_2048_background.png",
+      "idiom" : "tv"
+    },
+    {
+      "scale" : "2x",
+      "filename" : "HowToLogo_2048_background@2x.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
