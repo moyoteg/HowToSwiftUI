@@ -125,9 +125,6 @@
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplatformApp.swift; sourceTree = "<group>"; };
-		045D7EF025DF9DEE00150123 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		045D7EF125DF9DEF00150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1A25DF9E2500150123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,7 +207,6 @@
 			children = (
 				0442FCCC25E59D13000D7283 /* README.md */,
 				041CB97225C8CE6800111090 /* HowToSwiftUI */,
-				045D7EEE25DF9DEE00150123 /* Shared */,
 				045D7F1925DF9E2400150123 /* watchos WatchKit App */,
 				045D7F2525DF9E2500150123 /* watchos WatchKit Extension */,
 				049CD91C25E61BB500482E7F /* tvOS */,
@@ -269,16 +265,6 @@
 				0422E17525E02C400017ABCF /* ChangeBackground.swift */,
 			);
 			path = "How To";
-			sourceTree = "<group>";
-		};
-		045D7EEE25DF9DEE00150123 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				045D7EEF25DF9DEE00150123 /* multiplatformApp.swift */,
-				045D7EF025DF9DEE00150123 /* ContentView.swift */,
-				045D7EF125DF9DEF00150123 /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		045D7F1925DF9E2400150123 /* watchos WatchKit App */ = {
