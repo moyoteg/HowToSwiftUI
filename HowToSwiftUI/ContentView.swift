@@ -24,6 +24,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "rotate 3D effect", AnyView(Rotate3DEffect())),
         HowTo(isResolved: true, "scroll rotating cards", AnyView(ScrollRotatingCards())),
         HowTo(isResolved: true, "reflect view", AnyView(ReflectView())),
+        HowTo(isResolved: true, "page curl", AnyView(CurlPage())),
 
     ]
     
