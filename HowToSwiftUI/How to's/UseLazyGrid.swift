@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UseLazyGrid: View {
-    let data = (1...100).map { "Item \($0)" }
+    let data = (0...99).map { "Item \($0)" }
 
     @State var sections = [
         GridItem(.flexible()),
@@ -22,16 +22,13 @@ struct UseLazyGrid: View {
         
         VStack {
             HStack {
-                Spacer()
                 Button("add section") {
                     withAnimation {
                         sections.append(GridItem(.flexible()))
                     }
                 }
                 .padding()
-                
-                Spacer()
-                
+                                
                 Button("remove section") {
                     withAnimation {
                         if sections.isEmpty { return }
@@ -39,8 +36,12 @@ struct UseLazyGrid: View {
                     }
                 }
                 .padding()
-                Spacer()
             }
+            
+            Divider()
+            
+            Text("LazyVGrid")
+                .font(.title2)
             
             ScrollView {
                 LazyVGrid(columns: sections, spacing: 20) {
@@ -53,6 +54,9 @@ struct UseLazyGrid: View {
             .padding()
             
             Divider()
+            
+            Text("LazyHGrid")
+                .font(.title2)
             
             ScrollView(.horizontal) {
                 LazyHGrid(rows: sections, spacing: 20) {
