@@ -24,8 +24,11 @@ struct ContentView: View {
         HowTo(isResolved: true, "rotate 3D effect", AnyView(Rotate3DEffect())),
         HowTo(isResolved: true, "scroll rotating cards", AnyView(ScrollRotatingCards())),
         HowTo(isResolved: true, "reflect view", AnyView(ReflectView())),
-        HowTo(isResolved: true, "page curl", AnyView(CurlPage())),
-
+        HowTo(isResolved: true, "curl page", AnyView(CurlPage())),
+        HowTo(isResolved: false, "z stack images", AnyView(ZStackImages())),
+        HowTo(isResolved: true, "use uikit page view", AnyView(UseUIKitPageView())),
+        HowTo(isResolved: true, "use Lazy Grid", AnyView(UseLazyGrid())),
+        
     ]
     
     var body: some View {
