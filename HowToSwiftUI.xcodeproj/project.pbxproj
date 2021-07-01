@@ -26,6 +26,7 @@
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
 		043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043976F926867F8200B975E5 /* UseLazyGrid.swift */; };
+		04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
 		0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D40125E8224A0060AD02 /* CurlPage.swift */; };
 		0453E24B25E6C8D100B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
@@ -131,6 +132,7 @@
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		043976F926867F8200B975E5 /* UseLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseLazyGrid.swift; sourceTree = "<group>"; };
+		04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseImageAsViewBackground.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				04EC57BF2602AC9400DEA017 /* ZStackImages.swift */,
 				04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */,
 				043976F926867F8200B975E5 /* UseLazyGrid.swift */,
+				04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */,
 				0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */,
 				04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */,
+				04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,

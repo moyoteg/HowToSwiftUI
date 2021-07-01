@@ -28,7 +28,7 @@ struct ContentView: View {
         HowTo(isResolved: false, "z stack images", AnyView(ZStackImages())),
         HowTo(isResolved: true, "use uikit page view", AnyView(UseUIKitPageView())),
         HowTo(isResolved: true, "use Lazy Grid", AnyView(UseLazyGrid())),
-        
+        HowTo(isResolved: true, "use image as view background", AnyView(UseImageAsViewBackground())),
     ]
     
     var body: some View {
