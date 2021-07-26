@@ -42,6 +42,7 @@
 		045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F3325DF9E2600150123 /* Preview Assets.xcassets */; };
 		045D7F7725DFA03900150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		045D7F7E25DFA04400150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
+		046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */; };
 		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
@@ -66,6 +67,9 @@
 		049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		049CD9CE25E62D4700482E7F /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
 		04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */; };
+		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
+		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
+		04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC57BF2602AC9400DEA017 /* ZStackImages.swift */; };
 		04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 04FB23122638AB89000D2D07 /* SwiftUtilities */; };
@@ -148,6 +152,7 @@
 		045D7F3525DF9E2600150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D7F3625DF9E2600150123 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		045D7F7625DFA03900150123 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
+		046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapAnnotations.swift; sourceTree = "<group>"; };
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
@@ -159,6 +164,9 @@
 		049CD92425E61BB600482E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		049CD92B25E61BB600482E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUIKitPageView.swift; sourceTree = "<group>"; };
+		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
+		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
+		04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnotationLocation.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 		04EC57BF2602AC9400DEA017 /* ZStackImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +222,10 @@
 				04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */,
 				043976F926867F8200B975E5 /* UseLazyGrid.swift */,
 				04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */,
+				046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */,
+				04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */,
+				04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */,
+				04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -554,12 +566,16 @@
 				04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
+				046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,
+				04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */,
+				04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */,
 				047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */,
 				04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */,
 				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				045D7F7725DFA03900150123 /* HowTo.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
+				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,

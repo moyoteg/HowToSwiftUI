@@ -29,6 +29,10 @@ struct ContentView: View {
         HowTo(isResolved: true, "use uikit page view", AnyView(UseUIKitPageView())),
         HowTo(isResolved: true, "use Lazy Grid", AnyView(UseLazyGrid())),
         HowTo(isResolved: true, "use image as view background", AnyView(UseImageAsViewBackground())),
+        HowTo(isResolved: true, "show map annotations", AnyView(ShowMapAnnotations())),
+        HowTo(isResolved: true, "track annotation in map", AnyView(TrackAnnotationInMap())),
+        HowTo(isResolved: true, "handle optional observed object", AnyView(HandleOptionalObservedObject())),
+        HowTo(isResolved: false, "update annotation location", AnyView(UpdateAnnotationLocation())),
     ]
     
     var body: some View {
