@@ -32,7 +32,9 @@ struct ContentView: View {
         HowTo(isResolved: true, "show map annotations", AnyView(ShowMapAnnotations())),
         HowTo(isResolved: true, "track annotation in map", AnyView(TrackAnnotationInMap())),
         HowTo(isResolved: true, "handle optional observed object", AnyView(HandleOptionalObservedObject())),
-        HowTo(isResolved: false, "update annotation location", AnyView(UpdateAnnotationLocation())),
+        HowTo(isResolved: true, "update annotation location", AnyView(UpdateAnnotationLocation())),
+        HowTo(isResolved: true, "copy text", AnyView(CopyText())),
+        
     ]
     
     var body: some View {

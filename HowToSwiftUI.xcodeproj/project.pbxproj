@@ -42,6 +42,7 @@
 		045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F3325DF9E2600150123 /* Preview Assets.xcassets */; };
 		045D7F7725DFA03900150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		045D7F7E25DFA04400150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
+		04600BD726CD7F840023CC91 /* CopyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04600BD626CD7F840023CC91 /* CopyText.swift */; };
 		046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */; };
 		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
@@ -152,6 +153,7 @@
 		045D7F3525DF9E2600150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D7F3625DF9E2600150123 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		045D7F7625DFA03900150123 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
+		04600BD626CD7F840023CC91 /* CopyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyText.swift; sourceTree = "<group>"; };
 		046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapAnnotations.swift; sourceTree = "<group>"; };
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */,
 				04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */,
 				04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */,
+				04600BD626CD7F840023CC91 /* CopyText.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
