@@ -11,6 +11,8 @@ import MapKit
 
 struct SandBox: View {
     
+    /// *********
+    // not using
     var colors = [Color.blue,  Color.pink, Color.green, Color.yellow, Color.purple] {
         didSet {
             pageCount = colors.count
@@ -23,50 +25,23 @@ struct SandBox: View {
         
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var locations = [MKPointAnnotation]()
+    /// *********
     
+    /// *********
+    // using
+    
+    /// *********
     var body: some View {
-
-        ZStack {
-            MapView(centerCoordinate: $centerCoordinate, annotations: locations)
-            Circle()
-                .fill(Color.blue)
-                .opacity(0.3)
-                .frame(width: 32, height: 32)
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        // create a new location
-                        let newLocation = MKPointAnnotation()
-                        newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
-                    }) {
-                        Image(systemName: "location.fill")
-                            .animatableSystemFont(size: 20)
-                    }
-                    .padding()
-                }
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        // create a new location
-                        let newLocation = MKPointAnnotation()
-                        newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
-                    }) {
-                        Image(systemName: "plus")
-                    }
-                    .padding()
-                    .background(Color.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                    .padding(.trailing)
-                    
-                }
+        
+        GeometryReader { geometry in
+            HStack(spacing: -6) {
+                Image(systemName: "bus.fill")
+                Image(systemName: "ellipsis")
+                    .rotationEffect(.degrees(90))
             }
         }
+        .fixedSize()
+        
     }
 }
 

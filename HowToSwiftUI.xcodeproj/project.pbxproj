@@ -67,6 +67,8 @@
 		049CD9C225E62D4100482E7F /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		049CD9CE25E62D4700482E7F /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
+		04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */; };
+		04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */; };
 		04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */; };
 		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
 		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
@@ -165,6 +167,8 @@
 		049CD91F25E61BB500482E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		049CD92425E61BB600482E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		049CD92B25E61BB600482E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnnotationsToMap.swift; sourceTree = "<group>"; };
+		04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceImagesProportionally.swift; sourceTree = "<group>"; };
 		04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUIKitPageView.swift; sourceTree = "<group>"; };
 		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
 		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */,
 				04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */,
 				04600BD626CD7F840023CC91 /* CopyText.swift */,
+				04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */,
+				04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -565,6 +571,7 @@
 			files = (
 				0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */,
 				0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */,
+				04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */,
 				04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */,
 				04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
@@ -578,6 +585,7 @@
 				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				045D7F7725DFA03900150123 /* HowTo.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
+				04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */,
 				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,

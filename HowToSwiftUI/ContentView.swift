@@ -34,6 +34,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "handle optional observed object", AnyView(HandleOptionalObservedObject())),
         HowTo(isResolved: true, "update annotation location", AnyView(UpdateAnnotationLocation())),
         HowTo(isResolved: true, "copy text", AnyView(CopyText())),
+        HowTo(isResolved: true, "add annotations to map", AnyView(AddAnnotationsToMap())),
+        HowTo(isResolved: true, "space images proportionally", AnyView(SpaceImagesProportionally())),
         
     ]
     
