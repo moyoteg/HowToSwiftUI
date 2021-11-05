@@ -32,16 +32,21 @@ struct SandBox: View {
     
     /// *********
     var body: some View {
-        
-        GeometryReader { geometry in
-            HStack(spacing: -6) {
-                Image(systemName: "bus.fill")
-                Image(systemName: "ellipsis")
-                    .rotationEffect(.degrees(90))
-            }
+        VStack {
+            Image(systemName: "lock")
+                .resizable()
+                .frame(width: 150, height: 300, alignment: .center)
+            
+            Divider()
+            
+            Image(systemName: "lock")
+            
+            Divider()
+            
+            Image(systemName: "lock")
+                .resizable()
+                .frame(width: 50, height: 50, alignment: .center)
         }
-        .fixedSize()
-        
     }
 }
 

@@ -29,6 +29,7 @@
 		04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
 		0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D40125E8224A0060AD02 /* CurlPage.swift */; };
+		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
 		0453E24B25E6C8D100B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
@@ -142,6 +143,7 @@
 		04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseImageAsViewBackground.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
+		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1C25DF9E2500150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				04600BD626CD7F840023CC91 /* CopyText.swift */,
 				04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */,
 				04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */,
+				044AE890273340150058240B /* SizePDFImage.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				044AE891273340150058240B /* SizePDFImage.swift in Sources */,
 				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
