@@ -37,6 +37,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "add annotations to map", AnyView(AddAnnotationsToMap())),
         HowTo(isResolved: true, "space images proportionally", AnyView(SpaceImagesProportionally())),
         HowTo(isResolved: false, "size PDF image", AnyView(SizePDFImage())),
+        HowTo(isResolved: true, "view HTML", AnyView(ViewHTML())),
     ]
     
     var body: some View {

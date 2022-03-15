@@ -49,6 +49,7 @@
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
 		047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F55C825E6DDF30051B567 /* Assets.xcassets */; };
+		049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B8C1C27E01E25003E27FD /* ViewHTML.swift */; };
 		049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91D25E61BB500482E7F /* tvOSApp.swift */; };
 		049CD92025E61BB500482E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91F25E61BB500482E7F /* ContentView.swift */; };
 		049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CD92425E61BB600482E7F /* Preview Assets.xcassets */; };
@@ -163,6 +164,7 @@
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
 		047F55C825E6DDF30051B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049B8C1C27E01E25003E27FD /* ViewHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHTML.swift; sourceTree = "<group>"; };
 		049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowToSwiftUI.entitlements; sourceTree = "<group>"; };
 		049CD91B25E61BB500482E7F /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049CD91D25E61BB500482E7F /* tvOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSApp.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */,
 				04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */,
 				044AE890273340150058240B /* SizePDFImage.swift */,
+				049B8C1C27E01E25003E27FD /* ViewHTML.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
 				044AE891273340150058240B /* SizePDFImage.swift in Sources */,
 				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
+				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
