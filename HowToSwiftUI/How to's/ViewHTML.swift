@@ -7,9 +7,23 @@
 
 import SwiftUI
 
+import SwiftUIComponents
+
 struct ViewHTML: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HTMLView(htmlText:
+                        .constant(
+                    """
+                    <html>
+                    <body>
+                    <h1>
+                    Hello World
+                    </h1>
+                    </body>
+                    </html>
+                    """
+                        )
+        )
     }
 }
 
