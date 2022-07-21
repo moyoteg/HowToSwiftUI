@@ -38,6 +38,9 @@ struct ContentView: View {
         HowTo(isResolved: true, "space images proportionally", AnyView(SpaceImagesProportionally())),
         HowTo(isResolved: false, "size PDF image", AnyView(SizePDFImage())),
         HowTo(isResolved: true, "view HTML", AnyView(ViewHTML())),
+        HowTo(isResolved: true, "show charts", AnyView(ShowCharts())),
+        HowTo(isResolved: true, "Draw Border Around Rounded Rectangle", AnyView(DrawBorderAroundRoundedRectangle())),
+        
     ]
     
     var body: some View {

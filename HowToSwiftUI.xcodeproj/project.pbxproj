@@ -10,6 +10,7 @@
 		0400C70225DCAE2B00D234EE /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
 		0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */; };
 		0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */; };
+		040CF5BC2889085D00170D51 /* DrawBorderAroundRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */; };
 		0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */; };
 		041CB97625C8CE6800111090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CB97525C8CE6800111090 /* ContentView.swift */; };
@@ -25,6 +26,8 @@
 		0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 0422E15625DFA9DC0017ABCF /* SwiftUIComponents */; };
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
+		0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438856A2870F67800323FF3 /* ShowCharts.swift */; };
+		0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438856C28710D1600323FF3 /* ExternalAccessory.framework */; };
 		043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043976F926867F8200B975E5 /* UseLazyGrid.swift */; };
 		04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
@@ -126,6 +129,7 @@
 		0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGenericViewContent.swift; sourceTree = "<group>"; };
 		0400C70B25DCEF6400D234EE /* rotate3DEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rotate3DEffect.swift; sourceTree = "<group>"; };
 		0400C70E25DF091100D234EE /* ScrollRotatingCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRotatingCards.swift; sourceTree = "<group>"; };
+		040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBorderAroundRoundedRectangle.swift; sourceTree = "<group>"; };
 		0418F63825D4EDB800B40FAB /* DisableTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableTab.swift; sourceTree = "<group>"; };
 		041CB97025C8CE6800111090 /* HowToSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
+		0438856A2870F67800323FF3 /* ShowCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharts.swift; sourceTree = "<group>"; };
+		0438856C28710D1600323FF3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		043976F926867F8200B975E5 /* UseLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseLazyGrid.swift; sourceTree = "<group>"; };
 		04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseImageAsViewBackground.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041ECC8725CE45E300A37F49 /* SwiftUIComponents in Frameworks */,
+				0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */,
 				041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */,
 				04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */,
 			);
@@ -241,6 +248,8 @@
 				04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */,
 				044AE890273340150058240B /* SizePDFImage.swift */,
 				049B8C1C27E01E25003E27FD /* ViewHTML.swift */,
+				0438856A2870F67800323FF3 /* ShowCharts.swift */,
+				040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -297,6 +306,7 @@
 		0422E15525DFA9DC0017ABCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0438856C28710D1600323FF3 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -601,7 +611,9 @@
 				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
+				0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
+				040CF5BC2889085D00170D51 /* DrawBorderAroundRoundedRectangle.swift in Sources */,
 				0400C70225DCAE2B00D234EE /* PassGenericViewContent.swift in Sources */,
 				041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */,
 				04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */,
@@ -786,9 +798,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HowToSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = G7882XEDUN;
+				DEVELOPMENT_TEAM = 8HL66E8Y24;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -797,8 +812,10 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -811,9 +828,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HowToSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = G7882XEDUN;
+				DEVELOPMENT_TEAM = 8HL66E8Y24;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -822,8 +842,10 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
