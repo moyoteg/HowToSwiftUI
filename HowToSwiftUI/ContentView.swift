@@ -40,6 +40,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "view HTML", AnyView(ViewHTML())),
         HowTo(isResolved: true, "show charts", AnyView(ShowCharts())),
         HowTo(isResolved: true, "Draw Border Around Rounded Rectangle", AnyView(DrawBorderAroundRoundedRectangle())),
+        HowTo(isResolved: true, "Mask Rounded Rectangle As Percentange Pill", AnyView(MaskRoundedRectangleAsPercentangePill())),
         
     ]
     
@@ -48,11 +49,19 @@ struct ContentView: View {
             NavigationView {
                 FilteredList("How To",
                              list: howTos) { (howTo) in
-                    NavigationLink(howTo.description,
-                                   destination:
+
+                    NavigationLink(destination:
                                     howTo.view
-                                    .navigationBarTitle("\(howTo.name)")
-                    )
+                        .navigationBarTitle("\(howTo.name)")
+                    ) {
+                        HStack {
+                            Text("\(howTo.description)")
+                                .lineLimit(3)
+                                .multilineTextAlignment(.leading)
+                                .minimumScaleFactor(0.5)
+                        }
+                    }
+                    
                 }
             }
             .shadow(radius: 10)

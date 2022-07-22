@@ -26,6 +26,7 @@
 		0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 0422E15625DFA9DC0017ABCF /* SwiftUIComponents */; };
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
+		0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */; };
 		0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438856A2870F67800323FF3 /* ShowCharts.swift */; };
 		0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438856C28710D1600323FF3 /* ExternalAccessory.framework */; };
 		043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043976F926867F8200B975E5 /* UseLazyGrid.swift */; };
@@ -144,6 +145,7 @@
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
+		0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRoundedRectangleAsPercentangePill.swift; sourceTree = "<group>"; };
 		0438856A2870F67800323FF3 /* ShowCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharts.swift; sourceTree = "<group>"; };
 		0438856C28710D1600323FF3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		043976F926867F8200B975E5 /* UseLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseLazyGrid.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				049B8C1C27E01E25003E27FD /* ViewHTML.swift */,
 				0438856A2870F67800323FF3 /* ShowCharts.swift */,
 				040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */,
+				0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */,
 				04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */,
 				04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */,
+				0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */,

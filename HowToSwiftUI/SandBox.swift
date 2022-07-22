@@ -64,25 +64,35 @@ struct SandBox: View {
     let height = 100.0
     let width = 150.0
     
+    @State var percentage: Double = 0
+
+    var currentWidth: Double {
+        width * percentage/100
+    }
+
     var body: some View {
 
+        Text("currentWidth: \(String(format: "%.0f", currentWidth))")
+
         RoundedRectangle(cornerRadius: height)
-            .fill(.blue.opacity(0.5))
+            .fill(.blue)
             .frame(width: width, height: height)
-            .overlay(
-                RoundedRectangle(cornerRadius: height)
-                    .fill(.blue.opacity(0.75))
-                    .frame(width: width * 0.95, height: height * 0.95)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: height)
-                            .fill(.blue.opacity(1.0))
-                            .frame(width: width * 0.85, height: height * 0.85)
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: height)
-                            .stroke(.green, lineWidth: 8)
-                    )
+            .mask(
+                HStack {
+                    
+                    Rectangle()
+                        .frame(width: currentWidth, height: height)
+                    
+                    Spacer(minLength: 0)
+                }
             )
+            .shadow(radius: 4)
+        
+        Group {
+            Text("\(String(format: "%.0f", percentage))%")
+            Slider(value: $percentage, in: 0...100, step: 1.0)
+                .padding()
+        }
     }
     
 }
