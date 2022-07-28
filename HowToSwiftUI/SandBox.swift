@@ -70,23 +70,61 @@ struct SandBox: View {
         width * percentage/100
     }
 
-    var body: some View {
-
+    public var body: some View {
+        
         Text("currentWidth: \(String(format: "%.0f", currentWidth))")
 
-        RoundedRectangle(cornerRadius: height)
-            .fill(.blue)
-            .frame(width: width, height: height)
-            .mask(
-                HStack {
+        GeometryReader { geometry in
+
+            ZStack {
+                
+                // blue shadow background
+                RoundedRectangle(cornerRadius: geometry.size.height)
+                    .frame(width: geometry.size.width , height: geometry.size.height)
+                    .foregroundColor(.blue.opacity(0.5))
+                    .brightness(-0.3)
+                    .opacity(0.8)
+                    .shadow(color: .blue, radius: 16)
+                
+                // Pill
+                ZStack(alignment: .leading) {
                     
-                    Rectangle()
-                        .frame(width: currentWidth, height: height)
-                    
-                    Spacer(minLength: 0)
+                    // fuel progress bar
+                    RoundedRectangle(cornerRadius: geometry.size.height)
+                        .overlay(
+                            
+                            // inner fuel progress bar
+                            RoundedRectangle(cornerRadius: geometry.size.height)
+                                .fill(.blue)
+                                .overlay(
+                                    // inner INNER fuel progress bar
+                                    RoundedRectangle(cornerRadius: geometry.size.height)
+                                        .stroke(.blue, lineWidth: 6)
+                                        .opacity(0.6)
+                                )
+                        )
+                        .padding(8)
+                        .mask(
+                            HStack {
+                                
+                                RoundedRectangle(cornerRadius: geometry.size.height)
+                                    .frame(width: CGFloat(self.percentage / 100.0) * geometry.size.width, height: geometry.size.height)
+                                
+                                Spacer(minLength: 0)
+                            }
+                        )
+                        .animation(.easeInOut)
+
+                    // top white frame
+                    RoundedRectangle(cornerRadius: geometry.size.height)
+                        .stroke(.white, lineWidth: 2)
+                        .frame(width: geometry.size.width , height: geometry.size.height)
+                    // .hydrogenAnimation()
                 }
-            )
-            .shadow(radius: 4)
+                
+            }
+        }
+        .frame(height: height)
         
         Group {
             Text("\(String(format: "%.0f", percentage))%")

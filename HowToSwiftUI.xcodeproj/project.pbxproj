@@ -76,6 +76,7 @@
 		04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */; };
 		04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */; };
 		04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */; };
+		04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF8DD928931430008DF335 /* VolumetricPill.swift */; };
 		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
 		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
 		04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */; };
@@ -182,6 +183,7 @@
 		04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnnotationsToMap.swift; sourceTree = "<group>"; };
 		04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceImagesProportionally.swift; sourceTree = "<group>"; };
 		04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUIKitPageView.swift; sourceTree = "<group>"; };
+		04CF8DD928931430008DF335 /* VolumetricPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumetricPill.swift; sourceTree = "<group>"; };
 		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
 		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
 		04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnotationLocation.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				0438856A2870F67800323FF3 /* ShowCharts.swift */,
 				040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */,
 				0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */,
+				04CF8DD928931430008DF335 /* VolumetricPill.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */,
 				0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */,
 				0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */,
 				04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */,
