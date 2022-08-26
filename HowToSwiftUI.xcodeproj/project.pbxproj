@@ -26,6 +26,17 @@
 		0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 0422E15625DFA9DC0017ABCF /* SwiftUIComponents */; };
 		0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E16D25DFB1F10017ABCF /* UseButton.swift */; };
 		0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422E17525E02C400017ABCF /* ChangeBackground.swift */; };
+		042DD6DC28B89879002E5AD4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6DB28B89879002E5AD4 /* StoreKit.framework */; };
+		042DD6DE28B89879002E5AD4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6DD28B89879002E5AD4 /* AudioToolbox.framework */; };
+		042DD6E028B89879002E5AD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6DF28B89879002E5AD4 /* NetworkExtension.framework */; };
+		042DD6E228B89879002E5AD4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6E128B89879002E5AD4 /* HealthKit.framework */; };
+		042DD6E428B89879002E5AD4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6E328B89879002E5AD4 /* MapKit.framework */; };
+		042DD6E628B89879002E5AD4 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6E528B89879002E5AD4 /* AuthenticationServices.framework */; };
+		042DD6E828B89879002E5AD4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6E728B89879002E5AD4 /* GameKit.framework */; };
+		042DD6EA28B89879002E5AD4 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6E928B89879002E5AD4 /* PassKit.framework */; };
+		042DD6EC28B89879002E5AD4 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6EB28B89879002E5AD4 /* HomeKit.framework */; };
+		042DD6EE28B89879002E5AD4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DD6ED28B89879002E5AD4 /* GameController.framework */; };
+		042DD6F028B8A33F002E5AD4 /* RequestAllPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DD6EF28B8A33F002E5AD4 /* RequestAllPermissions.swift */; };
 		0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */; };
 		0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438856A2870F67800323FF3 /* ShowCharts.swift */; };
 		0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438856C28710D1600323FF3 /* ExternalAccessory.framework */; };
@@ -146,6 +157,17 @@
 		041ECC7B25CE1EB600A37F49 /* SecureToggleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureToggleTextField.swift; sourceTree = "<group>"; };
 		0422E16D25DFB1F10017ABCF /* UseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseButton.swift; sourceTree = "<group>"; };
 		0422E17525E02C400017ABCF /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
+		042DD6DB28B89879002E5AD4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		042DD6DD28B89879002E5AD4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		042DD6DF28B89879002E5AD4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		042DD6E128B89879002E5AD4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		042DD6E328B89879002E5AD4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		042DD6E528B89879002E5AD4 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		042DD6E728B89879002E5AD4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		042DD6E928B89879002E5AD4 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		042DD6EB28B89879002E5AD4 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		042DD6ED28B89879002E5AD4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		042DD6EF28B8A33F002E5AD4 /* RequestAllPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAllPermissions.swift; sourceTree = "<group>"; };
 		0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRoundedRectangleAsPercentangePill.swift; sourceTree = "<group>"; };
 		0438856A2870F67800323FF3 /* ShowCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharts.swift; sourceTree = "<group>"; };
 		0438856C28710D1600323FF3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -196,10 +218,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042DD6EA28B89879002E5AD4 /* PassKit.framework in Frameworks */,
+				042DD6E828B89879002E5AD4 /* GameKit.framework in Frameworks */,
 				041ECC8725CE45E300A37F49 /* SwiftUIComponents in Frameworks */,
 				0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */,
+				042DD6DC28B89879002E5AD4 /* StoreKit.framework in Frameworks */,
 				041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */,
+				042DD6E428B89879002E5AD4 /* MapKit.framework in Frameworks */,
 				04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */,
+				042DD6EE28B89879002E5AD4 /* GameController.framework in Frameworks */,
+				042DD6E628B89879002E5AD4 /* AuthenticationServices.framework in Frameworks */,
+				042DD6E228B89879002E5AD4 /* HealthKit.framework in Frameworks */,
+				042DD6EC28B89879002E5AD4 /* HomeKit.framework in Frameworks */,
+				042DD6DE28B89879002E5AD4 /* AudioToolbox.framework in Frameworks */,
+				042DD6E028B89879002E5AD4 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +288,7 @@
 				040CF5BB2889085C00170D51 /* DrawBorderAroundRoundedRectangle.swift */,
 				0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */,
 				04CF8DD928931430008DF335 /* VolumetricPill.swift */,
+				042DD6EF28B8A33F002E5AD4 /* RequestAllPermissions.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -312,6 +345,16 @@
 		0422E15525DFA9DC0017ABCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				042DD6ED28B89879002E5AD4 /* GameController.framework */,
+				042DD6EB28B89879002E5AD4 /* HomeKit.framework */,
+				042DD6E928B89879002E5AD4 /* PassKit.framework */,
+				042DD6E728B89879002E5AD4 /* GameKit.framework */,
+				042DD6E528B89879002E5AD4 /* AuthenticationServices.framework */,
+				042DD6E328B89879002E5AD4 /* MapKit.framework */,
+				042DD6E128B89879002E5AD4 /* HealthKit.framework */,
+				042DD6DF28B89879002E5AD4 /* NetworkExtension.framework */,
+				042DD6DD28B89879002E5AD4 /* AudioToolbox.framework */,
+				042DD6DB28B89879002E5AD4 /* StoreKit.framework */,
 				0438856C28710D1600323FF3 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
@@ -599,6 +642,7 @@
 				04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */,
 				0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
+				042DD6F028B8A33F002E5AD4 /* RequestAllPermissions.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,
@@ -733,14 +777,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 14.0;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
 			};
 			name = Debug;
 		};
@@ -789,13 +833,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TVOS_DEPLOYMENT_TARGET = 14.0;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -814,7 +858,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -844,7 +888,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,7 +1031,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 14.3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Debug;
 		};
@@ -1010,7 +1054,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 14.3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
 			};
 			name = Release;
 		};

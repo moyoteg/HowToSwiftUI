@@ -2,6 +2,52 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSVideoSubscriberAccountUsageDescription</key>
+	<string>to learn</string>
+	<key>NSMotionUsageDescription</key>
+	<string>to learn</string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>to learn</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>to learn</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>to learn</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>to learn</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>to learn</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>to learn</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>to learn</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>to learn</string>
+	<key>NSSiriUsageDescription</key>
+	<string>to learn</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>to learn</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>to learn</string>
+	<key>NSFallDetectionUsageDescription</key>
+	<string>to learn</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>to learn</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>to learn</string>
+	<key>NSContactsUsageDescription</key>
+	<string>to learn</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>to learn</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>to learn</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>to learn</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>to learn</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>to learn</string>
+	<key>NSCameraUsageDescription</key>
+	<string>to learn</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -18,10 +64,21 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>GCSupportsControllerUserInteraction</key>
+	<true/>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.education</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict/>
+	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Application requires user’s location for better user experience.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -29,11 +86,14 @@
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array/>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>gamekit</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -48,11 +108,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Application requires user’s location for better user experience.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Application requires user’s location for better user experience.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Application requires user’s location for better user experience.</string>
 </dict>
 </plist>

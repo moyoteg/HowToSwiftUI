@@ -6,15 +6,37 @@
 //
 
 import SwiftUI
-import SwiftUIComponents
 import MapKit
 import NetworkExtension
 import CoreLocation
+import SystemConfiguration.CaptiveNetwork
 
+import SwiftUIComponents
 import SwiftUICharts
 import SwiftUtilities
 
-import SystemConfiguration.CaptiveNetwork
+// Permissions
+import PermissionsKit
+import NotificationPermission
+import BluetoothPermission
+import FaceIDPermission
+import CameraPermission
+import PhotoLibraryPermission
+import NotificationPermission
+import MicrophonePermission
+import CalendarPermission
+import ContactsPermission
+import RemindersPermission
+import SpeechRecognizerPermission
+import LocationWhenInUsePermission
+import LocationAlwaysPermission
+import MotionPermission
+import MediaLibraryPermission
+import BluetoothPermission
+import TrackingPermission
+import FaceIDPermission
+import SiriPermission
+import HealthPermission
 
 struct SandBox: View {
     
@@ -70,70 +92,53 @@ struct SandBox: View {
         width * percentage/100
     }
 
+    @State private var isPresented = false
+
     public var body: some View {
         
-        Text("currentWidth: \(String(format: "%.0f", currentWidth))")
-
-        GeometryReader { geometry in
-
-            ZStack {
+        NavigationView {
+            
+            List {
                 
-                // blue shadow background
-                RoundedRectangle(cornerRadius: geometry.size.height)
-                    .frame(width: geometry.size.width , height: geometry.size.height)
-                    .foregroundColor(.blue.opacity(0.5))
-                    .brightness(-0.3)
-                    .opacity(0.8)
-                    .shadow(color: .blue, radius: 16)
-                
-                // Pill
-                ZStack(alignment: .leading) {
+                ForEach(SwiftUIComponents.Permission.allCases, id: \.self) { permission in
                     
-                    // fuel progress bar
-                    RoundedRectangle(cornerRadius: geometry.size.height)
-                        .overlay(
-                            
-                            // inner fuel progress bar
-                            RoundedRectangle(cornerRadius: geometry.size.height)
-                                .fill(.blue)
-                                .overlay(
-                                    // inner INNER fuel progress bar
-                                    RoundedRectangle(cornerRadius: geometry.size.height)
-                                        .stroke(.blue, lineWidth: 6)
-                                        .opacity(0.6)
-                                )
-                        )
-                        .padding(8)
-                        .mask(
-                            HStack {
-                                
-                                RoundedRectangle(cornerRadius: geometry.size.height)
-                                    .frame(width: CGFloat(self.percentage / 100.0) * geometry.size.width, height: geometry.size.height)
-                                
-                                Spacer(minLength: 0)
+                    HStack {
+                        Text("\(permission.permission.kind.name)")
+                        
+                        Spacer()
+                        
+                        Text("\(permission.permission.status.description)")
+                        
+                        Spacer()
+                        
+                        Button("request") {
+                            withAnimation {
+                                                                
+                                permission.permission.request {
+                                    isPresented = true
+                                }
                             }
-                        )
-                        .animation(.easeInOut)
-
-                    // top white frame
-                    RoundedRectangle(cornerRadius: geometry.size.height)
-                        .stroke(.white, lineWidth: 2)
-                        .frame(width: geometry.size.width , height: geometry.size.height)
-                    // .hydrogenAnimation()
+                        }
+                        .alert(isPresented: $isPresented) {
+                            
+                            Alert(
+                                title: Text("\(permission.permission.kind.name) permission"),
+                                message: Text("authorized: \(permission.permission.authorized.description)")
+                            )
+                            
+                        }
+                    }
                 }
-                
             }
+            .navigationBarTitle(Text("Permissions"), displayMode: .automatic)
         }
-        .frame(height: height)
-        
-        Group {
-            Text("\(String(format: "%.0f", percentage))%")
-            Slider(value: $percentage, in: 0...100, step: 1.0)
-                .padding()
-        }
+        .listStyle(GroupedListStyle())
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }
+
+// MARK: - Experimentations
 
 extension MKPointAnnotation {
     static var example: MKPointAnnotation {

@@ -42,6 +42,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "Draw Border Around Rounded Rectangle", AnyView(DrawBorderAroundRoundedRectangle())),
         HowTo(isResolved: true, "Mask Rounded Rectangle As Percentange Pill", AnyView(MaskRoundedRectangleAsPercentangePill())),
         HowTo(isResolved: true, "Volumetric Pill", AnyView(VolumetricPill())),
+        HowTo(isResolved: true, "Request All Permissions", AnyView(RequestAllPermissions())),
     ]
     
     var body: some View {
