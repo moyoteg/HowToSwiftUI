@@ -46,18 +46,18 @@ struct RequestAllPermissions: View {
                     
                     HStack {
                         
-                        Text("\(permission.permission.kind.name)")
+                        Text("\(permission.name)")
                         
                         Spacer()
                         
-                        Text("\(permission.permission.status.description)")
+                        Text("\(permission.status.description)")
                         
                         Spacer()
                         
                         Button("request") {
                             withAnimation {
                                                                 
-                                permission.permission.request {
+                                permission.request {
                                     
                                     isPresented = true
                                     
@@ -66,18 +66,18 @@ struct RequestAllPermissions: View {
                         }
                         .alert(isPresented: $isPresented) {
                             
-                            if permission.permission.authorized {
+                            if permission.isAuthorized {
                                 
                                 return Alert(
-                                    title: Text("\(permission.permission.kind.name) permission"),
-                                    message: Text("authorized: \(permission.permission.authorized.description)")
+                                    title: Text("\(permission.name) permission"),
+                                    message: Text("authorized: \(permission.isAuthorized.description)")
                                 )
                                 
                             } else {
                              
                                 return Alert(
-                                    title: Text("\(permission.permission.kind.name) permission"),
-                                    message: Text("authorized: \(permission.permission.authorized.description)"),
+                                    title: Text("\(permission.name) permission"),
+                                    message: Text("authorized: \(permission.status.description)"),
                                     primaryButton: .default(
                                         Text("Go To Settings"),
                                         action: {

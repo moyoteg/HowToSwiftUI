@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 import Introspect
 
 struct SecureToggleTextField: View {
@@ -15,31 +16,6 @@ struct SecureToggleTextField: View {
     var body: some View {
         SecureField("placeholder", text: $text)
             .padding()
-            .modifier(SecureToggle())
+            .secureToggle(foregroundColor: .green)
     }
 }
-
-struct SecureToggle: ViewModifier {
-
-        @State public var isSecure: Bool = true
-        
-        public func body(content: Content) -> some View {
-            
-            HStack {
-                content
-                    .introspectTextField { (textfield) in
-                        textfield.isSecureTextEntry = isSecure
-                    }
-                
-                Spacer()
-                
-                Button(action: {
-                    self.isSecure.toggle()
-                }) {
-                    Image(systemName: isSecure ? "eye.slash":"eye")
-                }
-                .padding()
-            }
-        }
-        
-    }

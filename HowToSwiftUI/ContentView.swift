@@ -43,6 +43,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Mask Rounded Rectangle As Percentange Pill", AnyView(MaskRoundedRectangleAsPercentangePill())),
         HowTo(isResolved: true, "Volumetric Pill", AnyView(VolumetricPill())),
         HowTo(isResolved: true, "Request All Permissions", AnyView(RequestAllPermissions())),
+        HowTo(isResolved: true, "Select List To Show", AnyView(SelectListToShow())),
+        
     ]
     
     var body: some View {

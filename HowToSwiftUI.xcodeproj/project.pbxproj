@@ -94,6 +94,9 @@
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC57BF2602AC9400DEA017 /* ZStackImages.swift */; };
 		04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 04FB23122638AB89000D2D07 /* SwiftUtilities */; };
+		04FC29A128E8A63C00C8A704 /* UseFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */; };
+		04FC29A228E8A63C00C8A704 /* UseFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */; };
+		04FC29A328E8A63C00C8A704 /* UseFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +214,7 @@
 		04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnotationLocation.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 		04EC57BF2602AC9400DEA017 /* ZStackImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackImages.swift; sourceTree = "<group>"; };
+		04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +293,7 @@
 				0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */,
 				04CF8DD928931430008DF335 /* VolumetricPill.swift */,
 				042DD6EF28B8A33F002E5AD4 /* RequestAllPermissions.swift */,
+				04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -543,9 +548,11 @@
 					};
 					045D7F1125DF9E2300150123 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1400;
 					};
 					045D7F1425DF9E2400150123 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1400;
 					};
 					045D7F2025DF9E2500150123 = {
 						CreatedOnToolsVersion = 12.4;
@@ -658,6 +665,7 @@
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
+				04FC29A128E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
 				044AE891273340150058240B /* SizePDFImage.swift in Sources */,
 				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
 				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
@@ -682,6 +690,7 @@
 				045D7F7E25DFA04400150123 /* HowTo.swift in Sources */,
 				045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */,
 				045D7F2D25DF9E2500150123 /* NotificationView.swift in Sources */,
+				04FC29A228E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
 				0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */,
 				0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */,
 			);
@@ -702,6 +711,7 @@
 				049CD9B025E62D3600482E7F /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				049CD92025E61BB500482E7F /* ContentView.swift in Sources */,
 				049CD99825E62D2900482E7F /* ScrollRotatingCards.swift in Sources */,
+				04FC29A328E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
 				049CD9AA25E62D3200482E7F /* CenterTextFieldPlaceholderText.swift in Sources */,
 				049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */,
 				049CD98625E61F3D00482E7F /* SandBox.swift in Sources */,
@@ -956,13 +966,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				IBSC_MODULE = watchos_WatchKit_Extension;
 				INFOPLIST_FILE = "watchos WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.watchos.watchos.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.2;
@@ -975,9 +992,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				IBSC_MODULE = watchos_WatchKit_Extension;
 				INFOPLIST_FILE = "watchos WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.watchos.watchos.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -991,11 +1014,18 @@
 		045D7F4025DF9E2600150123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.watchos.watchos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1003,8 +1033,14 @@
 		045D7F4125DF9E2600150123 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.watchos.watchos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
