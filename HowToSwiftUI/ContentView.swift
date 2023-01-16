@@ -44,7 +44,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Volumetric Pill", AnyView(VolumetricPill())),
         HowTo(isResolved: true, "Request All Permissions", AnyView(RequestAllPermissions())),
         HowTo(isResolved: true, "Select List To Show", AnyView(SelectListToShow())),
-        
+        HowTo(isResolved: true, "Show Local Console", AnyView(ShowLocalConsole())),
+        HowTo(isResolved: true, "Show Interaction Location", AnyView(ShowInteractionLocation())),
     ]
     
     var body: some View {

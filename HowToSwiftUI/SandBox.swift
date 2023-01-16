@@ -14,6 +14,7 @@ import SystemConfiguration.CaptiveNetwork
 import SwiftUIComponents
 import SwiftUICharts
 import SwiftUtilities
+import CloudyLogs
 
 // Permissions
 import PermissionsKit
@@ -130,365 +131,13 @@ struct SandBox: View {
 
     @State var showInteractionLocation = false
 
+    @State var newMessage = "test"
+
     public var body: some View {
         
-        Button("show console: \(showConsole.description)") {
-            withAnimation {
-                showConsole.toggle()
-            }
-        }
-        .padding()
-        
-        Button("show interaction location: \(showInteractionLocation.description)") {
-            withAnimation {
-                showInteractionLocation.toggle()
-            }
-        }
-        .padding()
-        
-        Text("root")
-            .console(presented: showConsole)
-            .interactionLocation(presented: showInteractionLocation)
+        ChatThread(newMessage: newMessage)
     }
     
-}
-
-public extension View {
-    
-    func interactionLocation(presented: Bool) -> some View {
-        self.modifier(Modifier.InteractionLocation(presented: presented))
-    }
-}
-
-
-public extension Modifier {
-    
-    struct InteractionLocation: ViewModifier {
-        
-        var presented: Bool
-        
-        @State private var location: CGPoint = CGPoint(x: 50, y: 50)
-        
-        @GestureState private var fingerLocation: CGPoint? = nil
-        
-        var fingerDrag: some Gesture {
-            DragGesture()
-                .updating($fingerLocation) { (value, fingerLocation, transaction) in
-                    fingerLocation = value.location
-                }
-        }
-        
-        public func body(content: Content) -> some View {
-            ZStack {
-                
-                content
-                
-                if let fingerLocation = fingerLocation {
-                    Circle()
-                        .stroke(Color.green, lineWidth: 2)
-                        .frame(width: 44, height: 44)
-                        .position(fingerLocation)
-                }
-            }
-            .simultaneousGesture(fingerDrag)
-        }
-    }
-}
-
-// Console
-
-public extension View {
-    
-    func console(presented: Bool) -> some View {
-        self.modifier(Modifier.Console(presented: presented))
-    }
-}
-
-public extension Modifier {
-    
-    struct Console: ViewModifier {
-        
-        var presented: Bool
-        
-        @State private var location: CGPoint = CGPoint(x: 50, y: 50) {
-            didSet {
-                print("\(location)")
-            }
-        }
-                
-        @GestureState private var startLocation: CGPoint? = nil // 1
-        
-        var longPress: some Gesture {
-            LongPressGesture(minimumDuration: 5.0)
-            
-                .updating($isDetectingLongPress) { currentState, gestureState, transaction in
-                    gestureState = currentState
-                }
-                .onChanged({ value in
-                    withAnimation {
-                        allowDragging = true
-                    }
-                })
-                .onEnded({ value in
-                    withAnimation {
-                        allowDragging = false
-                    }
-                })
-        }
-        
-        var drag: some Gesture {
-            DragGesture()
-                .onChanged { value in
-                    var newLocation = startLocation ?? location // 3
-                    newLocation.x += value.translation.width
-                    newLocation.y += value.translation.height
-                    self.location = newLocation
-                }.updating($startLocation) { (value, startLocation, transaction) in
-                    startLocation = startLocation ?? location // 2
-                }
-        }
-        
-        var magnification: some Gesture {
-            MagnificationGesture()
-                .onChanged { amount in
-                    
-                    magnificationCurrentAmount = amount - 1
-                    
-                }
-                .onEnded { amount in
-                    
-                    if amount > minMagnificationAmount {
-                        
-                        magnificationFinalAmount += magnificationCurrentAmount
-                        magnificationCurrentAmount = 0
-                    }
-                }
-        }
-        
-        var resize: some Gesture {
-            DragGesture()
-            
-                .onChanged { value in
-                    
-                    if width + value.location.x >= minWidth {
-                        //                                            width += value.translation.width
-                        width = width + value.location.x
-                    }
-                    
-                    if height + value.location.y >= minHeight {
-                        //                                            height += value.translation.height
-                        height = height + value.location.y
-                    }
-                    
-                    withAnimation {
-                        //
-                        //                                        if width >= minWidth {
-                        //                                            //                                            width += value.translation.width
-                        //                                            width = width + value.location.x
-                        //                                        }
-                        //
-                        //                                        if height >= minHeight {
-                        //                                            //                                            height += value.translation.height
-                        //                                            height = height + value.location.y
-                        //                                        }
-                        //
-                        isMoving = true
-                    }
-                }
-                .onEnded { _ in
-                    withAnimation {
-                        isMoving = false
-                    }
-                }
-        }
-        
-        // frame
-        let scaling = 0.5
-        var minWidth:CGFloat { 176.0 / scaling }
-        var minHeight:CGFloat { 88.0 / scaling }
-        @State private var width = 10.0
-        @State private var height = 10.0
-        let shrinkMultiplier = 0.8
-        
-        //
-        @State private var isMoving = false
-        @State private var allowDragging = false
-        
-        @State private var isHidden = false
-        @State var opacity: Double = 1.0
-
-        @GestureState var isDetectingLongPress = false
-        
-        //
-        @State private var magnificationCurrentAmount = 0.0
-        @State private var magnificationFinalAmount = 1.0
-        let minMagnificationAmount = 0.4
-        
-        public init(presented: Bool) {
-            self.presented = presented
-        }
-        
-        public func body(content: Content) -> some View {
-            
-            ZStack {
-                
-                content
-                
-                if presented {
-                    
-                    GeometryReader { geometry in
-                        
-                        ZStack {
-                            
-                            Group {
-                                Rectangle()
-                                    .fill(allowDragging ? isMoving ? .purple:.green :.blue)
-                                    .cornerRadius(25)
-                                    .opacity(isMoving ? 0.1:0.25)
-                                
-                                Rectangle()
-                                    .fill(allowDragging ? isMoving ? .purple:.green :.blue)
-                                    .shadow(color: allowDragging ? .green:.blue, radius: allowDragging ? 40:5)
-                                    .cornerRadius(25)
-                                    .blur(radius: 20)
-                                    .padding()
-                            }
-                            .opacity(isHidden ? 0.0:1.0)
-//                            .simultaneousGesture(
-//                                DragGesture()
-//
-//                                    .onChanged { value in
-//
-//                                        if !allowDragging {
-//                                            return
-//                                        }
-//
-//                                        location = value.location
-//
-//                                        withAnimation {
-//
-////                                            var newLocation = startLocation ?? location // 3
-////
-////                                            if newLocation.x + value.translation.width > 8 {
-////                                                newLocation.x += value.translation.width
-////                                            }
-////
-////                                            if newLocation.y + value.translation.height > 8 {
-////                                                newLocation.y += value.translation.height
-////                                            }
-////
-////                                            self.location = newLocation
-//                                            isMoving = true
-//                                        }
-//                                    }
-//                                    .updating($startLocation) { (value, startLocation, transaction) in
-//
-//                                        if !allowDragging {
-//                                            return
-//                                        }
-//
-//                                        withAnimation {
-////                                            startLocation = startLocation ?? location // 2
-//                                        }
-//                                    }
-//                                    .onEnded { _ in
-//                                        withAnimation {
-////                                            allowDragging = false
-////                                            isMoving = false
-//                                        }
-//                                    }
-//                            )
-                            
-                            NavigationView {
-                                
-                                FilteredList(
-                                    list: SandBox.longList) { (string) in
-                                        
-                                        Text("\(string)")
-                                            .font(.system(size: 8))
-                                    }
-                                
-                                    .listStyle(GroupedListStyle())
-                                    .navigationViewStyle(StackNavigationViewStyle())
-                            }
-                            .padding()
-                            .opacity(isMoving ? 0.5:1.0)
-                            .minimumScaleFactor(0.2)
-                            .opacity(isHidden ? 0.0:1.0)
-                            
-                            buttons()
-                            
-                        }
-                        .position(location)
-                        .frame(width: width, height: height)
-                        .onAppear {
-                            width = max(geometry.size.width * 0.9, minWidth)
-                            height = max(geometry.size.height * 0.9 / 3, minHeight)
-                            location = CGPoint(x: geometry.size.width / 2, y: geometry.size.height / 2)
-                        }
-                        .simultaneousGesture(drag.simultaneously(with: longPress))
-                        .scaleEffect(magnificationFinalAmount + magnificationCurrentAmount)
-                        .simultaneousGesture(magnification)
-                        .opacity(opacity)
-                    }
-                    
-                }
-            }
-            
-        }
-        
-        @ViewBuilder
-        func buttons() -> some View {
-            HStack {
-                Spacer()
-                VStack {
-                    
-                    Spacer()
-//
-//                    Image(systemName: "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left") // arrow.up.backward.and.arrow.down.forward.circle.fill
-//                        .simultaneousGesture(drag)
-//
-//                    Spacer()
-
-                    Menu {
-                        
-//                        HStack {
-//                            Text("\(String(format: "%.0f", opacity))%")
-//                            Slider(value: $opacity, in: 0...1, step: 0.1)
-//                        }
-//
-//                        Stepper {
-//                            Text("\(opacity)")
-//                        } onIncrement: {
-//                            opacity += 0.1
-//                        } onDecrement: {
-//                            opacity -= 0.1
-//                        } onEditingChanged: { change in
-//
-//                        }
-                        
-                        Button {
-                            withAnimation {
-                                isHidden.toggle()
-                            }
-                        } label: {
-                            Text("\(isHidden ? "un-hide":"hide")")
-                            Image(systemName: isHidden ? "eye.slash": "eye")
-                        }
-                        
-                    } label: {
-                        Image(systemName: "ellipsis.circle.fill")
-                    }
-                    
-//                    Spacer()
-//
-//                    Image(systemName: "rectangle.and.arrow.up.right.and.arrow.down.left") // arrow.up.backward.and.arrow.down.forward.circle.fill
-//                        .simultaneousGesture(resize)
-                }
-            }
-            .foregroundColor(.blue)
-        }
-    }
 }
 
 // MARK: - Experimentations
@@ -610,3 +259,63 @@ struct MapView: UIViewRepresentable {
  }
  }
  */
+
+
+import SwiftUI
+
+struct ChatThread: View {
+    
+    @State var newMessage: String
+    
+    @State private var messages = [
+        Message(content: "Hey, how's it going?", sender: "John"),
+        Message(content: "Not too bad, how about you?", sender: "Jane"),
+        Message(content: "I'm good, thanks for asking. What's up?", sender: "John"),
+        Message(content: "Just wanted to catch up and see how things are going.", sender: "Jane"),
+        Message(content: "Things are going well, thanks for asking. How about you?", sender: "John"),
+        Message(content: "I'm good too, thanks. Let's catch up again soon.", sender: "Jane")
+    ]
+    
+    var body: some View {
+        VStack {
+            List {
+                ForEach(messages) { message in
+                    HStack {
+                        Text(message.sender)
+                            .font(.caption)
+                        Spacer()
+                        Text(message.content)
+                            .padding(.all, 10)
+                            .background(Color.gray)
+                            .cornerRadius(10)
+                    }
+                }
+            }
+            HStack {
+                TextField("Enter message", text: $newMessage)
+                Button(action: {
+                    self.messages.append(Message(content: self.newMessage, sender: "Me"))
+                    self.newMessage = ""
+                }) {
+                    Text("Send")
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct Message: Identifiable {
+    var id: Int {
+        content.hashValue + sender.hashValue
+    }
+    
+    var content: String
+    var sender: String
+}
+
+struct ChatThread_Previews: PreviewProvider {
+    static var previews: some View {
+        ChatThread(newMessage: "hellow world")
+    }
+}

@@ -87,7 +87,7 @@ struct TrackAnnotationInMap: View {
                         Image(systemName: annotation.name)
                             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.purple)
-                            .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
+                            .animation(.easeIn, value: 0.3)
                     }
                 }
                 .onAppear {
