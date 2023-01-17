@@ -64,6 +64,8 @@
 		047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F55C825E6DDF30051B567 /* Assets.xcassets */; };
 		048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */; };
 		048D2BCC2975C1CA00BF80CE /* ShowInteractionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */; };
+		048D2BCE2975C4DA00BF80CE /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 048D2BCD2975C2B100BF80CE /* SwiftUIComponents */; };
+		048D2BD029772B0E00BF80CE /* UseAIChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */; };
 		049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B8C1C27E01E25003E27FD /* ViewHTML.swift */; };
 		049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91D25E61BB500482E7F /* tvOSApp.swift */; };
 		049CD92025E61BB500482E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91F25E61BB500482E7F /* ContentView.swift */; };
@@ -181,6 +183,7 @@
 		047F55C825E6DDF30051B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocalConsole.swift; sourceTree = "<group>"; };
 		048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInteractionLocation.swift; sourceTree = "<group>"; };
+		048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAIChatGPT.swift; sourceTree = "<group>"; };
 		049B8C1C27E01E25003E27FD /* ViewHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHTML.swift; sourceTree = "<group>"; };
 		049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowToSwiftUI.entitlements; sourceTree = "<group>"; };
 		049CD91B25E61BB500482E7F /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D2BCE2975C4DA00BF80CE /* SwiftUIComponents in Frameworks */,
 				0422E15725DFA9DC0017ABCF /* SwiftUIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +283,7 @@
 				04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */,
 				048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */,
 				048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */,
+				048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D2BD029772B0E00BF80CE /* UseAIChatGPT.swift in Sources */,
 				04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */,
 				0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */,
 				0400C70C25DCEF6400D234EE /* rotate3DEffect.swift in Sources */,

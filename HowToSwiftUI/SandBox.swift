@@ -128,14 +128,25 @@ struct SandBox: View {
     }()
     
     @State var showConsole = false
-
+    
     @State var showInteractionLocation = false
 
     @State var newMessage = "test"
 
     public var body: some View {
         
-        ChatThread(newMessage: newMessage)
+        ZStack {
+            
+            AnimatedGradientView()
+            
+            VStack {
+                
+                ChatThread()
+                
+            }
+            
+        }
+        
     }
     
 }
@@ -260,7 +271,7 @@ struct MapView: UIViewRepresentable {
  }
  */
 
-
+/*
 import SwiftUI
 
 struct ChatThread: View {
@@ -307,7 +318,10 @@ struct ChatThread: View {
 
 struct Message: Identifiable {
     var id: Int {
-        content.hashValue + sender.hashValue
+        var hasher = Hasher()
+            hasher.combine(content)
+            hasher.combine(sender)
+        return hasher.finalize()
     }
     
     var content: String
@@ -319,3 +333,6 @@ struct ChatThread_Previews: PreviewProvider {
         ChatThread(newMessage: "hellow world")
     }
 }
+*/
+// -------------
+
