@@ -9,7 +9,19 @@ import SwiftUI
 
 struct UseAIChatGPT: View {
     var body: some View {
-        ChatThread()
+        
+        ZStack {
+            
+            AnimatedGradientView()
+            
+            VStack {
+                
+                ChatThread()
+                
+            }
+            
+        }
+        
     }
 }
 
@@ -214,3 +226,70 @@ struct StepperView_Previews: PreviewProvider {
 //this code will create a stepper that will allow you to go from 0.0 to 1.0 and the value will be displayed in the text view.
 // you can change the range from 0.0 to 1.0 to any other range that you need.
 // the stepper value will be rounded to 2 decimal places only.
+
+
+/*
+import SwiftUI
+
+struct ChatThread: View {
+    
+    @State var newMessage: String
+    
+    @State private var messages = [
+        Message(content: "Hey, how's it going?", sender: "John"),
+        Message(content: "Not too bad, how about you?", sender: "Jane"),
+        Message(content: "I'm good, thanks for asking. What's up?", sender: "John"),
+        Message(content: "Just wanted to catch up and see how things are going.", sender: "Jane"),
+        Message(content: "Things are going well, thanks for asking. How about you?", sender: "John"),
+        Message(content: "I'm good too, thanks. Let's catch up again soon.", sender: "Jane")
+    ]
+    
+    var body: some View {
+        VStack {
+            List {
+                ForEach(messages) { message in
+                    HStack {
+                        Text(message.sender)
+                            .font(.caption)
+                        Spacer()
+                        Text(message.content)
+                            .padding(.all, 10)
+                            .background(Color.gray)
+                            .cornerRadius(10)
+                    }
+                }
+            }
+            HStack {
+                TextField("Enter message", text: $newMessage)
+                Button(action: {
+                    self.messages.append(Message(content: self.newMessage, sender: "Me"))
+                    self.newMessage = ""
+                }) {
+                    Text("Send")
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct Message: Identifiable {
+    var id: Int {
+        var hasher = Hasher()
+            hasher.combine(content)
+            hasher.combine(sender)
+        return hasher.finalize()
+    }
+    
+    var content: String
+    var sender: String
+}
+
+struct ChatThread_Previews: PreviewProvider {
+    static var previews: some View {
+        ChatThread(newMessage: "hellow world")
+    }
+}
+*/
+// -------------
+

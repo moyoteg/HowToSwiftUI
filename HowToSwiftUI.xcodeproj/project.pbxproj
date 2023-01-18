@@ -66,6 +66,7 @@
 		048D2BCC2975C1CA00BF80CE /* ShowInteractionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */; };
 		048D2BCE2975C4DA00BF80CE /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 048D2BCD2975C2B100BF80CE /* SwiftUIComponents */; };
 		048D2BD029772B0E00BF80CE /* UseAIChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */; };
+		048D2BD22977331000BF80CE /* UseCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BD12977331000BF80CE /* UseCamera.swift */; };
 		049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B8C1C27E01E25003E27FD /* ViewHTML.swift */; };
 		049CD91E25E61BB500482E7F /* tvOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91D25E61BB500482E7F /* tvOSApp.swift */; };
 		049CD92025E61BB500482E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD91F25E61BB500482E7F /* ContentView.swift */; };
@@ -184,6 +185,7 @@
 		048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocalConsole.swift; sourceTree = "<group>"; };
 		048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInteractionLocation.swift; sourceTree = "<group>"; };
 		048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAIChatGPT.swift; sourceTree = "<group>"; };
+		048D2BD12977331000BF80CE /* UseCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCamera.swift; sourceTree = "<group>"; };
 		049B8C1C27E01E25003E27FD /* ViewHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHTML.swift; sourceTree = "<group>"; };
 		049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HowToSwiftUI.entitlements; sourceTree = "<group>"; };
 		049CD91B25E61BB500482E7F /* tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +286,7 @@
 				048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */,
 				048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */,
 				048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */,
+				048D2BD12977331000BF80CE /* UseCamera.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */,
 				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
+				048D2BD22977331000BF80CE /* UseCamera.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
 				04FC29A128E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
@@ -893,7 +897,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -917,7 +921,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -927,6 +931,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -946,6 +951,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -977,7 +983,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 15.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Debug;
 		};
@@ -1000,7 +1006,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 15.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Release;
 		};

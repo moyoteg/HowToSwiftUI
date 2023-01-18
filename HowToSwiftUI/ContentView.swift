@@ -47,6 +47,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Show Local Console", AnyView(ShowLocalConsole())),
         HowTo(isResolved: true, "Show Interaction Location", AnyView(ShowInteractionLocation())),
         HowTo(isResolved: true, "Use AI ChatGPT", AnyView(UseAIChatGPT())),
+        HowTo(isResolved: true, "Use Camera", AnyView(UseCamera())),
+        
     ]
     
     var body: some View {
