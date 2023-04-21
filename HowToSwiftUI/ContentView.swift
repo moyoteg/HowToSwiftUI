@@ -17,7 +17,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "center text textfield", AnyView(CenterTextFieldPlaceholderText())),
         HowTo(isResolved: true, "insert and remove tab", AnyView(InsertAndRemoveTab())),
         HowTo(isResolved: true, "secure toggle textfield", AnyView(SecureToggleTextField())),
-        HowTo(isResolved: false, "disable tab", AnyView(DisableTab())),
+        HowTo(isResolved: true, "disable tab", AnyView(DisableTab())),
         HowTo(isResolved: true, "insert view w/ transition", AnyView(InsertViewWithTransition())),
         HowTo(isResolved: true, "show pop up", AnyView(ShowPopUP())),
         HowTo(isResolved: true, "pass generic content", AnyView(PassGenericViewContent())),
@@ -25,7 +25,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "scroll rotating cards", AnyView(ScrollRotatingCards())),
         HowTo(isResolved: true, "reflect view", AnyView(ReflectView())),
         HowTo(isResolved: true, "curl page", AnyView(CurlPage())),
-        HowTo(isResolved: false, "z stack images", AnyView(ZStackImages())),
+        HowTo(isResolved: true, "z stack images", AnyView(ZStackImages())),
         HowTo(isResolved: true, "use uikit page view", AnyView(UseUIKitPageView())),
         HowTo(isResolved: true, "use Lazy Grid", AnyView(UseLazyGrid())),
         HowTo(isResolved: true, "use image as view background", AnyView(UseImageAsViewBackground())),
@@ -48,6 +48,9 @@ struct ContentView: View {
         HowTo(isResolved: true, "Show Interaction Location", AnyView(ShowInteractionLocation())),
         HowTo(isResolved: true, "Use AI ChatGPT", AnyView(UseAIChatGPT())),
         HowTo(isResolved: true, "Use Camera", AnyView(UseCamera())),
+        HowTo(isResolved: true, "Use NavigationSplitView And NavigationStack", AnyView(NavigationSplitViewAndNavigationStack())),
+        HowTo(isResolved: true, "Use URLImage", AnyView(UseURLImage())),
+        HowTo(isResolved: true, "Create Analog Clock", AnyView(CreateAnalogClock())),
         
     ]
     

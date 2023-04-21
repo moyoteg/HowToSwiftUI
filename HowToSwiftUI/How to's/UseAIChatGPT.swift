@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUIComponents
+
 struct UseAIChatGPT: View {
     var body: some View {
         
@@ -40,11 +42,28 @@ struct ChatThread: View {
     @State private var showAlert = false
     @State private var alertTitle = ""
     @State private var alertMessage = ""
-    @State private var apiKey = "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"
+    @State private var apiKey = "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"
+    //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
     
     @State var CHATGPTtemperature = 0.0
 
 var body: some View {
+    
+    Stepper("temperature \(CHATGPTtemperature, specifier: "%.1f")", value: $CHATGPTtemperature, in: 0.0...1.0, step: 0.1)
+        .padding()
+        .shadow(radius: 5)
+    
+//    Divider()
+    
+    TextField("Enter Chat GPT apiKey", text: $apiKey)
+        .padding()
+        .minimumScaleFactor(0.3)
+//        .lineLimit(3)
+        .shadow(radius: 5)
+        .clearButton(text: $apiKey)
+    
+//    Divider()
+    
     VStack {
         List {
             ForEach(messages) { message in
@@ -60,13 +79,13 @@ var body: some View {
                 }
             }
         }
-                
-        Stepper("temperature \(CHATGPTtemperature, specifier: "%.1f")", value: $CHATGPTtemperature, in: 0.0...1.0, step: 0.1)
-            .padding()
-            .shadow(radius: 5)
         
         HStack {
             TextField("Enter message", text: $newMessage)
+                .clearButton(text: $newMessage)
+                .minimumScaleFactor(0.3)
+                .lineLimit(3)
+            
             Button(action: {
                 self.sendMessage()
             }) {
@@ -74,6 +93,8 @@ var body: some View {
             }
         }
         .padding()
+        .shadow(radius: 5)
+
     }
     .alert(isPresented: $showAlert) {
         Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))

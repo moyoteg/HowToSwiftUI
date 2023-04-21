@@ -40,8 +40,11 @@
 		0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */; };
 		0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438856A2870F67800323FF3 /* ShowCharts.swift */; };
 		0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438856C28710D1600323FF3 /* ExternalAccessory.framework */; };
+		043910352981EAE5001522E9 /* TortillaPackage.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 043910342981EAE5001522E9 /* TortillaPackage.mlmodel */; };
+		0439103829824605001522E9 /* CloudyLogs in Frameworks */ = {isa = PBXBuildFile; productRef = 0439103729824605001522E9 /* CloudyLogs */; };
 		043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043976F926867F8200B975E5 /* UseLazyGrid.swift */; };
 		04397703268D3E7200B975E5 /* UseImageAsViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */; };
+		043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
 		0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D40125E8224A0060AD02 /* CurlPage.swift */; };
 		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
@@ -91,6 +94,8 @@
 		04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */; };
 		04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */; };
 		04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF8DD928931430008DF335 /* VolumetricPill.swift */; };
+		04D2F80F29F2F0D5005229A8 /* UseURLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */; };
+		04D2F81129F30DAC005229A8 /* CreateAnalogClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */; };
 		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
 		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
 		04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */; };
@@ -159,8 +164,10 @@
 		0433B366288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskRoundedRectangleAsPercentangePill.swift; sourceTree = "<group>"; };
 		0438856A2870F67800323FF3 /* ShowCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharts.swift; sourceTree = "<group>"; };
 		0438856C28710D1600323FF3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		043910342981EAE5001522E9 /* TortillaPackage.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TortillaPackage.mlmodel; sourceTree = "<group>"; };
 		043976F926867F8200B975E5 /* UseLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseLazyGrid.swift; sourceTree = "<group>"; };
 		04397702268D3E7200B975E5 /* UseImageAsViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseImageAsViewBackground.swift; sourceTree = "<group>"; };
+		043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewAndNavigationStack.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
 		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
@@ -197,6 +204,8 @@
 		04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceImagesProportionally.swift; sourceTree = "<group>"; };
 		04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUIKitPageView.swift; sourceTree = "<group>"; };
 		04CF8DD928931430008DF335 /* VolumetricPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumetricPill.swift; sourceTree = "<group>"; };
+		04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseURLImage.swift; sourceTree = "<group>"; };
+		04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnalogClock.swift; sourceTree = "<group>"; };
 		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
 		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
 		04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnotationLocation.swift; sourceTree = "<group>"; };
@@ -224,6 +233,7 @@
 				042DD6EC28B89879002E5AD4 /* HomeKit.framework in Frameworks */,
 				042DD6DE28B89879002E5AD4 /* AudioToolbox.framework in Frameworks */,
 				042DD6E028B89879002E5AD4 /* NetworkExtension.framework in Frameworks */,
+				0439103829824605001522E9 /* CloudyLogs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +297,9 @@
 				048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */,
 				048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */,
 				048D2BD12977331000BF80CE /* UseCamera.swift */,
+				043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */,
+				04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */,
+				04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -323,6 +336,7 @@
 				041CB97525C8CE6800111090 /* ContentView.swift */,
 				045D7F7625DFA03900150123 /* HowTo.swift */,
 				0478402B25DCA28B00CBF92B /* SandBox.swift */,
+				043910342981EAE5001522E9 /* TortillaPackage.mlmodel */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
@@ -446,6 +460,7 @@
 				041ECC7F25CE1F1000A37F49 /* Introspect */,
 				041ECC8625CE45E300A37F49 /* SwiftUIComponents */,
 				04FB23122638AB89000D2D07 /* SwiftUtilities */,
+				0439103729824605001522E9 /* CloudyLogs */,
 			);
 			productName = HowToSwiftUI;
 			productReference = 041CB97025C8CE6800111090 /* HowToSwiftUI.app */;
@@ -547,6 +562,7 @@
 				041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */,
 				046A0E2A25E82B41000088FA /* XCRemoteSwiftPackageReference "SwiftUtilities" */,
+				0439103629824605001522E9 /* XCRemoteSwiftPackageReference "CloudyLogs" */,
 			);
 			productRefGroup = 041CB97125C8CE6800111090 /* Products */;
 			projectDirPath = "";
@@ -627,8 +643,10 @@
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
 				04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */,
 				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
+				04D2F80F29F2F0D5005229A8 /* UseURLImage.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				048D2BD22977331000BF80CE /* UseCamera.swift in Sources */,
+				043910352981EAE5001522E9 /* TortillaPackage.mlmodel in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
 				041CB98425C8CFB600111090 /* HideNavigationBar.swift in Sources */,
 				04FC29A128E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
@@ -637,10 +655,12 @@
 				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
+				043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */,
 				0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
 				048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */,
 				040CF5BC2889085D00170D51 /* DrawBorderAroundRoundedRectangle.swift in Sources */,
+				04D2F81129F30DAC005229A8 /* CreateAnalogClock.swift in Sources */,
 				0400C70225DCAE2B00D234EE /* PassGenericViewContent.swift in Sources */,
 				041ECC7C25CE1EB600A37F49 /* SecureToggleTextField.swift in Sources */,
 				04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */,
@@ -749,7 +769,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -805,7 +825,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -830,7 +850,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -860,7 +880,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HowToSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -931,7 +951,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -951,7 +971,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -978,6 +998,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.tvOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1001,6 +1022,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pragcore.howtoswiftui.tvOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1077,6 +1099,14 @@
 				kind = branch;
 			};
 		};
+		0439103629824605001522E9 /* XCRemoteSwiftPackageReference "CloudyLogs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moyoteg/CloudyLogs";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		046A0E2A25E82B41000088FA /* XCRemoteSwiftPackageReference "SwiftUtilities" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moyoteg/SwiftUtilities";
@@ -1102,6 +1132,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */;
 			productName = SwiftUIComponents;
+		};
+		0439103729824605001522E9 /* CloudyLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0439103629824605001522E9 /* XCRemoteSwiftPackageReference "CloudyLogs" */;
+			productName = CloudyLogs;
 		};
 		048D2BCD2975C2B100BF80CE /* SwiftUIComponents */ = {
 			isa = XCSwiftPackageProductDependency;

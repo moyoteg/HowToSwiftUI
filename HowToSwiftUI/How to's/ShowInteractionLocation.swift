@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import CloudyLogs
+
 struct ShowInteractionLocation: View {
     
     @State var showInteractionLocation = false
