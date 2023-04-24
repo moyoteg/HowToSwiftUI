@@ -51,6 +51,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "Use NavigationSplitView And NavigationStack", AnyView(NavigationSplitViewAndNavigationStack())),
         HowTo(isResolved: true, "Use URLImage", AnyView(UseURLImage())),
         HowTo(isResolved: true, "Create Analog Clock", AnyView(CreateAnalogClock())),
+        HowTo(isResolved: false, "Use Machine Learning", AnyView(UseMachineLearning())),
         
     ]
     
