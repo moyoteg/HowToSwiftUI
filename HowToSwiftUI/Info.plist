@@ -54,6 +54,8 @@
 	<string>to learn</string>
 	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
 	<string>to learn</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>to learn</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>INSendMessageIntent</string>
