@@ -48,6 +48,8 @@
 	<string>to learn</string>
 	<key>NSCameraUsageDescription</key>
 	<string>to learn</string>
+	<key>NFCReaderUsageDescription</key>
+	<string>to learn</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
