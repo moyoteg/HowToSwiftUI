@@ -61,6 +61,7 @@
 		045D7F7E25DFA04400150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		04600BD726CD7F840023CC91 /* CopyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04600BD626CD7F840023CC91 /* CopyText.swift */; };
 		046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */; };
+		04730FAB29F634850010D48C /* UseDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04730FAA29F634850010D48C /* UseDesignSystem.swift */; };
 		0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */; };
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
@@ -185,6 +186,7 @@
 		045D7F7625DFA03900150123 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
 		04600BD626CD7F840023CC91 /* CopyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyText.swift; sourceTree = "<group>"; };
 		046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapAnnotations.swift; sourceTree = "<group>"; };
+		04730FAA29F634850010D48C /* UseDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseDesignSystem.swift; sourceTree = "<group>"; };
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */,
 				04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */,
 				04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */,
+				04730FAA29F634850010D48C /* UseDesignSystem.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				044AE891273340150058240B /* SizePDFImage.swift in Sources */,
 				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
 				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
+				04730FAB29F634850010D48C /* UseDesignSystem.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */,

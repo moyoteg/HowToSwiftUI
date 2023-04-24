@@ -20,8 +20,6 @@
 	<string>NSFileProtectionComplete</string>
 	<key>com.apple.developer.devicecheck.appattest-environment</key>
 	<string>development</string>
-	<key>com.apple.developer.family-controls</key>
-	<true/>
 	<key>com.apple.developer.fileprovider.testing-mode</key>
 	<true/>
 	<key>com.apple.developer.group-session</key>
