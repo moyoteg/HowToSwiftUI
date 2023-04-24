@@ -22,6 +22,15 @@
 	<string>1</string>
 	<key>CLKComplicationPrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

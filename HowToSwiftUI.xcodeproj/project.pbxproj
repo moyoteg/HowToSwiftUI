@@ -187,6 +187,7 @@
 		04600BD626CD7F840023CC91 /* CopyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyText.swift; sourceTree = "<group>"; };
 		046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapAnnotations.swift; sourceTree = "<group>"; };
 		04730FAA29F634850010D48C /* UseDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseDesignSystem.swift; sourceTree = "<group>"; };
+		04730FAC29F71A7B0010D48C /* watchos WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchos WatchKit App.entitlements"; sourceTree = "<group>"; };
 		0478402825DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveViewWithTransition.swift; sourceTree = "<group>"; };
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
@@ -386,6 +387,7 @@
 		045D7F1925DF9E2400150123 /* watchos WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				04730FAC29F71A7B0010D48C /* watchos WatchKit App.entitlements */,
 				045D7F1C25DF9E2500150123 /* Info.plist */,
 			);
 			path = "watchos WatchKit App";
@@ -915,6 +917,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "watchos WatchKit App/watchos WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7882XEDUN;
 				INFOPLIST_FILE = "watchos WatchKit App/Info.plist";
@@ -929,7 +932,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -941,6 +944,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "watchos WatchKit App/watchos WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7882XEDUN;
 				INFOPLIST_FILE = "watchos WatchKit App/Info.plist";
@@ -954,7 +958,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};

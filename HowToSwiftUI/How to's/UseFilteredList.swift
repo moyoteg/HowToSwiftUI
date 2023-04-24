@@ -48,7 +48,9 @@ struct SelectListToShow: View {
                             Text($0.rawValue)
                         }
                     }
+#if !os(watchOS)
                     .pickerStyle(SegmentedPickerStyle())
+#endif
                     .padding()
                 
                 
@@ -63,7 +65,9 @@ struct SelectListToShow: View {
             }
             
         }
+#if !os(watchOS)
         .listStyle(GroupedListStyle())
+#endif
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
