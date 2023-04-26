@@ -101,6 +101,8 @@
 		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
 		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
 		04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */; };
+		04E7E9FC29F8934D00AD04F0 /* CreateHorizontalSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7E9FB29F8934D00AD04F0 /* CreateHorizontalSections.swift */; };
+		04E7EA0029F8E53700AD04F0 /* SelectAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC57BF2602AC9400DEA017 /* ZStackImages.swift */; };
 		04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 04FB23122638AB89000D2D07 /* SwiftUtilities */; };
@@ -214,6 +216,8 @@
 		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
 		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
 		04D8735F26A8C52100873682 /* UpdateAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAnnotationLocation.swift; sourceTree = "<group>"; };
+		04E7E9FB29F8934D00AD04F0 /* CreateHorizontalSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHorizontalSections.swift; sourceTree = "<group>"; };
+		04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAppIcon.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 		04EC57BF2602AC9400DEA017 /* ZStackImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackImages.swift; sourceTree = "<group>"; };
 		04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFilteredList.swift; sourceTree = "<group>"; };
@@ -303,10 +307,12 @@
 				048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */,
 				048D2BD12977331000BF80CE /* UseCamera.swift */,
 				043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */,
+				04E7E9FB29F8934D00AD04F0 /* CreateHorizontalSections.swift */,
 				04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */,
 				04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */,
 				04730FAA29F634850010D48C /* UseDesignSystem.swift */,
 				04730FAD29F745B40010D48C /* UseMachineLearning.swift */,
+				04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -629,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E7E9FC29F8934D00AD04F0 /* CreateHorizontalSections.swift in Sources */,
 				048D2BD029772B0E00BF80CE /* UseAIChatGPT.swift in Sources */,
 				04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */,
 				0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */,
@@ -668,6 +675,7 @@
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */,
 				0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */,
+				04E7EA0029F8E53700AD04F0 /* SelectAppIcon.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
 				048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */,
 				040CF5BC2889085D00170D51 /* DrawBorderAroundRoundedRectangle.swift in Sources */,
