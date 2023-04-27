@@ -53,6 +53,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Create Analog Clock", AnyView(CreateAnalogClock())),
         HowTo(isResolved: false, "Use Machine Learning", AnyView(UseMachineLearning())),
         HowTo(isResolved: false, "Create Horizontal Sections", AnyView(CreateHorizontalSections())),
+        HowTo(isResolved: false, "Select AppIcon", AnyView(SelectAppIcon())),
+        HowTo(isResolved: false, "View 3D Object", AnyView(View3DObject())),
         
     ]
     

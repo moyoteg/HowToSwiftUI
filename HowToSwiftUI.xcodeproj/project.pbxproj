@@ -50,6 +50,17 @@
 		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
 		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
+		04574CEA29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
+		04574CEB29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
+		04574CEC29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
+		04574CED29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
+		04574CEF29FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
+		04574CF029FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
+		04574CF129FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
+		04574CF229FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
+		04574CF429FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
+		04574CF529FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
+		04574CF629FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
 		045D7F1625DF9E2400150123 /* watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 045D7F1525DF9E2400150123 /* watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2625DF9E2500150123 /* HowToSwiftUIApp.swift */; };
 		045D7F2925DF9E2500150123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2825DF9E2500150123 /* ContentView.swift */; };
@@ -175,6 +186,9 @@
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
 		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
+		04574CE929FB13840055D93F /* bitcoin_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_logo.scn; sourceTree = "<group>"; };
+		04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bitcoin_logo.obj; path = ../../../../../../../Desktop/Blender/bitcoin_logo.obj; sourceTree = "<group>"; };
+		04574CF329FB268D0055D93F /* View3DObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3DObject.swift; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1C25DF9E2500150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -313,6 +327,7 @@
 				04730FAA29F634850010D48C /* UseDesignSystem.swift */,
 				04730FAD29F745B40010D48C /* UseMachineLearning.swift */,
 				04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */,
+				04574CF329FB268D0055D93F /* View3DObject.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -350,6 +365,8 @@
 				045D7F7625DFA03900150123 /* HowTo.swift */,
 				0478402B25DCA28B00CBF92B /* SandBox.swift */,
 				043910342981EAE5001522E9 /* TortillaPackage.mlmodel */,
+				04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */,
+				04574CE929FB13840055D93F /* bitcoin_logo.scn */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
@@ -597,8 +614,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0442FCCD25E59D13000D7283 /* README.md in Resources */,
+				04574CEF29FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				041CB97B25C8CE6A00111090 /* Preview Assets.xcassets in Resources */,
 				041CB97825C8CE6A00111090 /* Assets.xcassets in Resources */,
+				04574CEA29FB13840055D93F /* bitcoin_logo.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +625,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04574CEB29FB13840055D93F /* bitcoin_logo.scn in Resources */,
+				04574CF029FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,7 +635,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04574CF129FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */,
+				04574CEC29FB13840055D93F /* bitcoin_logo.scn in Resources */,
 				0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +646,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04574CF229FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */,
+				04574CED29FB13840055D93F /* bitcoin_logo.scn in Resources */,
 				047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,6 +686,7 @@
 				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
 				04D2F80F29F2F0D5005229A8 /* UseURLImage.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
+				04574CF429FB268D0055D93F /* View3DObject.swift in Sources */,
 				048D2BD22977331000BF80CE /* UseCamera.swift in Sources */,
 				043910352981EAE5001522E9 /* TortillaPackage.mlmodel in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
@@ -696,6 +722,7 @@
 				045D7F7E25DFA04400150123 /* HowTo.swift in Sources */,
 				045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */,
 				045D7F2D25DF9E2500150123 /* NotificationView.swift in Sources */,
+				04574CF529FB268D0055D93F /* View3DObject.swift in Sources */,
 				04FC29A228E8A63C00C8A704 /* UseFilteredList.swift in Sources */,
 				0422E16E25DFB1F10017ABCF /* UseButton.swift in Sources */,
 				0422E17625E02C400017ABCF /* ChangeBackground.swift in Sources */,
@@ -712,6 +739,7 @@
 				049CD96225E61C1F00482E7F /* HowTo.swift in Sources */,
 				049CD98C25E62CF000482E7F /* UseSheet.swift in Sources */,
 				049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */,
+				04574CF629FB268D0055D93F /* View3DObject.swift in Sources */,
 				049CD99225E62D2600482E7F /* ReflectView.swift in Sources */,
 				049CD9BC25E62D3D00482E7F /* HideNavigationBar.swift in Sources */,
 				049CD9B025E62D3600482E7F /* InsertAndRemoveViewWithTransition.swift in Sources */,
@@ -741,6 +769,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon1";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -803,6 +833,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon1";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -858,7 +890,8 @@
 		041CB98025C8CE6A00111090 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -891,7 +924,8 @@
 		041CB98125C8CE6A00111090 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
