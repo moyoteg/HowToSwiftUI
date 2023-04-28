@@ -136,11 +136,12 @@ struct SandBox: View {
     public var body: some View {
 
 //        MedicationConsumptionChart()
-        CoinView()
+        View3DObject(fileName: "bitcoin_cash_logo.scn")
         
     }
     
 }
+
 
 //struct CoinView: View {
 //    @State private var isRotating = false

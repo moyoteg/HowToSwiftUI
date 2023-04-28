@@ -54,7 +54,7 @@ struct ContentView: View {
         HowTo(isResolved: false, "Use Machine Learning", AnyView(UseMachineLearning())),
         HowTo(isResolved: false, "Create Horizontal Sections", AnyView(CreateHorizontalSections())),
         HowTo(isResolved: false, "Select AppIcon", AnyView(SelectAppIcon())),
-        HowTo(isResolved: false, "View 3D Object", AnyView(View3DObject())),
+        HowTo(isResolved: true, "View 3D Object", AnyView(View3DObject(fileName: "bitcoin_cash_logo.scn"))),
         
     ]
     

@@ -50,17 +50,18 @@
 		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
 		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
-		04574CEA29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
-		04574CEB29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
-		04574CEC29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
-		04574CED29FB13840055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CE929FB13840055D93F /* bitcoin_logo.scn */; };
-		04574CEF29FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
-		04574CF029FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
-		04574CF129FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
-		04574CF229FB1FEC0055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */; };
 		04574CF429FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
 		04574CF529FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
 		04574CF629FB268D0055D93F /* View3DObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574CF329FB268D0055D93F /* View3DObject.swift */; };
+		04574CF829FB35930055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CF729FB35930055D93F /* bitcoin_logo.obj */; };
+		04574CF929FB35930055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CF729FB35930055D93F /* bitcoin_logo.obj */; };
+		04574CFA29FB35930055D93F /* bitcoin_logo.obj in Resources */ = {isa = PBXBuildFile; fileRef = 04574CF729FB35930055D93F /* bitcoin_logo.obj */; };
+		04574CFC29FB364D0055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFB29FB364D0055D93F /* bitcoin_logo.scn */; };
+		04574CFD29FB364D0055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFB29FB364D0055D93F /* bitcoin_logo.scn */; };
+		04574CFE29FB364D0055D93F /* bitcoin_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFB29FB364D0055D93F /* bitcoin_logo.scn */; };
+		04574D0029FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
+		04574D0129FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
+		04574D0229FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
 		045D7F1625DF9E2400150123 /* watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 045D7F1525DF9E2400150123 /* watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2625DF9E2500150123 /* HowToSwiftUIApp.swift */; };
 		045D7F2925DF9E2500150123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2825DF9E2500150123 /* ContentView.swift */; };
@@ -186,9 +187,10 @@
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
 		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
-		04574CE929FB13840055D93F /* bitcoin_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_logo.scn; sourceTree = "<group>"; };
-		04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bitcoin_logo.obj; path = ../../../../../../../Desktop/Blender/bitcoin_logo.obj; sourceTree = "<group>"; };
 		04574CF329FB268D0055D93F /* View3DObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3DObject.swift; sourceTree = "<group>"; };
+		04574CF729FB35930055D93F /* bitcoin_logo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitcoin_logo.obj; sourceTree = "<group>"; };
+		04574CFB29FB364D0055D93F /* bitcoin_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_logo.scn; sourceTree = "<group>"; };
+		04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_cash_logo.scn; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1C25DF9E2500150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -365,8 +367,9 @@
 				045D7F7625DFA03900150123 /* HowTo.swift */,
 				0478402B25DCA28B00CBF92B /* SandBox.swift */,
 				043910342981EAE5001522E9 /* TortillaPackage.mlmodel */,
-				04574CEE29FB1FEB0055D93F /* bitcoin_logo.obj */,
-				04574CE929FB13840055D93F /* bitcoin_logo.scn */,
+				04574CF729FB35930055D93F /* bitcoin_logo.obj */,
+				04574CFB29FB364D0055D93F /* bitcoin_logo.scn */,
+				04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
@@ -614,10 +617,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0442FCCD25E59D13000D7283 /* README.md in Resources */,
-				04574CEF29FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
+				04574CFC29FB364D0055D93F /* bitcoin_logo.scn in Resources */,
+				04574CF829FB35930055D93F /* bitcoin_logo.obj in Resources */,
 				041CB97B25C8CE6A00111090 /* Preview Assets.xcassets in Resources */,
 				041CB97825C8CE6A00111090 /* Assets.xcassets in Resources */,
-				04574CEA29FB13840055D93F /* bitcoin_logo.scn in Resources */,
+				04574D0029FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,8 +629,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04574CEB29FB13840055D93F /* bitcoin_logo.scn in Resources */,
-				04574CF029FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,10 +637,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04574CF129FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */,
-				04574CEC29FB13840055D93F /* bitcoin_logo.scn in Resources */,
+				04574CF929FB35930055D93F /* bitcoin_logo.obj in Resources */,
 				0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */,
+				04574D0129FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */,
+				04574CFD29FB364D0055D93F /* bitcoin_logo.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +649,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04574CF229FB1FEC0055D93F /* bitcoin_logo.obj in Resources */,
 				049CD92525E61BB600482E7F /* Preview Assets.xcassets in Resources */,
-				04574CED29FB13840055D93F /* bitcoin_logo.scn in Resources */,
+				04574CFA29FB35930055D93F /* bitcoin_logo.obj in Resources */,
 				047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */,
+				04574D0229FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */,
+				04574CFE29FB364D0055D93F /* bitcoin_logo.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
