@@ -23,14 +23,11 @@ struct SelectAppIcon: View {
                 ForEach(0..<AppIcon.allCases.count, id: \.self) { index in
                     AppIcon.allCases[index].image
                         .resizable()
-                        .frame(width: 50, height: 50)
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(10)
                 }
             }
-            .frame(width: 50, height: 50)
-
-//            .pickerStyle(SegmentedPickerStyle())
+            .pickerStyle(WheelPickerStyle())
             .padding()
             
             Button("Set App Icon") {
@@ -49,23 +46,21 @@ enum AppIcon: String, CaseIterable {
     case icon2 = "AppIcon2"
     case icon3 = "AppIcon3"
     
-    var image: URLImage {
-        return URLImage(localImageName: self.rawValue)
-    }
-
-    func setAsAppIcon() {
-        Logger.log("Tapped icon \(self.rawValue)")
-        
-        if UIApplication.shared.supportsAlternateIcons {
-            // Change icon
-            UIApplication.shared.setAlternateIconName(self.rawValue) { error in
-                if let error = error {
-                    Logger.log("ERROR: Could not set custom icon \(self.rawValue). \(error)")
-                    Logger.log(error.localizedDescription)
-                }
-            }
+    var image: Image {
+        if let uiimage = UIImage(named: self.rawValue) {
+            return Image(uiImage: uiimage)
         } else {
-            print("Error: Icon changes not supported")
+            return SwiftUI.Image(systemName: "circle.slash")
+        }
+    }
+    
+    func setAsAppIcon() {
+        UIApplication.shared.setAlternateIconName(rawValue) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Success!")
+            }
         }
     }
 }

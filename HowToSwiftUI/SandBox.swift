@@ -136,11 +136,292 @@ struct SandBox: View {
     public var body: some View {
 
 //        MedicationConsumptionChart()
-        View3DObject(fileName: "bitcoin_cash_logo.scn")
+        BitcoinCashTransactor()
         
     }
     
 }
+
+import SwiftUI
+import BitcoinCashKit
+import HdWalletKit
+
+struct BitcoinCashTransactor: View {
+    @State var recipientAddress: String = ""
+    @State var amount: Double = 0.0
+    @State var response: String = ""
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Image("bitcoin-cash-logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+            Text("Send Bitcoin Cash")
+                .font(.title)
+                .foregroundColor(.bitcoinCashGreen)
+            VStack(spacing: 10) {
+                TextField("Recipient address", text: $recipientAddress)
+                    .bitcoinCashTextFieldStyle()
+                TextField("Amount", value: $amount, formatter: NumberFormatter())
+                    .bitcoinCashTextFieldStyle()
+            }
+            Button(action: {
+                sendBitcoinCash()
+            }) {
+                Text("Send")
+                    .bitcoinCashLabelStyle()
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.bitcoinCashGreen)
+                    .cornerRadius(10)
+            }
+            Text(response)
+                .bitcoinCashLabelStyle()
+                .foregroundColor(.bitcoinCashGreen)
+                .multilineTextAlignment(.center)
+                .font(.subheadline)
+        }
+        .padding()
+        .background(Color.bitcoinCashDarkGray)
+        .edgesIgnoringSafeArea(.all)
+    }
+    
+    func sendBitcoinCash() {
+        
+        /*
+        // Create a BitcoinCashKit instance
+        let bitcoinCashKit = BitcoinCashKit(withWords: ["YOUR_RECOVERY_PHRASE"], walletId: "YOUR_WALLET_ID", testNet: true)
+        
+        // Create a BitcoinCashAddress object from the recipient address
+        let address = BitcoinCashAddress(string: recipientAddress)!
+        
+        // Create a BitcoinCashTransactionBuilder
+        let builder = BitcoinCashTransactionBuilder()
+            .set(to: address)
+            .set(value: Satoshi(Int(amount * 100_000_000)))
+            .set(fee: Satoshi(1_000))
+            .set(changeAddress: bitcoinCashKit.receiveAddress())
+        
+        // Build the transaction
+        let transaction = builder.build()
+        
+        // Sign the transaction
+        try! bitcoinCashKit.sign(transaction: transaction)
+        
+        // Broadcast the transaction to the Bitcoin Cash network
+        bitcoinCashKit.send(rawTransaction: transaction.serialized().hex) { error in
+            if let error = error {
+                response = "Error: \(error.localizedDescription)"
+            } else {
+                response = "Transaction sent!"
+            }
+        }
+         */
+        
+//        let words = ["mnemonic", "phrase", "words"]
+//        let passphrase: String = ""
+//                
+//        let seed = Mnemonic.seed(mnemonic: words, passphrase: passphrase)!
+        
+//        let bitcoinCashKit = BitcoinCashKit(withWords: ["YOUR_RECOVERY_PHRASE"], walletId: "YOUR_WALLET_ID", testNet: true)
+//        let receiveAddress = bitcoinCashKit.receiveAddress()
+//
+//        bitcoinCashKit.balance(of: receiveAddress) { result in
+//            switch result {
+//            case .success(let balance):
+//                print("Balance: \(balance)")
+//            case .failure(let error):
+//                print("Error fetching balance: \(error.localizedDescription)")
+//            }
+//        }
+//
+//        let builder = BitcoinCashTransactionBuilder()
+//            .set(to: BitcoinCashAddress(string: recipientAddress)!)
+//            .set(value: Satoshi(Int(amount * 100_000_000)))
+//            .set(fee: Satoshi(1_000))
+//            .set(changeAddress: receiveAddress)
+//
+//        let transaction = builder.build()
+
+        
+    }
+}
+
+// MARK: - Style Helpers
+
+extension Color {
+    static let bitcoinCashGreen = Color(red: 44 / 255, green: 160 / 255, blue: 75 / 255)
+    static let bitcoinCashDarkGray = Color(red: 30 / 255, green: 31 / 255, blue: 32 / 255)
+}
+
+extension TextField {
+    func bitcoinCashTextFieldStyle() -> some View {
+        return self
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
+            .background(Color.white)
+            .cornerRadius(10)
+            .foregroundColor(.bitcoinCashDarkGray)
+            .font(.body)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.bitcoinCashGreen, lineWidth: 1)
+            )
+    }
+}
+
+extension Button {
+    func bitcoinCashButtonStyle() -> some View {
+        return self
+            .font(.headline)
+            .padding(.horizontal, 50)
+            .padding(.vertical, 15)
+    }
+}
+
+extension Text {
+    func bitcoinCashLabelStyle() -> some View {
+        return self
+            .padding(.horizontal, 20)
+            .padding(.vertical, 10)
+            .background(Color.white)
+            .cornerRadius(10)
+            .foregroundColor(.bitcoinCashDarkGray)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.bitcoinCashGreen, lineWidth: 1)
+            )
+    }
+}
+
+
+
+
+
+
+
+
+
+//struct BitcoinCashTransaction: View {
+//    @State var recipientAddress: String = ""
+//    @State var amount: Double = 0.0
+//    @State var response: String = ""
+//
+//    var body: some View {
+//        VStack(spacing: 20) {
+//            Image("bitcoin-cash-circle")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 100, height: 100)
+//            Text("Send Bitcoin Cash")
+//                .font(.title)
+//                .foregroundColor(.bitcoinCashGreen)
+//            VStack(spacing: 10) {
+//                TextField("Recipient address", text: $recipientAddress)
+//                    .bitcoinCashTextFieldStyle()
+//                TextField("Amount", value: $amount, formatter: NumberFormatter())
+//                    .bitcoinCashTextFieldStyle()
+//            }
+//            Button(action: {
+//                sendBitcoinCash()
+//                }) {
+//                    Text("Send")
+//                        .bitcoinCashLabelStyle()
+//                        .foregroundColor(.white)
+//                        .padding()
+//                        .background(Color.bitcoinCashGreen)
+//                        .cornerRadius(10)
+//                }
+//                Text(response)
+//                    .bitcoinCashLabelStyle()
+//                    .foregroundColor(.bitcoinCashGreen)
+//                    .multilineTextAlignment(.center)
+//                    .font(.subheadline)
+//            }
+//            .padding()
+//            .background(Color.bitcoinCashDarkGray)
+//            .edgesIgnoringSafeArea(.all)
+//        }
+//
+//        func sendBitcoinCash() {
+//             let url = URL(string: "https://rest.bitcoin.com/v2/main/wallet/send")!
+//             var request = URLRequest(url: url)
+//             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//             request.httpMethod = "POST"
+//
+//             let body: [String: Any] = [            "to": recipientAddress,            "amount": amount,            "from": "YOUR_SENDER_ADDRESS",            "password": "YOUR_PASSWORD"        ]
+//
+//             let jsonData = try! JSONSerialization.data(withJSONObject: body, options: [])
+//             request.httpBody = jsonData
+//
+//             let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//                 if let error = error {
+//                     self.response = "Error: \(error.localizedDescription)"
+//                 } else if let data = data {
+//                     let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+//                     self.response = "Transaction ID:\n\(json["txid"] as! String)"
+//                 }
+//             }
+//
+//             task.resume()
+//         }
+//    }
+//
+//    struct BitcoinCashTransaction_Previews: PreviewProvider {
+//        static var previews: some View {
+//            BitcoinCashTransaction()
+//        }
+//    }
+//
+//    // MARK: - Style Helpers
+//
+//    extension Color {
+//        static let bitcoinCashGreen = Color(red: 44 / 255, green: 160 / 255, blue: 75 / 255)
+//        static let bitcoinCashDarkGray = Color(red: 30 / 255, green: 31 / 255, blue: 32 / 255)
+//    }
+//
+//    extension TextField {
+//        func bitcoinCashTextFieldStyle() -> some View {
+//            return self
+//                .padding(.vertical, 10)
+//                .padding(.horizontal, 20)
+//                .background(Color.white)
+//                .cornerRadius(10)
+//                .foregroundColor(.bitcoinCashDarkGray)
+//                .font(.body)
+//                .overlay(
+//                    RoundedRectangle(cornerRadius: 10)
+//                        .stroke(Color.bitcoinCashGreen, lineWidth: 1)
+//                )
+//        }
+//    }
+//
+//    extension Button {
+//        func bitcoinCashButtonStyle() -> some View {
+//            return self
+//                .font(.headline)
+//                .padding(.horizontal, 50)
+//                .padding(.vertical, 15)
+//        }
+//    }
+//
+//    extension Text {
+//        func bitcoinCashLabelStyle() -> some View {
+//            return self
+//                .padding(.horizontal, 20)
+//                .padding(.vertical, 10)
+//                .background(Color.white)
+//                .cornerRadius(10)
+//            .foregroundColor(.bitcoinCashDarkGray)
+//            .overlay(
+//                RoundedRectangle(cornerRadius: 10)
+//                    .stroke(Color.bitcoinCashGreen, lineWidth: 1)
+//            )
+//    }
+//}
+
+
 
 
 //struct CoinView: View {

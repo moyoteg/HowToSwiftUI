@@ -52,9 +52,11 @@ struct ContentView: View {
         HowTo(isResolved: true, "Use URLImage", AnyView(UseURLImage())),
         HowTo(isResolved: true, "Create Analog Clock", AnyView(CreateAnalogClock())),
         HowTo(isResolved: false, "Use Machine Learning", AnyView(UseMachineLearning())),
-        HowTo(isResolved: false, "Create Horizontal Sections", AnyView(CreateHorizontalSections())),
-        HowTo(isResolved: false, "Select AppIcon", AnyView(SelectAppIcon())),
-        HowTo(isResolved: true, "View 3D Object", AnyView(View3DObject(fileName: "bitcoin_cash_logo.scn"))),
+        HowTo(isResolved: true, "Create Horizontal Sections", AnyView(CreateHorizontalSections())),
+        HowTo(isResolved: true, "Select AppIcon", AnyView(SelectAppIcon())),
+        HowTo(isResolved: true, "View 3D Object", AnyView(View3DObject())),
+        HowTo(isResolved: true, "Use Settings Bundle", AnyView(UseSettingsBundle())),
+        HowTo(isResolved: true, "Generate Acknowledgements", AnyView(GenerateAcknowledgements())),
         
     ]
     

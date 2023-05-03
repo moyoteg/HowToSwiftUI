@@ -47,6 +47,7 @@
 		043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */; };
 		0442FCCD25E59D13000D7283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0442FCCC25E59D13000D7283 /* README.md */; };
 		0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D40125E8224A0060AD02 /* CurlPage.swift */; };
+		04481FBC2A02CA68002236E5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04481FBB2A02CA67002236E5 /* Settings.bundle */; };
 		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
 		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
@@ -62,6 +63,8 @@
 		04574D0029FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
 		04574D0129FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
 		04574D0229FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */ = {isa = PBXBuildFile; fileRef = 04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */; };
+		04574D0429FF27650055D93F /* UseOpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04574D0329FF27640055D93F /* UseOpenAI.swift */; };
+		04574D0729FF62190055D93F /* BitcoinCashKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04574D0629FF62190055D93F /* BitcoinCashKit */; };
 		045D7F1625DF9E2400150123 /* watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 045D7F1525DF9E2400150123 /* watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		045D7F2725DF9E2500150123 /* HowToSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2625DF9E2500150123 /* HowToSwiftUIApp.swift */; };
 		045D7F2925DF9E2500150123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F2825DF9E2500150123 /* ContentView.swift */; };
@@ -117,6 +120,11 @@
 		04E7EA0029F8E53700AD04F0 /* SelectAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */; };
 		04EA98BB25CA773900A00C65 /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC57BF2602AC9400DEA017 /* ZStackImages.swift */; };
+		04FA0C022A02D2EB00A7B9CF /* UseSettingsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0C012A02D2EB00A7B9CF /* UseSettingsBundle.swift */; };
+		04FA0C052A02FA0800A7B9CF /* GenerateAcknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0C042A02FA0800A7B9CF /* GenerateAcknowledgements.swift */; };
+		04FA0C1B2A030D0D00A7B9CF /* AckGen in Frameworks */ = {isa = PBXBuildFile; productRef = 04FA0C1A2A030D0D00A7B9CF /* AckGen */; };
+		04FA0C1D2A030D0D00A7B9CF /* AckGenUI in Frameworks */ = {isa = PBXBuildFile; productRef = 04FA0C1C2A030D0D00A7B9CF /* AckGenUI */; };
+		04FA0C1F2A0316D800A7B9CF /* Acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FA0C1E2A0316D800A7B9CF /* Acknowledgements.plist */; };
 		04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 04FB23122638AB89000D2D07 /* SwiftUtilities */; };
 		04FC29A128E8A63C00C8A704 /* UseFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */; };
 		04FC29A228E8A63C00C8A704 /* UseFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */; };
@@ -186,11 +194,13 @@
 		043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewAndNavigationStack.swift; sourceTree = "<group>"; };
 		0442FCCC25E59D13000D7283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
+		04481FBB2A02CA67002236E5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
 		04574CF329FB268D0055D93F /* View3DObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3DObject.swift; sourceTree = "<group>"; };
 		04574CF729FB35930055D93F /* bitcoin_logo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitcoin_logo.obj; sourceTree = "<group>"; };
 		04574CFB29FB364D0055D93F /* bitcoin_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_logo.scn; sourceTree = "<group>"; };
 		04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bitcoin_cash_logo.scn; sourceTree = "<group>"; };
+		04574D0329FF27640055D93F /* UseOpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseOpenAI.swift; sourceTree = "<group>"; };
 		045D7F1225DF9E2300150123 /* watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1525DF9E2400150123 /* watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045D7F1C25DF9E2500150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -236,6 +246,9 @@
 		04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAppIcon.swift; sourceTree = "<group>"; };
 		04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAndRemoveTab.swift; sourceTree = "<group>"; };
 		04EC57BF2602AC9400DEA017 /* ZStackImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackImages.swift; sourceTree = "<group>"; };
+		04FA0C012A02D2EB00A7B9CF /* UseSettingsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSettingsBundle.swift; sourceTree = "<group>"; };
+		04FA0C042A02FA0800A7B9CF /* GenerateAcknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAcknowledgements.swift; sourceTree = "<group>"; };
+		04FA0C1E2A0316D800A7B9CF /* Acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Acknowledgements.plist; sourceTree = SOURCE_ROOT; };
 		04FC29A028E8A63C00C8A704 /* UseFilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,14 +262,17 @@
 				041ECC8725CE45E300A37F49 /* SwiftUIComponents in Frameworks */,
 				0438856D28710D1600323FF3 /* ExternalAccessory.framework in Frameworks */,
 				042DD6DC28B89879002E5AD4 /* StoreKit.framework in Frameworks */,
+				04FA0C1D2A030D0D00A7B9CF /* AckGenUI in Frameworks */,
 				041ECC8025CE1F1000A37F49 /* Introspect in Frameworks */,
 				042DD6E428B89879002E5AD4 /* MapKit.framework in Frameworks */,
 				04FB23132638AB89000D2D07 /* SwiftUtilities in Frameworks */,
 				042DD6EE28B89879002E5AD4 /* GameController.framework in Frameworks */,
 				042DD6E628B89879002E5AD4 /* AuthenticationServices.framework in Frameworks */,
 				042DD6E228B89879002E5AD4 /* HealthKit.framework in Frameworks */,
+				04FA0C1B2A030D0D00A7B9CF /* AckGen in Frameworks */,
 				042DD6EC28B89879002E5AD4 /* HomeKit.framework in Frameworks */,
 				042DD6DE28B89879002E5AD4 /* AudioToolbox.framework in Frameworks */,
+				04574D0729FF62190055D93F /* BitcoinCashKit in Frameworks */,
 				042DD6E028B89879002E5AD4 /* NetworkExtension.framework in Frameworks */,
 				0439103829824605001522E9 /* CloudyLogs in Frameworks */,
 			);
@@ -330,6 +346,9 @@
 				04730FAD29F745B40010D48C /* UseMachineLearning.swift */,
 				04E7E9FF29F8E53700AD04F0 /* SelectAppIcon.swift */,
 				04574CF329FB268D0055D93F /* View3DObject.swift */,
+				04574D0329FF27640055D93F /* UseOpenAI.swift */,
+				04FA0C012A02D2EB00A7B9CF /* UseSettingsBundle.swift */,
+				04FA0C042A02FA0800A7B9CF /* GenerateAcknowledgements.swift */,
 			);
 			path = "How to's";
 			sourceTree = "<group>";
@@ -361,6 +380,7 @@
 		041CB97225C8CE6800111090 /* HowToSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				04FA0C1E2A0316D800A7B9CF /* Acknowledgements.plist */,
 				049CD8F725E613E800482E7F /* HowToSwiftUI.entitlements */,
 				041CB97325C8CE6800111090 /* HowToSwiftUIApp.swift */,
 				041CB97525C8CE6800111090 /* ContentView.swift */,
@@ -372,6 +392,7 @@
 				04574CFF29FB3EAA0055D93F /* bitcoin_cash_logo.scn */,
 				0418F63B25D4EE7800B40FAB /* How to's */,
 				041CB97725C8CE6A00111090 /* Assets.xcassets */,
+				04481FBB2A02CA67002236E5 /* Settings.bundle */,
 				041CB97C25C8CE6A00111090 /* Info.plist */,
 				041CB97925C8CE6A00111090 /* Preview Content */,
 			);
@@ -484,6 +505,7 @@
 				041CB96C25C8CE6800111090 /* Sources */,
 				041CB96D25C8CE6800111090 /* Frameworks */,
 				041CB96E25C8CE6800111090 /* Resources */,
+				04FA0C032A02F95200A7B9CF /* Acknowledgements Generation */,
 			);
 			buildRules = (
 			);
@@ -495,6 +517,9 @@
 				041ECC8625CE45E300A37F49 /* SwiftUIComponents */,
 				04FB23122638AB89000D2D07 /* SwiftUtilities */,
 				0439103729824605001522E9 /* CloudyLogs */,
+				04574D0629FF62190055D93F /* BitcoinCashKit */,
+				04FA0C1A2A030D0D00A7B9CF /* AckGen */,
+				04FA0C1C2A030D0D00A7B9CF /* AckGenUI */,
 			);
 			productName = HowToSwiftUI;
 			productReference = 041CB97025C8CE6800111090 /* HowToSwiftUI.app */;
@@ -598,6 +623,8 @@
 				041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */,
 				046A0E2A25E82B41000088FA /* XCRemoteSwiftPackageReference "SwiftUtilities" */,
 				0439103629824605001522E9 /* XCRemoteSwiftPackageReference "CloudyLogs" */,
+				04574D0529FF62190055D93F /* XCRemoteSwiftPackageReference "BitcoinCashKit" */,
+				04FA0C192A030D0D00A7B9CF /* XCRemoteSwiftPackageReference "AckGen" */,
 			);
 			productRefGroup = 041CB97125C8CE6800111090 /* Products */;
 			projectDirPath = "";
@@ -619,9 +646,11 @@
 				0442FCCD25E59D13000D7283 /* README.md in Resources */,
 				04574CFC29FB364D0055D93F /* bitcoin_logo.scn in Resources */,
 				04574CF829FB35930055D93F /* bitcoin_logo.obj in Resources */,
+				04FA0C1F2A0316D800A7B9CF /* Acknowledgements.plist in Resources */,
 				041CB97B25C8CE6A00111090 /* Preview Assets.xcassets in Resources */,
 				041CB97825C8CE6A00111090 /* Assets.xcassets in Resources */,
 				04574D0029FB3EAA0055D93F /* bitcoin_cash_logo.scn in Resources */,
+				04481FBC2A02CA68002236E5 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +688,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04FA0C032A02F95200A7B9CF /* Acknowledgements Generation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Acknowledgements Generation";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Acknowledgements Generation\"\n\n#swift run ackgen $SRCROOT/PackageLicenses.plist\n  \nDIR=$PROJECT_TEMP_DIR/../../../SourcePackages/checkouts/AckGen\nif [ -d \"$DIR\" ]; then\n  cd $DIR\n  SDKROOT=(xcrun --sdk macosx --show-sdk-path)\n  swift run ackgen\nelse\n  echo \"warning: AckGen not found. Please install the package via SPM (https://github.com/MartinP7r/AckGen#installation)\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		041CB96C25C8CE6800111090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -683,6 +733,7 @@
 				04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */,
 				047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */,
 				04EC57C02602AC9400DEA017 /* ZStackImages.swift in Sources */,
+				04FA0C052A02FA0800A7B9CF /* GenerateAcknowledgements.swift in Sources */,
 				0478402925DC804D00CBF92B /* InsertAndRemoveViewWithTransition.swift in Sources */,
 				045D7F7725DFA03900150123 /* HowTo.swift in Sources */,
 				041CB97425C8CE6800111090 /* HowToSwiftUIApp.swift in Sources */,
@@ -699,11 +750,13 @@
 				044AE891273340150058240B /* SizePDFImage.swift in Sources */,
 				04600BD726CD7F840023CC91 /* CopyText.swift in Sources */,
 				049B8C1D27E01E25003E27FD /* ViewHTML.swift in Sources */,
+				04574D0429FF27650055D93F /* UseOpenAI.swift in Sources */,
 				04730FAB29F634850010D48C /* UseDesignSystem.swift in Sources */,
 				0400C70F25DF091100D234EE /* ScrollRotatingCards.swift in Sources */,
 				04730FAE29F745B40010D48C /* UseMachineLearning.swift in Sources */,
 				0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */,
 				043D131429F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift in Sources */,
+				04FA0C022A02D2EB00A7B9CF /* UseSettingsBundle.swift in Sources */,
 				0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */,
 				04E7EA0029F8E53700AD04F0 /* SelectAppIcon.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
@@ -894,7 +947,7 @@
 		041CB98025C8CE6A00111090 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon";
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon1";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
@@ -928,7 +981,7 @@
 		041CB98125C8CE6A00111090 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon";
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon3 AppIcon2 AppIcon1";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HowToSwiftUI/HowToSwiftUI.entitlements;
@@ -1174,11 +1227,27 @@
 				kind = branch;
 			};
 		};
+		04574D0529FF62190055D93F /* XCRemoteSwiftPackageReference "BitcoinCashKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/horizontalsystems/BitcoinCashKit.Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		046A0E2A25E82B41000088FA /* XCRemoteSwiftPackageReference "SwiftUtilities" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moyoteg/SwiftUtilities";
 			requirement = {
 				branch = master;
+				kind = branch;
+			};
+		};
+		04FA0C192A030D0D00A7B9CF /* XCRemoteSwiftPackageReference "AckGen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moyoteg/AckGen";
+			requirement = {
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -1205,6 +1274,11 @@
 			package = 0439103629824605001522E9 /* XCRemoteSwiftPackageReference "CloudyLogs" */;
 			productName = CloudyLogs;
 		};
+		04574D0629FF62190055D93F /* BitcoinCashKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04574D0529FF62190055D93F /* XCRemoteSwiftPackageReference "BitcoinCashKit" */;
+			productName = BitcoinCashKit;
+		};
 		048D2BCD2975C2B100BF80CE /* SwiftUIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 041ECC8525CE45E300A37F49 /* XCRemoteSwiftPackageReference "SwiftUIComponents" */;
@@ -1219,6 +1293,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 041ECC7E25CE1F1000A37F49 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		04FA0C1A2A030D0D00A7B9CF /* AckGen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FA0C192A030D0D00A7B9CF /* XCRemoteSwiftPackageReference "AckGen" */;
+			productName = AckGen;
+		};
+		04FA0C1C2A030D0D00A7B9CF /* AckGenUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FA0C192A030D0D00A7B9CF /* XCRemoteSwiftPackageReference "AckGen" */;
+			productName = AckGenUI;
 		};
 		04FB23122638AB89000D2D07 /* SwiftUtilities */ = {
 			isa = XCSwiftPackageProductDependency;

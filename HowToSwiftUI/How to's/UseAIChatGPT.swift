@@ -42,7 +42,7 @@ struct ChatThread: View {
     @State private var showAlert = false
     @State private var alertTitle = ""
     @State private var alertMessage = ""
-    @State private var apiKey = "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"
+    @State private var apiKey = "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"
     //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
     //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
 
@@ -206,22 +206,6 @@ struct AnimatedGradientView: View {
         }
     }
 }
-
-//struct Color {
-//    var hex: String
-//    var red: Double {
-//        return Double((Int(hex, radix: 16)! >> 16) & 0xFF) / 255
-//    }
-//    var green: Double {
-//        return Double((Int(hex, radix: 16)! >> 8) & 0xFF) / 255
-//    }
-//    var blue: Double {
-//        return Double((Int(hex, radix: 16)!) & 0xFF) / 255
-//    }
-//    var color: Color {
-//        return Color(hex: hex)
-//    }
-//}
 
 struct AnimatedGradientView_Previews: PreviewProvider {
     static var previews: some View {

@@ -64,7 +64,7 @@ struct VolumetricPill: View {
                                 Spacer(minLength: 0)
                             }
                         )
-                        .animation(.easeInOut)
+                        .animation(.easeInOut, value: "roundedAnimation")
 
                     // top white frame
                     RoundedRectangle(cornerRadius: geometry.size.height)
