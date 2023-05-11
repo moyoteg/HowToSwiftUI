@@ -56,7 +56,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Select AppIcon", AnyView(SelectAppIcon())),
         HowTo(isResolved: true, "View 3D Object", AnyView(View3DObject())),
         HowTo(isResolved: true, "Use Settings Bundle", AnyView(UseSettingsBundle())),
-        HowTo(isResolved: true, "Generate Acknowledgements", AnyView(GenerateAcknowledgements())),
+        HowTo(isResolved: false, "Generate Acknowledgements", AnyView(GenerateAcknowledgements())),
+        HowTo(isResolved: true, "Use Firebase Auth", AnyView(UseFirebaseAuth())),
         
     ]
     
