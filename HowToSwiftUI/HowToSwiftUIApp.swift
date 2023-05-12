@@ -11,6 +11,14 @@ import FirebaseCore
 @main
 struct HowToSwiftUIApp: App {
     
+    init() {
+        setupAuthentication()
+    }
+    
+    private func setupAuthentication() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
