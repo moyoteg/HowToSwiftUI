@@ -136,7 +136,9 @@ struct SandBox: View {
     public var body: some View {
 
 //        MedicationConsumptionChart()
-        BitcoinCashTransactor()
+//        BitcoinCashTransactor()
+//        SFSymbol()
+        ViewAndUseSFSymbols()
         
     }
     

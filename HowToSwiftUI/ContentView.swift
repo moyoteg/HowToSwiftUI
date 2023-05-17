@@ -58,6 +58,9 @@ struct ContentView: View {
         HowTo(isResolved: true, "Use Settings Bundle", AnyView(UseSettingsBundle())),
         HowTo(isResolved: false, "Generate Acknowledgements", AnyView(GenerateAcknowledgements())),
         HowTo(isResolved: true, "Use Firebase Auth", AnyView(UseFirebaseAuth())),
+        HowTo(isResolved: true, "Use Google Remote Configuration", AnyView(UseGoogleRemoteConfiguration())),
+        HowTo(isResolved: true, "Use Prism", AnyView(UsePrism3D())),
+        HowTo(isResolved: true, "View And Use SF Symbols", AnyView(ViewAndUseSFSymbols())),
         
     ]
     
