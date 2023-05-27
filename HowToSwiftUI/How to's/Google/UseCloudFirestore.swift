@@ -353,11 +353,8 @@ struct User: Identifiable {
 //    case augmentedRealityExperience(String)
 //}
 //
-//enum Category {
-//    case outdoors
-//    case foodAndDrink
-//    case artAndCulture
-//    case entertainment
+//struct Category {
+//    let name: String
 //}
 //
 //struct Location {

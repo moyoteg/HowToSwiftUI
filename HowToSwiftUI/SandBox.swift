@@ -15,29 +15,7 @@ import SwiftUIComponents
 import SwiftUICharts
 import SwiftUtilities
 import CloudyLogs
-
-// Permissions
-import PermissionsKit
-import NotificationPermission
-import BluetoothPermission
-import FaceIDPermission
-import CameraPermission
-import PhotoLibraryPermission
-import NotificationPermission
-import MicrophonePermission
-import CalendarPermission
-import ContactsPermission
-import RemindersPermission
-import SpeechRecognizerPermission
-import LocationWhenInUsePermission
-import LocationAlwaysPermission
-import MotionPermission
-import MediaLibraryPermission
-import BluetoothPermission
-import TrackingPermission
-import FaceIDPermission
-import SiriPermission
-import HealthPermission
+import Flow
 
 struct SandBox: View {
     
@@ -133,15 +111,19 @@ struct SandBox: View {
 
     @State var newMessage = "test"
 
+    let range = 1...3
+    
     public var body: some View {
-
-//        MedicationConsumptionChart()
-//        BitcoinCashTransactor()
-//        SFSymbol()
-        ViewAndUseSFSymbols()
         
+        UseGridLastCellTakesFullWidth()
     }
     
+}
+
+struct SandBox_Previews: PreviewProvider {
+    static var previews: some View {
+        SandBox()
+    }
 }
 
 import SwiftUI

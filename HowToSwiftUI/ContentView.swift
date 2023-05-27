@@ -49,7 +49,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "Use AI ChatGPT", AnyView(UseAIChatGPT())),
         HowTo(isResolved: true, "Use Camera", AnyView(UseCamera())),
         HowTo(isResolved: true, "Use NavigationSplitView And NavigationStack", AnyView(NavigationSplitViewAndNavigationStack())),
-        HowTo(isResolved: true, "Use URLImage", AnyView(UseURLImage())),
+        HowTo(isResolved: true, "Use AutoImage", AnyView(UseAutoImage())),
         HowTo(isResolved: true, "Create Analog Clock", AnyView(CreateAnalogClock())),
         HowTo(isResolved: false, "Use Machine Learning", AnyView(UseMachineLearning())),
         HowTo(isResolved: true, "Create Horizontal Sections", AnyView(CreateHorizontalSections())),
@@ -61,6 +61,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Use Google Remote Configuration", AnyView(UseGoogleRemoteConfiguration())),
         HowTo(isResolved: true, "Use Prism", AnyView(UsePrism3D())),
         HowTo(isResolved: true, "View And Use SF Symbols", AnyView(ViewAndUseSFSymbols())),
+        HowTo(isResolved: true, "Create Flow Layout", AnyView(CreateFlowLayout())),
+        HowTo(isResolved: true, "Use Grid Last Cell Takes Full Width", AnyView(UseGridLastCellTakesFullWidth())),
         
     ]
     

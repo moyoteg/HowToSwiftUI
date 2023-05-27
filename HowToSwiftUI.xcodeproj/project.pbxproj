@@ -145,6 +145,8 @@
 		045D7F3425DF9E2600150123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045D7F3325DF9E2600150123 /* Preview Assets.xcassets */; };
 		045D7F7725DFA03900150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
 		045D7F7E25DFA04400150123 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D7F7625DFA03900150123 /* HowTo.swift */; };
+		045FFCC02A226ED0004D2269 /* CreateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FFCBF2A226ECF004D2269 /* CreateFlowLayout.swift */; };
+		045FFCC22A2283F2004D2269 /* GridLastCellTakesFullWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FFCC12A2283F2004D2269 /* GridLastCellTakesFullWidth.swift */; };
 		04600BD726CD7F840023CC91 /* CopyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04600BD626CD7F840023CC91 /* CopyText.swift */; };
 		046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */; };
 		04730FAB29F634850010D48C /* UseDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04730FAA29F634850010D48C /* UseDesignSystem.swift */; };
@@ -178,11 +180,12 @@
 		049CD9C225E62D4100482E7F /* InsertAndRemoveTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA98BA25CA773900A00C65 /* InsertAndRemoveTab.swift */; };
 		049CD9C825E62D4300482E7F /* DisableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418F63825D4EDB800B40FAB /* DisableTab.swift */; };
 		049CD9CE25E62D4700482E7F /* PassGenericViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400C70125DCAE2B00D234EE /* PassGenericViewContent.swift */; };
+		04BDB06C2A1D547300B9E779 /* CoolNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDB06B2A1D547300B9E779 /* CoolNavigation.swift */; };
 		04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */; };
 		04C417EE2703E47B00692C7A /* SpaceImagesProportionally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */; };
 		04CA86BC260D139D004C2A5C /* UseUIKitPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */; };
 		04CF8DDA28931431008DF335 /* VolumetricPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF8DD928931430008DF335 /* VolumetricPill.swift */; };
-		04D2F80F29F2F0D5005229A8 /* UseURLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */; };
+		04D2F80F29F2F0D5005229A8 /* UseAutoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F80E29F2F0D5005229A8 /* UseAutoImage.swift */; };
 		04D2F81129F30DAC005229A8 /* CreateAnalogClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */; };
 		04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */; };
 		04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */; };
@@ -308,6 +311,8 @@
 		045D7F3525DF9E2600150123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045D7F3625DF9E2600150123 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		045D7F7625DFA03900150123 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
+		045FFCBF2A226ECF004D2269 /* CreateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFlowLayout.swift; sourceTree = "<group>"; };
+		045FFCC12A2283F2004D2269 /* GridLastCellTakesFullWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLastCellTakesFullWidth.swift; sourceTree = "<group>"; };
 		04600BD626CD7F840023CC91 /* CopyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyText.swift; sourceTree = "<group>"; };
 		046BC0CA269D12FC00B044A8 /* ShowMapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapAnnotations.swift; sourceTree = "<group>"; };
 		04730FAA29F634850010D48C /* UseDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseDesignSystem.swift; sourceTree = "<group>"; };
@@ -328,11 +333,12 @@
 		049CD91F25E61BB500482E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		049CD92425E61BB600482E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		049CD92B25E61BB600482E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BDB06B2A1D547300B9E779 /* CoolNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolNavigation.swift; sourceTree = "<group>"; };
 		04C417EB2703DCCD00692C7A /* AddAnnotationsToMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnnotationsToMap.swift; sourceTree = "<group>"; };
 		04C417ED2703E47B00692C7A /* SpaceImagesProportionally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceImagesProportionally.swift; sourceTree = "<group>"; };
 		04CA86BB260D139D004C2A5C /* UseUIKitPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseUIKitPageView.swift; sourceTree = "<group>"; };
 		04CF8DD928931430008DF335 /* VolumetricPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumetricPill.swift; sourceTree = "<group>"; };
-		04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseURLImage.swift; sourceTree = "<group>"; };
+		04D2F80E29F2F0D5005229A8 /* UseAutoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAutoImage.swift; sourceTree = "<group>"; };
 		04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnalogClock.swift; sourceTree = "<group>"; };
 		04D87355269E40CB00873682 /* TrackAnnotationInMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAnnotationInMap.swift; sourceTree = "<group>"; };
 		04D87357269FCF0600873682 /* HandleOptionalObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleOptionalObservedObject.swift; sourceTree = "<group>"; };
@@ -452,7 +458,7 @@
 				048D2BD12977331000BF80CE /* UseCamera.swift */,
 				043D131329F1B41F00C8F1D0 /* NavigationSplitViewAndNavigationStack.swift */,
 				04E7E9FB29F8934D00AD04F0 /* CreateHorizontalSections.swift */,
-				04D2F80E29F2F0D5005229A8 /* UseURLImage.swift */,
+				04D2F80E29F2F0D5005229A8 /* UseAutoImage.swift */,
 				04D2F81029F30DAC005229A8 /* CreateAnalogClock.swift */,
 				04730FAA29F634850010D48C /* UseDesignSystem.swift */,
 				04730FAD29F745B40010D48C /* UseMachineLearning.swift */,
@@ -462,6 +468,9 @@
 				04FA0C012A02D2EB00A7B9CF /* UseSettingsBundle.swift */,
 				04FA0C042A02FA0800A7B9CF /* GenerateAcknowledgements.swift */,
 				041FB36B2A14388B00E39E8B /* ViewAndUseSFSymbols.swift */,
+				04BDB06B2A1D547300B9E779 /* CoolNavigation.swift */,
+				045FFCBF2A226ECF004D2269 /* CreateFlowLayout.swift */,
+				045FFCC12A2283F2004D2269 /* GridLastCellTakesFullWidth.swift */,
 				04EE4FAD2A0DFB35005528E7 /* Google */,
 				0458B56F2A141EBF00A6A675 /* UsePrism3D */,
 			);
@@ -949,17 +958,19 @@
 				0458B5CC2A14311500A6A675 /* Image.swift in Sources */,
 				04EE4FA62A0DBFC7005528E7 /* UseGoogleRemoteConfiguration.swift in Sources */,
 				04EE4FAF2A0DFB73005528E7 /* UseCloudFirestore.swift in Sources */,
+				045FFCC22A2283F2004D2269 /* GridLastCellTakesFullWidth.swift in Sources */,
 				04C417EC2703DCCD00692C7A /* AddAnnotationsToMap.swift in Sources */,
 				04D87356269E40CB00873682 /* TrackAnnotationInMap.swift in Sources */,
 				0458B5EA2A14311500A6A675 /* Basic.swift in Sources */,
 				0458B5DB2A14311500A6A675 /* Island.swift in Sources */,
 				0458B5DE2A14311500A6A675 /* Logo.swift in Sources */,
-				04D2F80F29F2F0D5005229A8 /* UseURLImage.swift in Sources */,
+				04D2F80F29F2F0D5005229A8 /* UseAutoImage.swift in Sources */,
 				0458B5E72A14311500A6A675 /* Interaction.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,
 				04574CF429FB268D0055D93F /* View3DObject.swift in Sources */,
 				048D2BD22977331000BF80CE /* UseCamera.swift in Sources */,
 				043910352981EAE5001522E9 /* TortillaPackage.mlmodel in Sources */,
+				045FFCC02A226ED0004D2269 /* CreateFlowLayout.swift in Sources */,
 				0458B5E42A14311500A6A675 /* Transform.swift in Sources */,
 				0458B56E2A141A9600A6A675 /* UsePrism3D.swift in Sources */,
 				041DF01925DF54FE0029ECE5 /* ReflectView.swift in Sources */,
@@ -982,6 +993,7 @@
 				0458B5F02A14313500A6A675 /* GalleryCardView.swift in Sources */,
 				04FA0C022A02D2EB00A7B9CF /* UseSettingsBundle.swift in Sources */,
 				0438856B2870F67800323FF3 /* ShowCharts.swift in Sources */,
+				04BDB06C2A1D547300B9E779 /* CoolNavigation.swift in Sources */,
 				04E7EA0029F8E53700AD04F0 /* SelectAppIcon.swift in Sources */,
 				0418F63925D4EDB800B40FAB /* DisableTab.swift in Sources */,
 				048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */,

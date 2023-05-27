@@ -9,14 +9,14 @@ import SwiftUI
 
 import SwiftUIComponents
 
-struct UseURLImage: View {
+struct UseAutoImage: View {
     var body: some View {
-        URLImage.Demo()
+        AutoImage.Demo()
     }
 }
 
 struct UseURLImage_Previews: PreviewProvider {
     static var previews: some View {
-        UseURLImage()
+        UseAutoImage()
     }
 }
