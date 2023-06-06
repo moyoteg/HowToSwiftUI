@@ -63,6 +63,7 @@ struct ContentView: View {
         HowTo(isResolved: true, "View And Use SF Symbols", AnyView(ViewAndUseSFSymbols())),
         HowTo(isResolved: true, "Create Flow Layout", AnyView(CreateFlowLayout())),
         HowTo(isResolved: true, "Use Grid Last Cell Takes Full Width", AnyView(UseGridLastCellTakesFullWidth())),
+        HowTo(isResolved: true, "Use Location", AnyView(UseLocation())),
         
     ]
     
