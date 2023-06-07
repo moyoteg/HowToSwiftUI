@@ -1,4 +1,3 @@
-//
 //  UseLocation.swift
 //  HowToSwiftUI
 //
@@ -12,14 +11,19 @@ import MapKit
 import SwiftUIComponents
 import SwiftUtilities
 
+import SwiftUI
+import CoreLocation
+import MapKit
+
 struct UseLocation: View {
     @StateObject private var locationManager = LocationManager()
     @State private var region = MKCoordinateRegion()
-    @State private var visitedRegions: [Region] = []
-
+    @ObservedObject private var visitHistoryManager = VisitHistoryManager()
+    @State private var monitoredRegions: [RegionWrapper] = []
+    
     var body: some View {
         VStack {
-            Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: visitedRegions) { region in
+            Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: monitoredRegions) { region in
                 MapAnnotation(coordinate: region.center) {
                     Circle()
                         .strokeBorder(Color.blue, lineWidth: 2)
@@ -30,69 +34,60 @@ struct UseLocation: View {
             .frame(height: 300)
             .cornerRadius(10)
             
-            Text("Authorization Status: \(locationManager.authorizationStatus.rawValue)")
-            
-            if let location = locationManager.currentLocation {
-                Text("Latitude: \(location.coordinate.latitude)")
-                Text("Longitude: \(location.coordinate.longitude)")
-            }
-            
-            if let heading = locationManager.heading {
-                if heading.headingAccuracy >= 0 {
-                    Text("Heading: \(heading.trueHeading)")
-                } else {
-                    Text("Heading: N/A")
+            ScrollView {
+                Text("Authorization Status: \(locationManager.authorizationStatus.rawValue)")
+                
+                if let location = locationManager.currentLocation {
+                    Text("Latitude: \(location.coordinate.latitude)")
+                    Text("Longitude: \(location.coordinate.longitude)")
                 }
-            }
-            
-            Text("Ranging Beacons:")
-            ForEach(locationManager.rangingBeacons, id: \.self) { beacon in
-                Text("UUID: \(beacon.uuid)")
-                Text("Major: \(beacon.major)")
-                Text("Minor: \(beacon.minor)")
-                Text("Accuracy: \(beacon.accuracy)")
-            }
-            
-            Text("Monitoring Regions:")
-            ForEach(locationManager.monitoringRegions, id: \.self) { region in
-                Text("Identifier: \(region.identifier)")
-            }
-            
-            if let visit = locationManager.didVisit {
-                Text("Did Visit:")
-                Text("Arrival Date: \(visit.arrivalDate)")
-                Text("Departure Date: \(visit.departureDate)")
-            }
-            
-            Button("Generate Sample Data") {
-                generateSampleData()
+                
+                if let heading = locationManager.heading {
+                    if heading.headingAccuracy >= 0 {
+                        Text("Heading: \(heading.trueHeading)")
+                    } else {
+                        Text("Heading: N/A")
+                    }
+                }
+                
+                Text("Ranging Beacons:")
+                ForEach(locationManager.rangingBeacons, id: \.self) { beacon in
+                    Text("UUID: \(beacon.uuid)")
+                    Text("Major: \(beacon.major)")
+                    Text("Minor: \(beacon.minor)")
+                    Text("Accuracy: \(beacon.accuracy)")
+                }
+                
+                Text("Monitoring Regions:")
+                ForEach(monitoredRegions, id: \.id) { region in
+                    Text("Identifier: \(region.identifier)")
+                }
+                
+                Text("Visit History:")
+                ForEach(visitHistoryManager.visitHistory, id: \.arrivalDate) { visit in
+                    VStack {
+                        Text("Arrival Date: \(visit.arrivalDate)")
+                        Text("Departure Date: \(visit.departureDate)")
+                    }
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(8)
+                }
+                
+                Button("Generate Sample Data") {
+                    generateSampleData()
+                }
             }
         }
         .onAppear {
             locationManager.requestLocationAuthorization()
             locationManager.startUpdatingLocation()
             locationManager.startUpdatingHeading()
-            
-            let proximityUUID = UUID()
-            let region = CLBeaconRegion(uuid: proximityUUID, identifier: "SampleRegion")
-            locationManager.startRangingBeacons(in: region)
-            
-            let circularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: 37.3318, longitude: -122.0312), radius: 500, identifier: "SampleCircularRegion")
-            locationManager.startMonitoring(for: circularRegion)
-            
             locationManager.startMonitoringVisits()
         }
         .onDisappear {
             locationManager.stopUpdatingLocation()
             locationManager.stopUpdatingHeading()
-            
-            let proximityUUID = UUID()
-            let region = CLBeaconRegion(uuid: proximityUUID, identifier: "SampleRegion")
-            locationManager.stopRangingBeacons(in: region)
-            
-            let circularRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: 37.3318, longitude: -122.0312), radius: 500, identifier: "SampleCircularRegion")
-            locationManager.stopMonitoring(for: circularRegion)
-            
             locationManager.stopMonitoringVisits()
         }
         .onReceive(locationManager.$currentLocation) { location in
@@ -100,28 +95,90 @@ struct UseLocation: View {
             region = MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         }
         .onReceive(locationManager.$monitoringRegions) { monitoringRegions in
-            visitedRegions = monitoringRegions.compactMap { region in
-                guard let circularRegion = region as? CLCircularRegion else { return nil }
-                return Region(id: circularRegion.identifier, center: circularRegion.center, radius: circularRegion.radius)
-            }
+            monitoredRegions = monitoringRegions.map { RegionWrapper(region: $0) }
+            visitHistoryManager.visitHistory = locationManager.visitHistory
         }
-
     }
     
     private func generateSampleData() {
         // Generate sample data for different scenarios
-        locationManager.authorizationStatus = .authorizedWhenInUse
+        locationManager.authorizationStatus = CLAuthorizationStatus.authorizedWhenInUse
         locationManager.currentLocation = CLLocation(latitude: 37.3323, longitude: -122.0312)
         locationManager.rangingBeacons = [MockCLBeacon()]
-        locationManager.monitoringRegions = [MockCLRegion()]
-        locationManager.didVisit = MockCLVisit()
-        visitedRegions = locationManager.monitoringRegions.map { region in
-            let circularRegion = region as! CLCircularRegion
-            return Region(id: circularRegion.identifier, center: circularRegion.center, radius: circularRegion.radius)
+        locationManager.monitoringRegions = [MockCLCircularRegion()]
+        monitoredRegions = locationManager.monitoringRegions.map { RegionWrapper(region: $0) }
+        
+        let sampleVisit = MockCLVisit()
+        locationManager.visitHistory.append(sampleVisit)
+        visitHistoryManager.visitHistory.append(sampleVisit)
+    }
+}
+
+struct RegionWrapper: Identifiable {
+    let region: CLRegion
+    
+    var id: String {
+        return region.identifier
+    }
+    
+    var identifier: String {
+        return region.identifier
+    }
+    
+    var center: CLLocationCoordinate2D {
+        if let circularRegion = region as? CLCircularRegion {
+            return circularRegion.center
+        } else {
+            // You can handle other region types if needed
+            return kCLLocationCoordinate2DInvalid
         }
     }
-
+    
+    var radius: CLLocationDistance {
+        if let circularRegion = region as? CLCircularRegion {
+            return circularRegion.radius
+        } else {
+            // You can handle other region types if needed
+            return 0
+        }
+    }
 }
+
+class VisitHistoryManager: ObservableObject {
+    @Published var visitHistory: [CLVisit] = []
+}
+
+class MockCLCircularRegion: CLCircularRegion {
+    var mockIdentifier: String = "SampleCircularRegion"
+    var mockCenter: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 37.3318, longitude: -122.0312)
+    var mockRadius: CLLocationDistance = 500.0
+    
+    override var identifier: String {
+        return mockIdentifier
+    }
+    
+    override var center: CLLocationCoordinate2D {
+        return mockCenter
+    }
+    
+    override var radius: CLLocationDistance {
+        return mockRadius
+    }
+}
+
+class MockCLVisit: CLVisit {
+    var mockArrivalDate: Date = Date()
+    var mockDepartureDate: Date = Date()
+    
+    override var arrivalDate: Date {
+        return mockArrivalDate
+    }
+    
+    override var departureDate: Date {
+        return mockDepartureDate
+    }
+}
+
 
 class MockCLHeading: CLHeading {
     var mockTrueHeading: CLLocationDirection = 0.0
@@ -191,28 +248,6 @@ struct Region: Identifiable {
     let center: CLLocationCoordinate2D
     let radius: CLLocationDistance
 }
-
-class MockCLRegion: CLCircularRegion {
-    var mockIdentifier: String = "SampleRegion"
-    
-    override var identifier: String {
-        return mockIdentifier
-    }
-}
-
-class MockCLVisit: CLVisit {
-    var mockArrivalDate: Date = Date()
-    var mockDepartureDate: Date = Date()
-    
-    override var arrivalDate: Date {
-        return mockArrivalDate
-    }
-    
-    override var departureDate: Date {
-        return mockDepartureDate
-    }
-}
-
 
 struct UseLocation_Previews: PreviewProvider {
     static var previews: some View {
