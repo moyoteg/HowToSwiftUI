@@ -156,6 +156,7 @@
 		0478402C25DCA28B00CBF92B /* SandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478402B25DCA28B00CBF92B /* SandBox.swift */; };
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
 		047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F55C825E6DDF30051B567 /* Assets.xcassets */; };
+		0488188D2A324F5100D6C267 /* GetRandomRemoteImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */; };
 		048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */; };
 		048D2BCC2975C1CA00BF80CE /* ShowInteractionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */; };
 		048D2BCE2975C4DA00BF80CE /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 048D2BCD2975C2B100BF80CE /* SwiftUIComponents */; };
@@ -324,6 +325,7 @@
 		0478402B25DCA28B00CBF92B /* SandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandBox.swift; sourceTree = "<group>"; };
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
 		047F55C825E6DDF30051B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomRemoteImages.swift; sourceTree = "<group>"; };
 		048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocalConsole.swift; sourceTree = "<group>"; };
 		048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInteractionLocation.swift; sourceTree = "<group>"; };
 		048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAIChatGPT.swift; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 				045FFCBF2A226ECF004D2269 /* CreateFlowLayout.swift */,
 				045FFCC12A2283F2004D2269 /* GridLastCellTakesFullWidth.swift */,
 				04481BF62A2E18CA00935BC1 /* UseLocation.swift */,
+				0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */,
 				04EE4FAD2A0DFB35005528E7 /* Google */,
 				0458B56F2A141EBF00A6A675 /* UsePrism3D */,
 			);
@@ -946,6 +949,7 @@
 				042DD6F028B8A33F002E5AD4 /* RequestAllPermissions.swift in Sources */,
 				041CB97625C8CE6800111090 /* ContentView.swift in Sources */,
 				046BC0CB269D12FC00B044A8 /* ShowMapAnnotations.swift in Sources */,
+				0488188D2A324F5100D6C267 /* GetRandomRemoteImages.swift in Sources */,
 				041CB98725C8D20700111090 /* UseSheet.swift in Sources */,
 				04D87358269FCF0600873682 /* HandleOptionalObservedObject.swift in Sources */,
 				04D8736026A8C52200873682 /* UpdateAnnotationLocation.swift in Sources */,
