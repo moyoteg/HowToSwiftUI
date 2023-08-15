@@ -70,6 +70,7 @@
 		0445D40225E8224A0060AD02 /* CurlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445D40125E8224A0060AD02 /* CurlPage.swift */; };
 		04481BF72A2E18CA00935BC1 /* UseLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04481BF62A2E18CA00935BC1 /* UseLocation.swift */; };
 		04481FBC2A02CA68002236E5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04481FBB2A02CA67002236E5 /* Settings.bundle */; };
+		044868092A8B023100DD4D40 /* OverlayGradientFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044868082A8B023100DD4D40 /* OverlayGradientFocus.swift */; };
 		044AE891273340150058240B /* SizePDFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AE890273340150058240B /* SizePDFImage.swift */; };
 		0453E25125E6C8D200B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
 		0453E25725E6C8D300B70A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CB97725C8CE6A00111090 /* Assets.xcassets */; };
@@ -157,6 +158,7 @@
 		047C4BB025DCABE3006C7A77 /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */; };
 		047F55C925E6DDF30051B567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F55C825E6DDF30051B567 /* Assets.xcassets */; };
 		0488188D2A324F5100D6C267 /* GetRandomRemoteImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */; };
+		0488188F2A377F5600D6C267 /* SectionFullHeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488188E2A377F5600D6C267 /* SectionFullHeaderImage.swift */; };
 		048D2BCA2975BDD600BF80CE /* ShowLocalConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */; };
 		048D2BCC2975C1CA00BF80CE /* ShowInteractionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */; };
 		048D2BCE2975C4DA00BF80CE /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 048D2BCD2975C2B100BF80CE /* SwiftUIComponents */; };
@@ -279,6 +281,7 @@
 		0445D40125E8224A0060AD02 /* CurlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurlPage.swift; sourceTree = "<group>"; };
 		04481BF62A2E18CA00935BC1 /* UseLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseLocation.swift; sourceTree = "<group>"; };
 		04481FBB2A02CA67002236E5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		044868082A8B023100DD4D40 /* OverlayGradientFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayGradientFocus.swift; sourceTree = "<group>"; };
 		044AE890273340150058240B /* SizePDFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePDFImage.swift; sourceTree = "<group>"; };
 		04574CF329FB268D0055D93F /* View3DObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3DObject.swift; sourceTree = "<group>"; };
 		04574CF729FB35930055D93F /* bitcoin_logo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitcoin_logo.obj; sourceTree = "<group>"; };
@@ -326,6 +329,7 @@
 		047C4BAF25DCABE3006C7A77 /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
 		047F55C825E6DDF30051B567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomRemoteImages.swift; sourceTree = "<group>"; };
+		0488188E2A377F5600D6C267 /* SectionFullHeaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFullHeaderImage.swift; sourceTree = "<group>"; };
 		048D2BC92975BDD600BF80CE /* ShowLocalConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLocalConsole.swift; sourceTree = "<group>"; };
 		048D2BCB2975C1CA00BF80CE /* ShowInteractionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInteractionLocation.swift; sourceTree = "<group>"; };
 		048D2BCF29772B0E00BF80CE /* UseAIChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAIChatGPT.swift; sourceTree = "<group>"; };
@@ -477,6 +481,8 @@
 				045FFCC12A2283F2004D2269 /* GridLastCellTakesFullWidth.swift */,
 				04481BF62A2E18CA00935BC1 /* UseLocation.swift */,
 				0488188C2A324F5100D6C267 /* GetRandomRemoteImages.swift */,
+				0488188E2A377F5600D6C267 /* SectionFullHeaderImage.swift */,
+				044868082A8B023100DD4D40 /* OverlayGradientFocus.swift */,
 				04EE4FAD2A0DFB35005528E7 /* Google */,
 				0458B56F2A141EBF00A6A675 /* UsePrism3D */,
 			);
@@ -943,6 +949,7 @@
 				0458B5C92A14311500A6A675 /* Glass.swift in Sources */,
 				0458B5CF2A14311500A6A675 /* Gradient.swift in Sources */,
 				048D2BCC2975C1CA00BF80CE /* ShowInteractionLocation.swift in Sources */,
+				0488188F2A377F5600D6C267 /* SectionFullHeaderImage.swift in Sources */,
 				0458B5D52A14311500A6A675 /* Models.swift in Sources */,
 				0433B367288B55C700477C18 /* MaskRoundedRectangleAsPercentangePill.swift in Sources */,
 				041CB98B25C8D83300111090 /* CenterTextFieldPlaceholderText.swift in Sources */,
@@ -971,6 +978,7 @@
 				0458B5EA2A14311500A6A675 /* Basic.swift in Sources */,
 				0458B5DB2A14311500A6A675 /* Island.swift in Sources */,
 				0458B5DE2A14311500A6A675 /* Logo.swift in Sources */,
+				044868092A8B023100DD4D40 /* OverlayGradientFocus.swift in Sources */,
 				04D2F80F29F2F0D5005229A8 /* UseAutoImage.swift in Sources */,
 				0458B5E72A14311500A6A675 /* Interaction.swift in Sources */,
 				043976FA26867F8200B975E5 /* UseLazyGrid.swift in Sources */,

@@ -825,7 +825,7 @@ extension IslandView {
 
     var coastFence: some View {
         HStack {
-            ForEach(0 ..< numberOfBars) { index in
+            ForEach(0 ..< numberOfBars, id: \.self) { index in
                 PrismView(tilt: tilt, size: .init(width: 10, height: 10), extrusion: 6) {
                     Color(hex: 0x8A751B)
                         .overlay {
@@ -909,7 +909,7 @@ extension IslandView {
                     let columns = Int(200 / sidewalkLength) + 1
 
                     HStack(spacing: 0) {
-                        ForEach(0 ..< columns) { _ in
+                        ForEach(0 ..< columns, id: \.self) { _ in
                             Rectangle()
                                 .stroke(Color(hex: 0xD5D5D5), lineWidth: 3)
                                 .aspectRatio(1, contentMode: .fill)
@@ -927,7 +927,7 @@ extension IslandView {
                         let rows = Int(200 / sidewalkLength) + 1
 
                         VStack(spacing: 0) {
-                            ForEach(0 ..< rows) { _ in
+                            ForEach(0 ..< rows, id: \.self) { _ in
                                 Rectangle()
                                     .stroke(Color(hex: 0xD5D5D5), lineWidth: 3)
                                     .aspectRatio(1, contentMode: .fill)

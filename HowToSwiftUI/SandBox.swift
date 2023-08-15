@@ -113,45 +113,34 @@ struct SandBox: View {
     
     let range = 1...3
     
+    let imageName = "Sample"
+    
     public var body: some View {
         
-        NavigationStack {
+        HStack {
             
-            List {
-                Section {
-                    NavigationLink(destination:
-                                    
-                                    VStack {
-                        
-                        Image("Sample")
-                            .scaledToFill()
-                            .frame(width: .infinity, height: 200)
-                        
-                        NavigationStack {
-                            
-                            List {
-                                Section {
-                                    NavigationLink(destination: Text("Hello")) {
-                                        
-                                        
-                                    }
-                                }
-                            }
-                            .toolbar {
-                                Text("hello")
-                            }
-                            
-                        }
-                    }
-                                   
-                    ) {
-                        Text("Hello")
-                    }
-                }
-            }
+            view()
             
+            view()
+                .overlayGradientFocus(position: .top)
+            
+            view()
+                .overlayGradientFocus(position: .center)
+            
+            view()
+                .overlayGradientFocus(position: .bottom)
         }
+        .background(.red)
+    }
+    
+    @ViewBuilder
+    func view() -> some View {
         
+        Image(imageName)
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        
+        Color.green
     }
     
 }

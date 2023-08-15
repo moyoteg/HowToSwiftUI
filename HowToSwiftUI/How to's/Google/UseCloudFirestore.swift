@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+import FirebaseFirestoreSwift
+import Combine
 
 struct UseCloudFirestore: View {
+    @StateObject private var viewModel = FirestoreViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        
-        //
+//        List(viewModel.items) { item in
+//            Text(item.stringField)
+//        }
+        FirestoreCRUD()
+            .onAppear {
+                viewModel.fetchDataAndFavoritedItems()
+            }
     }
 }
 
@@ -21,404 +30,428 @@ struct UseCloudFirestore_Previews: PreviewProvider {
     }
 }
 
-/*
-// Quest model
-struct Quest {
-    let id: Int
-    let name: String
-    let themedCategory: ThemedCategory
+class FirestoreViewModel: ObservableObject {
+    private var db = Firestore.firestore()
+    private var listenerRegistration: ListenerRegistration?
+    
+    @Published var items: [ExampleModel] = []
+    
+    @Published var favoritedItems: [ExampleModel] = [] {
+        didSet {
+            print("didSet: favoritedItems: \(favoritedItems)")
+        }
+    }
+
+    func fetchDataAndFavoritedItems() {
+        fetchFavoritedItems()
+        fetchData()
+    }
+    
+    func fetchData() {
+        listenerRegistration = db.collection("examples").addSnapshotListener { (querySnapshot, error) in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(error?.localizedDescription ?? "Unknown error")")
+                return
+            }
+            
+            self.items = documents.compactMap { document in
+                                
+                do {
+                    let data = try document.data(as: ExampleModel.self)
+                    return data
+                } catch {
+                    print("Error decoding document: \(error.localizedDescription)")
+                    return nil
+                }
+            }
+        }
+    }
+    
+    func addItem(_ item: ExampleModel) {
+        do {
+            _ = try db.collection("examples").addDocument(from: item)
+        } catch {
+            print("Error adding document: \(error)")
+        }
+    }
+    
+    func updateItem(_ item: ExampleModel) {
+        guard let documentID = item.id else { return }
+        
+        do {
+            try db.collection("examples").document(documentID).setData(from: item)
+        } catch {
+            print("Error updating document: \(error)")
+        }
+    }
+    
+    func deleteItem(_ item: ExampleModel) {
+        guard let documentID = item.id else { return }
+        
+        db.collection("examples").document(documentID).delete { error in
+            if let error = error {
+                print("Error deleting document: \(error)")
+            }
+        }
+    }
+    
+    func fetchItem(withID id: String, completion: @escaping (ExampleModel?) -> Void) {
+        db.collection("examples").document(id).getDocument { (document, error) in
+            guard let document = document, document.exists else {
+                print("Error fetching document: \(error?.localizedDescription ?? "Unknown error")")
+                completion(nil)
+                return
+            }
+            
+            do {
+                let item = try document.data(as: ExampleModel.self)
+                completion(item)
+            } catch {
+                print("Error decoding document: \(error.localizedDescription)")
+                completion(nil)
+            }
+        }
+    }
+    
+    func favoriteItem(_ item: ExampleModel, completion: @escaping (Bool) -> Void) {
+        guard let itemId = item.id else {
+            completion(false)
+            return
+        }
+        
+        let favoritedExamplesRef = db.collection("favoritedExamples").document("favoritedExamplesDoc")
+        
+        favoritedExamplesRef.getDocument { [weak self] (document, error) in
+            if let document = document, document.exists, var favoritedExamples = try? document.data(as: FavoritedExamples.self) {
+                let itemRef = self?.db.collection("examples").document(itemId)
+                favoritedExamples.favoritedItems.append(itemRef!)
+                
+                do {
+                    try favoritedExamplesRef.setData(from: favoritedExamples)
+                    completion(true)
+                } catch {
+                    print("Error updating favoritedExamples document: \(error)")
+                    completion(false)
+                }
+            } else {
+                let itemRef = self?.db.collection("examples").document(itemId)
+                let favoritedExamples = FavoritedExamples(favoritedItems: [itemRef!])
+                
+                do {
+                    try favoritedExamplesRef.setData(from: favoritedExamples)
+                    completion(true)
+                } catch {
+                    print("Error creating favoritedExamples document: \(error)")
+                    completion(false)
+                }
+            }
+        }
+    }
+    
+    func unfavoriteItem(_ item: ExampleModel, completion: @escaping (Bool) -> Void) {
+        guard let itemId = item.id else {
+            completion(false)
+            return
+        }
+        
+        let favoritedExamplesRef = db.collection("favoritedExamples").document("favoritedExamplesDoc")
+        
+        favoritedExamplesRef.getDocument { [weak self] (document, error) in
+            guard let document = document, document.exists,
+                  var favoritedExamples = try? document.data(as: FavoritedExamples.self) else {
+                completion(false)
+                return
+            }
+            
+            let itemRef = self?.db.collection("examples").document(itemId)
+            if let index = favoritedExamples.favoritedItems.firstIndex(of: itemRef!) {
+                favoritedExamples.favoritedItems.remove(at: index)
+            }
+            
+            do {
+                try favoritedExamplesRef.setData(from: favoritedExamples)
+                completion(true)
+            } catch {
+                print("Error updating favoritedExamples document: \(error)")
+                completion(false)
+            }
+        }
+    }
+    
+    func fetchFavoritedItems() {
+        let favoritedExamplesRef = db.collection("favoritedExamples").document("favoritedExamplesDoc")
+        
+        favoritedExamplesRef.getDocument { (document, error) in
+            if let document = document, document.exists, let favoritedExamples = try? document.data(as: FavoritedExamples.self) {
+                let dispatchGroup = DispatchGroup()
+                var fetchedItems: [ExampleModel] = []
+                
+                for favoritedItemRef in favoritedExamples.favoritedItems {
+                    dispatchGroup.enter()
+                    
+                    favoritedItemRef.getDocument { (document, error) in
+                        defer {
+                            dispatchGroup.leave()
+                        }
+                        
+                        if let document = document, document.exists {
+                            do {
+                                let item = try document.data(as: ExampleModel.self)
+                                fetchedItems.append(item)
+
+                            } catch {
+                                print("Error decoding favorited item: \(error.localizedDescription)")
+                            }
+                        }
+                    }
+                }
+                
+                dispatchGroup.notify(queue: .main) {
+                    self.favoritedItems = fetchedItems
+                }
+            }
+        }
+    }
+    
+    func isItemFavorited(_ item: ExampleModel) -> Bool {
+        guard let itemId = item.id else {
+            return false
+        }
+        
+        let isItemFavorited = favoritedItems.contains { $0.id == itemId }
+        print("isItemFavorited: \(isItemFavorited)")
+        return isItemFavorited
+    }
+    
+    deinit {
+        listenerRegistration?.remove()
+    }
 }
 
-// Themed category model
-struct ThemedCategory {
-    let id: Int
-    let name: String
-    let tasks: [Task]
+struct ExampleModel: Codable, Identifiable, Equatable {
+    @DocumentID var id: String?
+    var stringField: String
+    var intField: Int
+    var doubleField: Double
+    var boolField: Bool
+    var dateField: Date
+    var arrayField: [String]
+    var dictionaryField: [String: String]
+    
+    var isFavorite: Bool?
+    
+    init(id: String? = nil, stringField: String, intField: Int, doubleField: Double, boolField: Bool, dateField: Date, arrayField: [String], dictionaryField: [String: String]) {
+        self.id = id
+        self.stringField = stringField
+        self.intField = intField
+        self.doubleField = doubleField
+        self.boolField = boolField
+        self.dateField = dateField
+        self.arrayField = arrayField
+        self.dictionaryField = dictionaryField
+    }
+    
 }
 
-// Task model
-struct Task {
-    let id: Int
-    let name: String
-    let geofencedAreas: [GeofencedArea]
-    let virtualEasterEggs: [VirtualEasterEgg]
-    let inPersonEasterEggs: [InPersonEasterEgg]
-    let brandPartnerQRCodes: [BrandPartnerQRCode]
-    let trivia: [Trivia]
-    let dailyDoubles: [DailyDouble]
-    let clues: [Clue]
-    let augmentedRealityExperiences: [AugmentedRealityExperience]
+struct FavoritedExamples: Codable {
+    var favoritedItems: [DocumentReference]
 }
 
-// Geofenced area model
-struct GeofencedArea {
-    let id: Int
-    let name: String
-    let latitude: Double
-    let longitude: Double
-    let radius: Double
+struct FirestoreCRUD: View {
+    @StateObject private var viewModel = FirestoreViewModel()
+    @State private var newItemTitle = ""
+    @State private var selectedItem: ExampleModel?
+    @State private var showAlert = false
+    @State private var foundItem: ExampleModel?
+    @State private var alertItem: ExampleModel?
+    @State private var isFavorited = false
+
+    var body: some View {
+        VStack {
+            
+            Button("Query Item") {
+                queryItem()
+            }
+            .padding()
+            .disabled(selectedItem == nil)
+            
+            Toggle(isOn: $isFavorited) {
+                Text("Favorite Item")
+            }
+            .padding()
+            .disabled(selectedItem == nil)
+            .onChange(of: isFavorited) { newValue in
+                toggleFavorite(newValue)
+            }
+            
+            TextField("Enter item title", text: $newItemTitle)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            HStack {
+                Button("Add Item") {
+                    addItem()
+                }
+                .padding()
+                
+                Button("Update Item") {
+                    updateItem()
+                }
+                .padding()
+                .disabled(selectedItem == nil)
+                
+                Button("Delete Item") {
+                    deleteItem()
+                }
+                .padding()
+                .disabled(selectedItem == nil)
+            }
+            
+            List(viewModel.items) { item in
+                VStack(alignment: .leading) {
+                    Text(item.stringField)
+                        .font(.headline)
+                    Text("Id: \(item.id ?? "no id")")
+                    Text("String: \(item.stringField)")
+                    Text("Int: \(item.intField)")
+                    Text("Double: \(item.doubleField)")
+                    Text("Bool: \(item.boolField.description)")
+                    Text("Date: \(item.dateField.description)")
+                    Text("Array: \(item.arrayField.joined(separator: ", "))")
+                    Text("Dictionary: \(item.dictionaryField.description)")
+                }
+                .onTapGesture {
+                    selectedItem = item
+                    newItemTitle = item.stringField
+                    print("favoritedItems.count: \(viewModel.favoritedItems.count)")
+                    isFavorited = viewModel.isItemFavorited(item)
+                }
+                .foregroundColor(viewModel.isItemFavorited(item) ? .red : .primary)
+            }
+        }
+        .onAppear {
+            viewModel.fetchData()
+        }
+        .alert(isPresented: $showAlert) {
+            if let foundItem = foundItem {
+                return Alert(
+                    title: Text("Found Item"),
+                    message: Text("ID: \(foundItem.id ?? "")\nString: \(foundItem.stringField)\nInt: \(foundItem.intField)\nDouble: \(foundItem.doubleField)\nBool: \(foundItem.boolField.description)\nDate: \(foundItem.dateField.description)\nArray: \(foundItem.arrayField.joined(separator: ", "))\nDictionary: \(foundItem.dictionaryField.description)"),
+                    dismissButton: .default(Text("OK"))
+                )
+            } else {
+                return Alert(
+                    title: Text("Item not found"),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
+        }
+        .alert(item: $alertItem) { item in
+            Alert(
+                title: Text("Query Result"),
+                message: Text("Item ID: \(item.id ?? "")"),
+                dismissButton: .default(Text("OK")) {
+                    clearAlert()
+                }
+            )
+        }
+    }
+    
+    private func addItem() {
+        let newItem = ExampleModel(
+            stringField: newItemTitle,
+            intField: Int.random(in: 1...100),
+            doubleField: Double.random(in: 1...10),
+            boolField: Bool.random(),
+            dateField: Date(),
+            arrayField: ["red", "green", "blue"],
+            dictionaryField: ["key1": "value1", "key2": "42"]
+        )
+        
+        viewModel.addItem(newItem)
+        newItemTitle = ""
+    }
+    
+    private func updateItem() {
+        guard let selectedItem = selectedItem else { return }
+        
+        let updatedItem = ExampleModel(
+            id: selectedItem.id,
+            stringField: newItemTitle,
+            intField: selectedItem.intField,
+            doubleField: selectedItem.doubleField,
+            boolField: selectedItem.boolField,
+            dateField: selectedItem.dateField,
+            arrayField: selectedItem.arrayField,
+            dictionaryField: selectedItem.dictionaryField
+        )
+        
+        viewModel.updateItem(updatedItem)
+        clearSelection()
+    }
+    
+    private func deleteItem() {
+        guard let selectedItem = selectedItem else { return }
+        
+        viewModel.deleteItem(selectedItem)
+        clearSelection()
+    }
+    
+    private func clearSelection() {
+        selectedItem = nil
+        newItemTitle = ""
+    }
+    
+    private func queryItem() {
+        guard let selectedItem = selectedItem, let itemId = selectedItem.id else { return }
+        viewModel.fetchItem(withID: itemId) { item in
+            foundItem = item
+            showAlert = true
+        }
+    }
+    
+    private func clearAlert() {
+        showAlert = false
+        alertItem = nil
+    }
+    
+    private func favoriteItem(_ item: ExampleModel) {
+        
+        viewModel.favoriteItem(item) { success in
+            if success {
+                showAlert = true
+                alertItem = selectedItem
+                if selectedItem == item {
+                    isFavorited = true
+                }
+            } else {
+                print("Failed to favorite item.")
+            }
+        }
+    }
+    
+    private func unfavoriteItem(_ item: ExampleModel) {
+        
+        viewModel.unfavoriteItem(item) { success in
+            if success {
+                showAlert = true
+                alertItem = selectedItem
+                if selectedItem == item {
+                    isFavorited = false
+                }
+            } else {
+                print("Failed to unfavorite item.")
+            }
+        }
+    }
+    
+    private func toggleFavorite(_ newValue: Bool) {
+        guard let selectedItem = selectedItem else { return }
+        
+        if newValue {
+            favoriteItem(selectedItem)
+        } else {
+            unfavoriteItem(selectedItem)
+        }
+    }
 }
-
-// Virtual Easter egg model
-struct VirtualEasterEgg {
-    let id: Int
-    let name: String
-    let imageUrl: String
-}
-
-// In-person Easter egg model
-struct InPersonEasterEgg {
-    let id: Int
-    let name: String
-    let location: String
-}
-
-// Brand partner QR code model
-struct BrandPartnerQRCode {
-    let id: Int
-    let name: String
-    let imageUrl: String
-}
-
-// Trivia model
-struct Trivia {
-    let id: Int
-    let question: String
-    let answer: String
-}
-
-// Daily double model
-struct DailyDouble {
-    let id: Int
-    let question: String
-    let answer: String
-    let value: Int
-}
-
-// Clue model
-struct Clue {
-    let id: Int
-    let question: String
-    let answer: String
-}
-
-// Augmented reality experience model
-struct AugmentedRealityExperience {
-    let id: Int
-    let name: String
-    let imageUrl: String
-}
-
-// Coin model
-struct Coin {
-    let id: Int
-    let amount: Int
-}
-
-// Prize model
-struct Prize {
-    let id: Int
-    let name: String
-    let type: PrizeType
-}
-
-// Prize type enumeration
-enum PrizeType {
-    case physical
-    case experience
-    case legendaryExperience
-}
-
-// User-generated content model
-struct UserGeneratedContent {
-    let id: Int
-    let images: [String]
-    let videos: [String]
-    let text: String
-    let testimonials: [String]
-}
-
-// Brand sponsor model
-struct BrandSponsor {
-    let id: Int
-    let name: String
-    let revenueModel: RevenueModel
-    let subscriptionFeatures: [String]
-}
-
-// Revenue model enumeration
-enum RevenueModel {
-    case freemium
-    case subscription
-}
-
-// Team model
-struct Team {
-    let id: Int
-    let name: String
-    let members: [User]
-    let coinPool: Coin
-}
-
-// User model
-struct User {
-    let id: Int
-    let name: String
-    let coins: [Coin]
-    let prizes: [Prize]
-    let ugc: UserGeneratedContent
-    let teams: [Team]
-}
-*/
-
-
-/*
-struct Quest: Identifiable {
-    let id = UUID()
-    let title: String
-    let category: String
-    let tasks: [Task]
-}
-
-struct Task: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let geofencedAreas: [GeofencedArea]
-    let virtualEasterEggs: [VirtualEasterEgg]
-    let inPersonEasterEggs: [InPersonEasterEgg]
-    let brandPartnerQRCodes: [BrandPartnerQRCode]
-    let trivia: [Trivia]
-    let dailyDoubles: [DailyDouble]
-    let clues: [Clue]
-    let augmentedRealityExperiences: [AugmentedRealityExperience]
-}
-
-struct GeofencedArea: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let latitude: Double
-    let longitude: Double
-    let radius: Double
-}
-
-struct VirtualEasterEgg: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let imageUrl: URL
-}
-
-struct InPersonEasterEgg: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let location: String
-}
-
-struct BrandPartnerQRCode: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let imageUrl: URL
-}
-
-struct Trivia: Identifiable {
-    let id = UUID()
-    let question: String
-    let answer: String
-}
-
-struct DailyDouble: Identifiable {
-    let id = UUID()
-    let category: String
-    let value: Int
-    let clue: String
-    let answer: String
-}
-
-struct Clue: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let location: String
-}
-
-struct AugmentedRealityExperience: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let arModelUrl: URL
-}
-
-struct Coin: Identifiable {
-    let id = UUID()
-    let amount: Int
-    let earnedBy: [CoinEarnedMethod]
-}
-
-enum CoinEarnedMethod {
-    case completingTasks
-    case uploadingUGC
-    case invitingFriends
-    case sharingUGCOnSocialMedia
-    case groupPurchases
-}
-
-struct Prize: Identifiable {
-    let id = UUID()
-    let title: String
-    let description: String
-    let type: PrizeType
-}
-
-enum PrizeType {
-    case physicalItem
-    case experience
-    case legendaryExperience
-}
-
-struct UserGeneratedContent: Identifiable {
-    let id = UUID()
-    let type: UGCType
-    let title: String
-    let description: String
-    let imageUrl: URL?
-    let videoUrl: URL?
-    let text: String?
-    let testimonial: String?
-}
-
-enum UGCType {
-    case image
-    case video
-    case text
-    case testimonial
-}
-
-struct BrandSponsor: Identifiable {
-    let id = UUID()
-    let name: String
-    let revenueModel: RevenueModel
-}
-
-enum RevenueModel {
-    case freemium
-    case subscriptionBased
-}
-
-struct Team: Identifiable {
-    let id = UUID()
-    let name: String
-    let members: [User]
-    let coinPool: Int
-}
-
-struct User: Identifiable {
-    let id = UUID()
-    let name: String
-    let email: String
-}
-*/
-
-//struct Quest {
-//    let id: UUID
-//    let title: String
-//    let description: String
-//    let category: Category
-//    var tasks: [Task]
-//    var completedTasks: [UUID]
-//    let coinReward: Int
-//    let prize: Prize?
-//}
-//
-//struct Task {
-//    let id: UUID
-//    let title: String
-//    let description: String
-//    let type: TaskType
-//    let location: Location?
-//    let coinReward: Int
-//}
-//
-//enum TaskType {
-//    case geofencedArea(Location)
-//    case virtualEasterEgg
-//    case inPersonEasterEgg(Location)
-//    case brandPartnerQRCode(String)
-//    case triviaQuestion(String, [String], Int)
-//    case dailyDouble(String, [String], Int)
-//    case clue(String)
-//    case augmentedRealityExperience(String)
-//}
-//
-//struct Category {
-//    let name: String
-//}
-//
-//struct Location {
-//    let latitude: Double
-//    let longitude: Double
-//}
-//
-//struct Prize {
-//    let id: UUID
-//    let title: String
-//    let description: String
-//    let type: PrizeType
-//    let coinCost: Int
-//}
-//
-//enum PrizeType {
-//    case physicalItem
-//    case experience
-//    case legendaryExperience
-//}
-//
-//// User-generated content model
-//struct UserGeneratedContent {
-//    let id: Int
-//    let images: [String]
-//    let videos: [String]
-//    let text: String
-//    let testimonials: [String]
-//}
-//
-//// Brand sponsor model
-//struct BrandSponsor {
-//    let id: Int
-//    let name: String
-//    let revenueModel: RevenueModel
-//    let subscriptionFeatures: [String]
-//}
-//
-//// Revenue model enumeration
-//enum RevenueModel {
-//    case freemium
-//    case subscription
-//}
-//
-//// Team model
-//struct Team {
-//    let id: Int
-//    let name: String
-//    let members: [User]
-//    let coinPool: Coin
-//}
-//
-//// User model
-//struct User {
-//    let id: Int
-//    let name: String
-//    let coins: [Coin]
-//    let prizes: [Prize]
-//    let ugc: UserGeneratedContent
-//    let teams: [Team]
-//}
-//
-//// Coin model
-//struct Coin {
-//    let id: Int
-//    let amount: Int
-//}

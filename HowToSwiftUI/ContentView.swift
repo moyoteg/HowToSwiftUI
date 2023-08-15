@@ -59,12 +59,16 @@ struct ContentView: View {
         HowTo(isResolved: false, "Generate Acknowledgements", AnyView(GenerateAcknowledgements())),
         HowTo(isResolved: true, "Use Firebase Auth", AnyView(UseFirebaseAuth())),
         HowTo(isResolved: true, "Use Google Remote Configuration", AnyView(UseGoogleRemoteConfiguration())),
+        HowTo(isResolved: true, "Use Cloud Firestore", AnyView(UseCloudFirestore())),
         HowTo(isResolved: true, "Use Prism", AnyView(UsePrism3D())),
         HowTo(isResolved: true, "View And Use SF Symbols", AnyView(ViewAndUseSFSymbols())),
         HowTo(isResolved: true, "Create Flow Layout", AnyView(CreateFlowLayout())),
         HowTo(isResolved: true, "Use Grid Last Cell Takes Full Width", AnyView(UseGridLastCellTakesFullWidth())),
         HowTo(isResolved: true, "Use Location", AnyView(UseLocation())),
         HowTo(isResolved: true, "Get Random Remote Images", AnyView(GetRandomRemoteImages())),
+        HowTo(isResolved: true, "Section Full Header Image", AnyView(SectionFullHeaderImage())),
+        HowTo(isResolved: true, "Overlay Gradient Focus", AnyView(OverlayGradientFocus())),
+        
         
     ]
     

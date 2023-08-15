@@ -130,7 +130,7 @@ class PicsumImageURLGenerator: ObservableObject {
     func generateURL() -> URL? {
         var urlString = "https://picsum.photos/"
         
-        var components = URLComponents(string: urlString)
+//        var components = URLComponents(string: urlString)
 
         var queryItems: [URLQueryItem] = []
 
@@ -212,7 +212,7 @@ class PicsumImageURLGenerator: ObservableObject {
 struct PicsumImageURLGeneratorView: View {
     @ObservedObject private var generator = PicsumImageURLGenerator()
     @State private var numberOfShakes = 0.0
-    @State private var buttonColor = .blue
+    @State private var buttonColor = Color.blue
 
     @State var imageUrls = [URL]()
     
