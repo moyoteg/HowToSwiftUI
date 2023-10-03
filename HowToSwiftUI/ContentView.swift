@@ -68,7 +68,8 @@ struct ContentView: View {
         HowTo(isResolved: true, "Get Random Remote Images", AnyView(GetRandomRemoteImages())),
         HowTo(isResolved: true, "Section Full Header Image", AnyView(SectionFullHeaderImage())),
         HowTo(isResolved: true, "Overlay Gradient Focus", AnyView(OverlayGradientFocus())),
-        
+        HowTo(isResolved: true, "Track Offset ScrollView", AnyView(TrackOffsetScrollView())),
+        HowTo(isResolved: true, "Pin Section Header To Top", AnyView(PinSectionHeaderToTop())),
         
     ]
     

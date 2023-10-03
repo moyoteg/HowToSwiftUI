@@ -391,4 +391,3 @@ extension AuthenticationViewModel {
         }
     }
 }
-

@@ -1,0 +1,92 @@
+
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
+      "filename" : "HowToLogo_2048-29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "29x29",
+      "filename" : "HowToLogo_2048-29@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "60x45",
+      "filename" : "HowToLogo_2048-60-45@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "60x45",
+      "filename" : "HowToLogo_2048-60-45@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "29x29",
+      "filename" : "HowToLogo_2048-29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "67x50",
+      "filename" : "HowToLogo_2048-67-50@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "74x55",
+      "filename" : "HowToLogo_2048-74-55@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ios-marketing",
+      "size" : "1024x1024",
+      "filename" : "HowToLogo_2048-1024@1x.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "27x20",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "HowToLogo_2048-27-20@2x.png",
+      "platform" : "ios"
+    },
+    {
+      "size" : "27x20",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "HowToLogo_2048-27-20@3x.png",
+      "platform" : "ios"
+    },
+    {
+      "size" : "32x24",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "HowToLogo_2048-32-24@2x.png",
+      "platform" : "ios"
+    },
+    {
+      "size" : "32x24",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "HowToLogo_2048-32-24@3x.png",
+      "platform" : "ios"
+    },
+    {
+      "size" : "1024x768",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "filename" : "HowToLogo_2048-1024-768@1x.png",
+      "platform" : "ios"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

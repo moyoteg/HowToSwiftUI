@@ -22,6 +22,8 @@
 	<string>development</string>
 	<key>com.apple.developer.fileprovider.testing-mode</key>
 	<true/>
+	<key>com.apple.developer.game-center</key>
+	<true/>
 	<key>com.apple.developer.group-session</key>
 	<true/>
 	<key>com.apple.developer.homekit</key>
